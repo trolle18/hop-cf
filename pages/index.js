@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Nav from '../components/Nav'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
+    <>
+    <Nav/>
     <div className={styles.container}>
       <Head>
         <title>HOP</title>
@@ -65,5 +68,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+    </>
   )
 }

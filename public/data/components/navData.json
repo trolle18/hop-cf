@@ -1,0 +1,32 @@
+[
+    {
+      "id": 123,
+      "online": "y",
+      "title": "Nav",
+      "desc": "Navbar",
+      "logoLink": [
+        {
+          "id": 132,
+          "linkTxt": "Logo-link",
+          "link": "/"
+        }
+      ],
+      "navLinks": [
+        {
+          "id": 981,
+          "linkTxt": "Nav-Link",
+          "link": "/"
+        },
+        {
+          "id": 761,
+          "linkTxt": "Nav-Link",
+          "link": "/"
+        },
+        {
+          "id": 812,
+          "linkTxt": "Nav-Link",
+          "link": "/"
+        }
+      ]
+    }
+  ]

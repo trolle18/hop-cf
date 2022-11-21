@@ -1,0 +1,33 @@
+
+h1 {
+    margin: .625rem 0;
+    text-transform: uppercase;
+    font-size: $fs_2xl;
+}
+
+h2 {
+    margin: .625rem 0;
+    text-transform: uppercase;
+    font-size: $fs_2xl;
+}
+
+h3 {
+    margin: 0 0 .625rem 0;
+    text-transform: uppercase;
+    font-size: $fs_l;
+}
+
+h4 {
+    margin: 0 0 .625rem 0;
+    font-size: $fs_ml;
+}
+
+h5 {
+    margin: 0 0 .625rem 0;
+    font-size: $fs_m;
+}
+
+p, span {
+    margin: 0 0 .625rem 0;
+    font-size: $fs_s;    
+}
