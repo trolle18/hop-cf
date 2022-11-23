@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import styles from '../styles/Home.module.css'
 
@@ -15,6 +16,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
+     
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -23,7 +26,7 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-
+ <Hero/>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>

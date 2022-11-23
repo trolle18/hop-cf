@@ -1,0 +1,34 @@
+[
+    {
+      "id": 234,
+      "online": "y",
+      "title": "Homepage",
+      "desc": "",
+      "hero": [
+        {
+          "id": 212,
+          "headline": "Headline text",
+          "text": "Lorem ipsum dolor sit amet",
+          "imgSrc": "/data/CFDomocil.jpg",
+          "imgAlt": "CF headquarters"
+        }
+      ],
+      "navLinks": [
+        {
+          "id": 981,
+          "linkTxt": "Nav-Link",
+          "link": "/"
+        },
+        {
+          "id": 761,
+          "linkTxt": "Nav-Link",
+          "link": "/"
+        },
+        {
+          "id": 812,
+          "linkTxt": "Nav-Link",
+          "link": "/"
+        }
+      ]
+    }
+  ]
