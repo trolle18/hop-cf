@@ -1,0 +1,24 @@
+.section-grid {
+    height: auto;
+    width: 100%;
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 2em 1em;
+}
+
+@media (min-width: 600px) {
+    .section-grid {
+        margin: 2em 0;
+        grid-template-columns: repeat(2, auto);
+        gap: 2em 1em;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-grid {
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+}

@@ -19,7 +19,7 @@ export default function Hero() {
         {sectionData.map((data) => (
             <div className="hero-cntr" key={data.id}>
                 {data?.hero.map((hero) => (
-                <>                    
+                <div key={hero.id}>                    
                     <div className="hero-cntr__img-cntr">
                         <Image src={hero.imgSrc} alt="" width={100} height={100}/>
                     </div>
@@ -27,7 +27,7 @@ export default function Hero() {
                         {/* <h1>{hero.headline}</h1> */}
                         <p>{hero.text}</p>
                     </div>
-                </>            
+                </div>            
                 ))} 
             </div>
         
