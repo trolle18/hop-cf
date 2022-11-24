@@ -9,7 +9,7 @@
           "id": 212,
           "headline": "Headline text",
           "text": "Lorem ipsum dolor sit amet",
-          "imgSrc": "/data/CFDomocil.jpg",
+          "imgSrc": "/public/data/CFDomicil.jpg",
           "imgAlt": "CF headquarters"
         }
       ],
