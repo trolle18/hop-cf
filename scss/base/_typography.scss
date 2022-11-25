@@ -28,6 +28,18 @@ h5 {
 }
 
 p, span {
-    margin: 0 0 .625rem 0;
-    font-size: $fs_s;    
+    margin: 0 0;
+    // font-size: $fs_s;    
+}
+
+.txt-clr-mg {
+    color: $clr_midnight_green;
+}
+
+.txt-clr-lg {
+    color: $clr_light_green;
+}
+
+.txt-clr-lightestg {
+    color: $clr_lightest_green;
 }

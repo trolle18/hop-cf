@@ -7,10 +7,10 @@
       "hero": [
         {
           "id": 212,
-          "headline": "Headline text",
-          "text": "Lorem ipsum dolor sit amet",
+          "headline": "420 Mio. gode grunde til at søge støtte",
+          "text": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af.",
           "imgSrc": "/data/media/petridish1.png",
-          "imgAlt": "CF headquarters"
+          "imgAlt": "hero image"
         }
       ]
     }

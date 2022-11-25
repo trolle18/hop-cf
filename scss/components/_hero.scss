@@ -24,9 +24,36 @@
 
     &__txt-cntr {
         height: auto;
-        width: auto;
+        width: 100%;
         top: 50%;
-        left: 4rem;
+        left: 0;
         position: absolute;
+
+        h1 {
+            font-size: $fs_3xl;
+        }
+
+        p {
+            font-size: $fs_l;
+        }
+
+    }
+}
+
+@media (min-width: 600px) {
+    .hero-cntr {
+    
+        &__txt-cntr {
+            width: 80%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-cntr {
+    
+        &__txt-cntr {
+            width: 80%;
+        }
     }
 }
