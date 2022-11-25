@@ -43,9 +43,9 @@ const Nav = () => {
                     <div className="nav-inner-cntr" key={data.id}>
                         <div className="nav-inner-cntr__logo"> 
                             {data?.logoLink.map((logoLink) => (
-                                <a key={logoLink.id} href={logoLink.link}>
-                                    {logoLink.linkTxt}
-                                </a>
+                              <a key={logoLink.id} href={logoLink.url}>
+                                <div className="logo-svg"></div>
+                              </a>
                             ))}    
 
                         </div>
