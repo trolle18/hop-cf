@@ -19,25 +19,26 @@ export default function TextCtaSection() {
         {sectionData.map((data) => (
             <div className="textCtaSection" key={data.id}>
                 {data?.txtCtaSection.map((section) => (
-                    <div className="textCtaSection__inner-cntr" key={section.id}>     
-                        <h2>{section.headline}</h2>               
+                    <div className="textCtaSection__inner-cntr" key={section.id}> 
+                        <div className="headline-cntr">
+                            <h2>{section.headline}</h2>   
+                        </div>    
+                                    
                         <div className="txt-cntr">
                             <p className="subheader">{section.subheadline}</p>
                             <p>{section.text}</p>
 
                             {section?.link.map((link) => (
-                                <button key={link.id}>
+                                <button className="cta-btn" key={link.id}>
                                     {link.text}
                                 </button>
                             ))}                            
                         </div>
 
                         <div className="img-cntr">
-                        {section?.img.map((img) => (
-                            <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
-                                
-                            ))}  
-                            
+                            {section?.img.map((img) => (
+                              <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
+                            ))}                              
                         </div>
                     
                     </div>            
