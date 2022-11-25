@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BurgerMenu from './BurgerMenu';
+import SearchField from './SearchField';
 
 const Nav = () => {
   const [show, setShow] = useState(true);
@@ -55,6 +56,7 @@ const Nav = () => {
                                     {navLink.linkTxt}
                                 </a>
                             ))}    
+                            <SearchField/>
                         </div>
 
                         <div className="nav-mob-links">                 
