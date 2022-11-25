@@ -41,7 +41,29 @@
             width: 100%;
             font-size: $fs_l;
         }
+    }
 
+    &__cta {
+        height: auto;
+        width: auto;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-color: $semitrans_lightest_green_80;
+        transition: ease-in .10s; 
+
+        .cta-inner-cntr {
+            height: auto;
+            width: auto;
+            margin: .75em 2em .75em 1em;
+            display: flex;
+            flex-direction: row;
+            gap: 5em;   
+        }
+
+        &:hover {
+            background-color: $clr_lightest_green;
+        }
     }
 }
 

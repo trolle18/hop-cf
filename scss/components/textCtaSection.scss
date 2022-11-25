@@ -1,0 +1,25 @@
+.textCtaSection {
+    height: auto;
+    width: 100%;
+
+    &__inner-cntr {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        row-gap: .5em;
+
+        .txt-cntr {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .img-cntr {
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}

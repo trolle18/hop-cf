@@ -1,17 +1,44 @@
 [
-    {
-      "id": 234,
-      "online": "y",
-      "title": "Homepage",
-      "desc": "",
-      "hero": [
-        {
-          "id": 212,
-          "headline": "420 Mio. gode grunde til at søge støtte",
-          "text": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af.",
-          "imgSrc": "/data/media/petridish1.png",
-          "imgAlt": "hero image"
-        }
-      ]
-    }
-  ]
+  {
+    "id": 234,
+    "online": "y",
+    "title": "Homepage",
+    "desc": "",
+    "hero": [
+      {
+        
+        "id": 212,
+        "headline": "420 Mio. gode grunde til at søge støtte",
+        "text": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af.",
+        "imgSrc": "/data/media/petridish1.png",
+        "imgAlt": "hero image",
+        "ctaTxt": "Søg støtte",
+        "ctaUrl": "/"
+      }
+    ],
+    "txtCtaSection": [
+      {
+        "id": 213,
+        "headline": "Frist: 1 Oktober",
+        "subheadline": "Ønsker du at få del i Carlsbergfondets midler til grundvidenskabelig forskning inden for naturvidenskab, samfundsvidenskab og humaniora?",
+        "text": "Dyk ned i fondets Efterårsopslag 2022, der tilbyder en lang række virkemidler rettet mod såvel yngre postdocs som etablerede forskere på lektor -og professorniveau. Frist: 1 oktober 2022.",
+        "img": [
+          {
+            "id": 111,
+            "src": "/data/media/calendar.svg",
+            "alt": "calendar image"
+
+          }
+        ],
+        "link": [
+          {
+            "id": 122,
+            "text": "Se alle åbne forslag",
+            "url": "/"
+
+          }
+        ]
+      }
+    ]
+  }
+]

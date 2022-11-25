@@ -27,6 +27,13 @@ export default function Hero() {
                         <h1>{hero.headline}</h1>
                         <p>{hero.text}</p>
                     </div>
+                    <a className="hero-cntr__cta" href={hero.ctaUrl}>
+                        <div className="cta-inner-cntr">
+                            <p>{hero.ctaTxt}</p>
+                            <div className="loop-svg"></div>
+                        </div>
+                    </a>
+                    
                 </div>            
                 ))} 
             </div>

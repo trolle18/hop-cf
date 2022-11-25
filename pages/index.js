@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import ArticleSection from '../components/ArticleSection'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
-import styles from '../styles/Home.module.css'
+import TextCtaSection from '../components/TextCtaSection'
 
 export default function Home() {
   return (
@@ -18,6 +17,7 @@ export default function Home() {
 
       <main className="page">
         <Hero/>
+        <TextCtaSection/>
         <ArticleSection/>
 
       </main>
