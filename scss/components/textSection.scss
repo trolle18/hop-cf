@@ -1,7 +1,14 @@
-.textCtaSection {
+.textSection {
     height: auto;
     width: 100%;
     margin: 4em 0em;
+
+    &__tag {
+        width: auto;
+        height: auto;
+        margin: 0 0 1em 0;
+        text-transform: uppercase;
+    }
 
     &__inner-cntr {
         height: auto;
@@ -55,7 +62,7 @@
 }
 
 @media (min-width: 600px) {
-    .textCtaSection {
+    .textSection {
     
         &__inner-cntr {
             height: auto;

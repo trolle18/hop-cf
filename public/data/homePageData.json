@@ -40,6 +40,32 @@
           }
         ]
       }
+    ],
+    "txtSliderSection": [
+      {
+        "id": 214,
+        "tag": "Nyheder",
+        "headline": "Hvad sker der?",
+        "headline2nd": "",
+        "subheadline": "Nyt om projekter, ansøgninger og alt det andet spændende der er relateret til og omkring Carlsberg-fondets arbejde.",
+        "text": "",
+        "img": [
+          {
+            "id": 111,
+            "src": "",
+            "alt": ""
+
+          }
+        ],
+        "link": [
+          {
+            "id": 122,
+            "text": "",
+            "url": ""
+
+          }
+        ]
+      }
     ]
   }
 ]
