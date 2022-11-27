@@ -14,20 +14,24 @@
             flex-direction: column;
             gap: 1em;
 
-            .subheader {
-                font-size: $fs_2xl;
+            &__inner-cntr {
+                .subheader {
+                    font-size: $fs_2xl;
+                }
+
+                .cta-btn {
+                    height: auto;
+                    width: max-content;
+                    margin: 0 auto;
+                    padding: 1em 2.25em;
+                    border: none;
+                    background-color: $clr_lightest_green;
+                    font-size: $fs_m;
+                    border-radius: 50px;
+                }
             }
 
-            .cta-btn {
-                height: auto;
-                width: max-content;
-                margin: 0 auto;
-                padding: 1em 2.25em;
-                border: none;
-                background-color: $clr_lightest_green;
-                font-size: $fs_m;
-                border-radius: 50px;
-            }
+            
         }
 
         .img-cntr {
@@ -69,23 +73,29 @@
                 border: solid red 1px;
                 display: flex;
                 flex-direction: column;
-                // gap: 2em;
-                // justify-content: space-between;
-    
-                .subheader {
-                    font-size: $fs_2xl;
-                }
-    
-                .cta-btn {
-                    height: auto;
-                    width: max-content;
-                    margin: 0 auto;
-                    padding: 1em 2.25em;
-                    border: none;
-                    background-color: $clr_lightest_green;
-                    font-size: $fs_m;
-                    border-radius: 50px;
-                }
+
+                &__inner-cntr {
+                    // margin: auto 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5em;
+                    border: solid green 1px;
+
+                    .subheader {
+                        font-size: $fs_2xl;
+                    }
+        
+                    .cta-btn {
+                        height: auto;
+                        width: max-content;
+                        margin: 0 auto;
+                        padding: 1em 2.25em;
+                        border: none;
+                        background-color: $clr_lightest_green;
+                        font-size: $fs_m;
+                        border-radius: 50px;
+                    }
+                }   
             }
     
             .img-cntr {
