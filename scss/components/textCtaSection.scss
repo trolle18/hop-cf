@@ -7,14 +7,19 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, auto);
-        row-gap: .5em;
+        row-gap: 2em;
 
         .txt-cntr {
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            justify-content: center;
 
             &__inner-cntr {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 1em;
+
                 .subheader {
                     font-size: $fs_2xl;
                 }
@@ -22,7 +27,7 @@
                 .cta-btn {
                     height: auto;
                     width: max-content;
-                    margin: 0 auto;
+                    margin: auto auto;
                     padding: 1em 2.25em;
                     border: none;
                     background-color: $clr_lightest_green;
@@ -30,7 +35,6 @@
                     border-radius: 50px;
                 }
             }
-
             
         }
 
@@ -75,10 +79,10 @@
                 flex-direction: column;
 
                 &__inner-cntr {
-                    // margin: auto 0;
+                    height: 100%;
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
-                    gap: 1.5em;
                     border: solid green 1px;
 
                     .subheader {
@@ -101,9 +105,15 @@
             .img-cntr {
                 grid-area: 2 / 1 / 3 / 2;
                 border: solid red 1px;
-                height: 200px;
+                height: 100%;
                 width: 100%;
+                max-width: 80%;
+                left: 0;
+                bottom: 0;
+                object-fit: contain;
+
                 img {
+                    border: solid blue 1px;
                     height: 100%;
                     width: 100%;
                 }

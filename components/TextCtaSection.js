@@ -28,13 +28,15 @@ export default function TextCtaSection() {
                             <div className="txt-cntr__inner-cntr">
                                 <p className="subheader">{section.subheadline}</p>
                                 <p>{section.text}</p>
-
+                                
                                 {section?.link.map((link) => (
                                     <button className="cta-btn" key={link.id}>
                                         {link.text}
                                     </button>
-                                ))}        
-                            </div>                                                
+                                ))}   
+                            </div>
+                            
+                                                                       
                         </div>
 
                         <div className="img-cntr">
