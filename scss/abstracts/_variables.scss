@@ -10,6 +10,11 @@ $fs_xs: 0.750rem; // 12px
 $fs_2xs: 0.625rem; // 10px
 $fs_3xs: 0.500rem; // 8px
 
+// Font-families
+$ff-headline: 'CarlsbergRoman04-Display';
+$ff-main: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+;
+
 // Colors
 $clr_black: #000;
 $clr_d_grey: #282828;
@@ -30,3 +35,4 @@ $clr_light_orange:#ffd8c2;
 $clr_yellow: #fff48d;
 
 $semitrans_lightest_green_80: rgba(204, 242, 219, .8);
+

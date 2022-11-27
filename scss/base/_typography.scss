@@ -1,35 +1,34 @@
+h1, h2, h3, h4, h5 {
+    font-family: $ff-headline;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
 
 h1 {
-    margin: 0 0;
-    text-transform: uppercase;
     font-size: $fs_2xl;
 }
 
 h2 {
-    margin: 0 0;
-    text-transform: uppercase;
     font-size: $fs_2xl;
 }
 
 h3 {
-    margin: 0 0;
-    text-transform: uppercase;
     font-size: $fs_l;
 }
 
 h4 {
-    margin: 0 0;
     font-size: $fs_ml;
 }
 
 h5 {
-    margin: 0 0;
     font-size: $fs_m;
 }
 
 p, span {
-    margin: 0 0;
-    // font-size: $fs_s;    
+    font-size: $fs_s;    
 }
 
 .txt-clr-mg {
