@@ -56,7 +56,7 @@ export default function TextSliderSection() {
                         {/* <div className="img-cntr">
                             {section?.img.map((img) => (
                               <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
-                            ))}                              
+                            ))}   
                         </div>                     */}
                     </div>       
                     </>     
