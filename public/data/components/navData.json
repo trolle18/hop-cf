@@ -7,25 +7,32 @@
       "logoLink": [
         {
           "id": 132,
-          "linkTxt": "Logo-link",
-          "link": "/"
+          "txt": "Logo-link",
+          "url": "/"
+        }
+      ],
+      "logoSvg": [
+        {
+          "id": 122,
+          "src": "/data/media/logo/CF_logo_DK_BLACK.svg",
+          "alt": "Carlsbergfondet logo"
         }
       ],
       "navLinks": [
         {
           "id": 981,
-          "linkTxt": "Nav-Link",
-          "link": "/"
+          "linkTxt": "Aktuelt",
+          "url": "/"
         },
         {
           "id": 761,
-          "linkTxt": "Nav-Link",
-          "link": "/"
+          "linkTxt": "Det støtter vi",
+          "url": "/"
         },
         {
           "id": 812,
-          "linkTxt": "Nav-Link",
-          "link": "/"
+          "linkTxt": "Om fondet",
+          "url": "/"
         }
       ]
     }

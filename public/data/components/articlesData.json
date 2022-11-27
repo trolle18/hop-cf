@@ -1,0 +1,106 @@
+[
+  {
+    "id": 312,
+    "online": "y",
+    "type": "type",
+    "styleTag": "styletag",
+    "title": "Article headline 1",
+    "desc": "Lorem ipsum dolor sit amet",
+    "category": "category",
+    "tag": "tag",
+    "createdDate": "20/11/22",
+    "updatedDate": "21/11/22",
+    "link": [
+      {
+        "id": 2220,
+        "txt": "lorem ipsum",
+        "url": "url..."
+      }
+    ],
+    "img": [
+        {
+          "id": 3121,
+          "src": "/data/CFDomicil.jpg",
+          "alt": "CF headquarters"
+        }
+      ]
+  },
+  {
+    "id": 233,
+    "online": "y",
+    "type": "type",
+    "styleTag": "styletag",
+    "title": "Article headline 2",
+    "desc": "Lorem ipsum dolor sit amet",
+    "category": "category",
+    "tag": "tag",
+    "createdDate": "20/11/22",
+    "updatedDate": "21/11/22",
+    "link": [
+      {
+        "id": 2220,
+        "txt": "lorem ipsum",
+        "url": "url..."
+      }
+    ],
+    "img": [
+      {
+        "id": 2331,
+        "src": "/data/CFDomicil.jpg",
+        "alt": "CF headquarters"
+      }
+    ]
+  },
+  {
+    "id": 647,
+    "online": "y",
+    "type": "type",
+    "styleTag": "styletag",
+    "title": "Article headline 3",
+    "desc": "Lorem ipsum dolor sit amet",
+    "category": "category",
+    "tag": "tag",
+    "createdDate": "20/11/22",
+    "updatedDate": "21/11/22",
+    "link": [
+      {
+        "id": 2220,
+        "txt": "lorem ipsum",
+        "url": "url..."
+      }
+    ],
+    "img": [
+      {
+        "id": 6471,
+        "src": "/data/CFDomicil.jpg",
+        "alt": "CF headquarters"
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "online": "y",
+    "type": "type",
+    "styleTag": "styletag",
+    "title": "Article headline 4",
+    "desc": "Lorem ipsum dolor sit amet",
+    "category": "category",
+    "tag": "tag",
+    "createdDate": "20/11/22",
+    "updatedDate": "21/11/22",
+    "link": [
+      {
+        "id": 2220,
+        "txt": "lorem ipsum",
+        "url": "url..."
+      }
+    ],
+    "img": [
+        {
+          "id": 2221,
+          "src": "/data/CFDomicil.jpg",
+          "alt": "CF headquarters"
+        }
+      ]
+    }
+  ]

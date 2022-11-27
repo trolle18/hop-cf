@@ -1,6 +1,7 @@
 // Abstracts
 @import 'abstracts/breakpoints';
 @import 'abstracts/variables';
+@import 'abstracts/fonts';
 
 // Base
 @import 'base/resets';
@@ -8,3 +9,12 @@
 
 // Components 
 @import 'components/nav';
+@import 'components/hero';
+@import 'components/article';
+@import 'components/searchField';
+@import 'components/CTAbtn';
+@import 'components/textSection';
+
+// Layout
+@import 'layout/sectionGrid';
+@import 'layout/sectionWrapper';

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BurgerMenu from './BurgerMenu';
+import SearchField from './SearchField';
 
 const Nav = () => {
   const [show, setShow] = useState(true);
@@ -43,9 +44,9 @@ const Nav = () => {
                     <div className="nav-inner-cntr" key={data.id}>
                         <div className="nav-inner-cntr__logo"> 
                             {data?.logoLink.map((logoLink) => (
-                                <a key={logoLink.id} href={logoLink.link}>
-                                    {logoLink.linkTxt}
-                                </a>
+                              <a key={logoLink.id} href={logoLink.url}>
+                                <div className="logo-svg"></div>
+                              </a>
                             ))}    
 
                         </div>
@@ -55,6 +56,7 @@ const Nav = () => {
                                     {navLink.linkTxt}
                                 </a>
                             ))}    
+                            <SearchField/>
                         </div>
 
                         <div className="nav-mob-links">                 

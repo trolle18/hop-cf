@@ -1,0 +1,15 @@
+.section-wrapper {
+    margin: 2em .75em;   
+}
+
+@media (min-width: 600px) {
+    .section-wrapper {
+        margin: 1em 2em;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-wrapper {
+        margin: 1em 2em;
+    }
+}
