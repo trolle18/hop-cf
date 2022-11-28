@@ -72,6 +72,14 @@
 
 @media (min-width: 600px) {
     .textSection {
+
+        .headline-cntr {
+            height: 100%;
+
+            h2 {
+                font-size: $fs_3xl;
+            }
+        }
     
         &__inner-cntr {
             height: auto;

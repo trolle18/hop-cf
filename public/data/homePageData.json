@@ -66,6 +66,96 @@
           }
         ]
       }
+    ],
+    "txtEventSection": [
+      {
+        "id": 275,
+        "tag": "Kalender",
+        "headline": "Begivenheder 2023",
+        "headline2nd": "",
+        "subheadline": "",
+        "text": "",
+        "img": [
+          {
+            "id": 255,
+            "src": "",
+            "alt": ""
+
+          }
+        ],
+        "link": [
+          {
+            "id": 422,
+            "text": "Flere bevigenheder",
+            "url": "/"
+          }
+        ],
+        "articles": [
+          {
+            "id": 53,
+            "tag": "Foredrag",
+            "headline": "Kom til en aften i selskab med hekse, gryder og koste.",
+            "dayMonth": "17.02",
+            "year": "2023",
+            "img": [
+              {
+                "id": 530,
+                "src": "/data/media/witches.png",
+                "alt": "witches"
+              }
+            ],
+            "link": [
+              {
+                "id": 531,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "id": 54,
+            "tag": "Kulturnatten: Åbent hus",
+            "headline": "Vi åbner de ellers lukkede døre til kælderen på Glyptotektet.",
+            "dayMonth": "12.05",
+            "year": "2023",
+            "img": [
+              {
+                "id": 540,
+                "src": "/data/media/funguspetri.png",
+                "alt": "fungus"
+              }
+            ],
+            "link": [
+              {
+                "id": 541,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "id": 55,
+            "tag": "Foredrag",
+            "headline": "Kom med til en aften i selskab med hekse, gryder og koste.",
+            "dayMonth": "16.03",
+            "year": "2023",
+            "img": [
+              {
+                "id": 550,
+                "src": "/data/media/Mask-group-lines.svg",
+                "alt": "Lines"
+              }
+            ],
+            "link": [
+              {
+                "id": 551,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 ]

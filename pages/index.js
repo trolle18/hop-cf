@@ -3,6 +3,7 @@ import ArticleSection from '../components/ArticleSection'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import TextCtaSection from '../components/TextCtaSection'
+import TextEventSection from '../components/TextEventSection'
 import TextSliderSection from '../components/TextSliderSection'
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
         <Hero/>
         <TextCtaSection/>
         <TextSliderSection/>
-        {/* <ArticleSection/> */}
+        <TextEventSection/>
 
       </main>
  
