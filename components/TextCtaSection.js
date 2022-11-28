@@ -18,7 +18,7 @@ export default function TextCtaSection() {
     return (
         <>
         {sectionData.map((data) => (
-            <div className="textSection" key={data.id}>
+            <section className="textSection" key={data.id}>
                 {data?.txtCtaSection.map((section) => (
                     <div className="textSection__inner-cntr" key={section.id}> 
                         <div className="headline-cntr">
@@ -54,8 +54,7 @@ export default function TextCtaSection() {
                         </div>                    
                     </div>            
                 ))} 
-            </div>
-        
+            </section>        
         ))}  
         </>
     )

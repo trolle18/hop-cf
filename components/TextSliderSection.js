@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import CtaBtn from './CTAbtn';
+import SwiperSection from './SwiperSection';
 
 export default function TextSliderSection() {
     const [sectionData, setSectionData] = useState([]);
@@ -18,7 +19,7 @@ export default function TextSliderSection() {
     return (
         <>
         {sectionData.map((data) => (
-            <div className="textSection" key={data.id}>
+            <section className="textSection" key={data.id}>
                 {data?.txtSliderSection.map((section) => (
                     <>
                     <div className="textSection__tag">
@@ -61,7 +62,8 @@ export default function TextSliderSection() {
                     </div>       
                     </>     
                 ))} 
-            </div>
+                <SwiperSection/>
+            </section>
         
         ))}  
         </>
