@@ -10,10 +10,10 @@ export default function Article ( {data} ) {
                     <Image key={img.id} src={img.src} alt={img.alt} height={100} width={100} />
                 ))}
                 </div>
-                <div className="article-cntn">
-                    <div className="article-cntn__txt">
-                        <span className="article-cntn__txt__details">{data.createdDate}</span>
-                        <p className="article-cntn__txt__headline">{data.title}</p>
+                <div className="article-cnt">
+                    <div className="article-cnt__txt">
+                        <span className="article-cnt__txt__details">{data.createdDate}</span>
+                        <p className="article-cnt__txt__headline">{data.title}</p>
                     </div>
                 </div>
             </article>
