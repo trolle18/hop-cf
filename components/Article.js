@@ -12,27 +12,10 @@ export default function Article ( {data} ) {
                 </div>
                 <div className="article-cntn">
                     <div className="article-cntn__txt">
-                        {/* <div className="txt-top"> */}
-                            {/* <span>{data.category}</span> */}
-                            <span className="article-cntn__txt__details">{data.createdDate}</span>
-                        {/* </div> */}
-
+                        <span className="article-cntn__txt__details">{data.createdDate}</span>
                         <p className="article-cntn__txt__headline">{data.title}</p>
-                        {/* <span>{data.tag}</span>
-                        <p>{data.desc}</p> */}
                     </div>
-
-                    {/* <div className="article-cntn__btm">
-                        {data.link.map((link) => (
-                            <a className="btm-link" key={link.id}>
-                                {link.txt}
-                            </a>
-                        ))}
-                    </div> */}
                 </div>
-                
-               
-
             </article>
         </>
     )
