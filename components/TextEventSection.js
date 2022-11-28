@@ -39,6 +39,9 @@ export default function TextEventSection() {
                                         {article?.link.map((link) => (
                                             <a key={link.id} href={link.url}>{link.text}</a>
                                         ))} 
+                                        <div className="txt-cntr__date">
+                                            <span>{article.dayMonth}</span> - <span>{article.year}</span>
+                                        </div>
                                     </div>
                                 </article>                         
                             ))}   
