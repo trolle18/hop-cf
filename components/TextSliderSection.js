@@ -20,6 +20,7 @@ export default function TextSliderSection() {
         <>
         {sectionData.map((data) => (
             <section className="textSection" key={data.id}>
+            <hr/>
                 {data?.txtSliderSection.map((section) => (
                     <>
                     <div className="textSection__tag">

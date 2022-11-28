@@ -3,11 +3,20 @@
     width: 100%;
     margin: 4em 0em;
 
+    hr {
+        width: 95%;
+        // height: .5px;
+        margin: 0 auto 2em auto;
+        color: $clr_l_grey;
+        opacity: 60%;
+    }
+
     &__tag {
         width: auto;
         height: auto;
         margin: 0 0 1em 0;
         text-transform: uppercase;
+        color: $clr_ml_grey;
     }
 
     &__inner-cntr {
