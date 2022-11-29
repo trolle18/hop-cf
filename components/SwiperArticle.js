@@ -10,10 +10,10 @@ export default function SwiperArticle ( {data} ) {
                     <Image key={img.id} src={img.src} alt={img.alt} height={100} width={100} />
                 ))}
                 </div>
-                <div className="swiper-article-cnt">
-                    <div className="swiper-article-cnt__txt">
-                        <span className="swiper-article-cnt__txt__details">{data.createdDate}</span>
-                        <p className="swiper-article-cnt__txt__headline">{data.title}</p>
+                <div className="swiper-article-cont">
+                    <div className="swiper-article-cont__txt">
+                        <span className="swiper-article-cont__txt__details">{data.createdDate}</span>
+                        <p className="swiper-article-cont__txt__headline">{data.title}</p>
                     </div>
                 </div>
             </article>
