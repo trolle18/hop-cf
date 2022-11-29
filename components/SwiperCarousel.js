@@ -50,7 +50,7 @@ const SwiperCarousel = () => {
             breakpoints= {{
                  310: {
                     slidesPerView: 1,
-                    centeredSlides: false,
+                    centeredSlides: true,
                 },
                 480: {
                     slidesPerView: 1.2,

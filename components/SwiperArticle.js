@@ -4,7 +4,7 @@ export default function SwiperArticle ( {data} ) {
 
     return (
         <>
-            <article className="swiper-article" key={data.id}>
+            <article className="swiper-article theme-plain" key={data.id}>
                 <div className="swiper-article__img-cntr">
                 {data.img.map((img) => (
                     <Image key={img.id} src={img.src} alt={img.alt} height={100} width={100} />

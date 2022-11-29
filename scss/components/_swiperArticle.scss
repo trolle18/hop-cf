@@ -7,7 +7,6 @@
     bottom: 0;
 
     &__img-cntr {
-        // border: solid blue 1px;
         height: 200px;
         width: 100%;
         position: relative;
@@ -23,7 +22,6 @@
     }
 
     .swiper-article-cont {
-        // border: solid green 1px;
         height: 100%;
         min-height: 90px;
         width: 100%;
@@ -65,4 +63,120 @@
             bottom: 0;
         }
     }   
+// }
+
+// .swiper-article-theme {
+    &.theme-plain {
+        background-color: $clr_l_grey;
+        .swiper-article-cont {
+            &__txt {
+                &__details {
+                    color: $clr_ml_grey;
+                }
+                &__headline {
+                    color: $clr_midnight_green;
+                }
+            }
+        }
+    }
+
+    &.theme-light-grey {
+        background-color: $clr_ml_grey;
+        .swiper-article-cont {
+            &__txt {
+                &__details {
+                    color: $clr_m_grey;
+                }
+                &__headline {
+                    color: $clr_midnight_green;
+                }
+            }
+        }
+    }
+
+    &.theme-dark-grey {
+        background-color: $clr_m_grey;
+        .swiper-article-cont {
+            &__txt {
+                &__details {
+                    color: $clr_ml_grey;
+                }
+                &__headline {
+                    color: $clr_l_grey;
+                }
+            }
+        }
+    }
+
+    &.theme-midnight-green {
+        background-color: $clr_midnight_green;
+        .swiper-article-cont {
+            &__txt {
+                &__details {
+                    color: $clr_ml_grey;
+                }
+                &__headline {
+                    color: $clr_l_grey;
+                }
+            }
+        }
+    }
+
+    &.theme-light-green {
+        background-color: $clr_light_green;
+        .swiper-article-cont {
+            &__txt {
+                &__details {
+                    color: $clr_midnight_green;
+                }
+                &__headline {
+                    color: $clr_midnight_green;
+                }
+            }
+        }
+    }
+
+    &.theme-lightest-green {
+        background-color: $clr_lightest_green;
+        .swiper-article-cont {
+            &__txt {
+                &__details {
+                    color: $clr_light_green;
+                }
+                &__headline {
+                    color: $clr_midnight_green;
+                }
+            }
+        }
+    }
+
+    &.theme-light-orange {
+        background-color: $clr_orange;
+        .swiper-article-cont {
+            &__txt {
+                &__details {
+                    color: $clr_light_green;
+                }
+                &__headline {
+                    color: $clr_light_green;
+                }
+            }
+        }
+    }
+
+    &.theme-dark-red {
+        background-color: $clr_dark_red;
+        .swiper-article-cont {
+            &__txt {
+                &__details {
+                    opacity: .8;
+                    color: $clr_ml_grey;
+                }
+                &__headline {
+                    color: $clr_ml_grey;
+                }
+            }
+        }
+    }
+    
 }
