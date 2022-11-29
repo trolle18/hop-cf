@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import CtaBtn from './CTAbtn';
-import SwiperSection from './SwiperSection';
+// import SwiperSection from './SwiperCarousel';
+import SwiperCarousel from './SwiperCarousel';
 
 export default function TextSliderSection() {
     const [sectionData, setSectionData] = useState([]);
@@ -63,7 +64,7 @@ export default function TextSliderSection() {
                     </div>       
                     </>     
                 ))} 
-                <SwiperSection/>
+                <SwiperCarousel/>
             </section>
         
         ))}  
