@@ -6,7 +6,7 @@
     position: relative;
 
     &__img-cntr {
-        height: 100%;
+        height: 260px;
         width: auto;
         display: flex;
         justify-content: center;
@@ -17,55 +17,90 @@
             margin: 1em auto 0 auto;
             object-fit: cover;
             object-position: center;
+            border-radius: 100px;
         }
     }
 
-    .txt-cntr {
-        height: 100%;
+    &__txt-cntr {
+        height: auto;
         width: auto;
-        margin: 1em;
+        margin: .75em;
+        bottom: 0;
         display: flex;
-        flex-direction: column;
-        gap: 1em;
-        z-index: 100;
+        flex-direction: row;
+        gap: .5em;
+        justify-content: space-between;
 
-        &__tag {
-            text-transform: uppercase;
-            color: $clr_m_grey;
+        &__cont {
+            // border: solid blue 1px;
+            height: 100%;
+            width: 100%;
+            margin: 2em 0 0 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            gap: .5em;
+            z-index: 100;
+
+            &__tag {
+                text-transform: uppercase;
+                font-size: $fs_xs;
+            }
+
+            &__headline {
+                margin: 0 0 .25em 0;
+                font-size: $fs_l;
+            }
+
+            a {
+                width: fit-content;
+                font-size: $fs_l;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 110%;
+                    height: 1px;
+                    background-color: $clr_m_grey;
+                }
+            }
         }
 
-        &__headline {
-            font-size: $fs_xl;
-        }
 
-        &__date {
+        &__vertical-right {
+            // border: solid blue 1px;
             height: auto;
             width: max-content;
-            display: flex;
-            flex-direction: row;
+            right: 0;
+            bottom: 0;
             color: $clr_midnight_green;
+            display: flex;
+            align-items: flex-end;
+            
+
+            &__inner-cntr {
+                display: flex;
+                flex-direction: row;
+                rotate: 180deg;
+                bottom: 0;
+                writing-mode:vertical-rl;
+                text-orientation: mixed;
+            }
+
+            p {
+                font-size: $fs_l;
+            }
 
             span {
                 content: '';
-                width: 1em;
-                height: 1px;
-                margin: auto .25em;
+                width: 1px;
+                height: 1em;
+                margin: .25em auto;
                 background-color: $clr_midnight_green;
             }
         }
 
-        a {
-            width: fit-content;
-            color: $clr_m_grey;
 
-            &::after {
-                content: "";
-                display: block;
-                width: 110%;
-                height: 1px;
-                background-color: $clr_m_grey;
-            }
-        }
     }
 }
 

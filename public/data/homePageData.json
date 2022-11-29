@@ -100,7 +100,7 @@
             "img": [
               {
                 "id": 530,
-                "src": "/data/media/witches.png",
+                "src": "/data/media/witchesimg.png",
                 "alt": "witches"
               }
             ],
@@ -121,7 +121,7 @@
             "img": [
               {
                 "id": 540,
-                "src": "/data/media/funguspetri.png",
+                "src": "/data/media/sculpture.png",
                 "alt": "fungus"
               }
             ],

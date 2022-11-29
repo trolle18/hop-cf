@@ -35,14 +35,18 @@ export default function TextEventSection() {
                                             <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
                                         ))}                              
                                     </div>    
-                                    <div className="txt-cntr">
-                                        <p className="txt-cntr__tag">{article.tag}</p>
-                                        <p className="txt-cntr__headline">{article.headline}</p>
-                                        {article?.link.map((link) => (
-                                            <a key={link.id} href={link.url}>{link.text}</a>
-                                        ))} 
-                                        <div className="txt-cntr__date">
-                                            <p>{article.dayMonth}</p><span></span><p>{article.year}</p>
+                                    <div className="mason-article__txt-cntr">
+                                        <div className='mason-article__txt-cntr__cont'>
+                                            <p className="mason-article__txt-cntr__cont__tag">{article.tag}</p>
+                                            <p className="mason-article__txt-cntr__cont__headline">{article.headline}</p>
+                                            {article?.link.map((link) => (
+                                                <a key={link.id} href={link.url}>{link.text}</a>
+                                            ))} 
+                                        </div>                                       
+                                        <div className="mason-article__txt-cntr__vertical-right">
+                                            <div className="mason-article__txt-cntr__vertical-right__inner-cntr">
+                                                <p>{article.dayMonth}</p><span></span><p>{article.year}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </article> 
