@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import CtaBtn from './CTAbtn';
+// import SwiperSection from './SwiperCarousel';
+import SwiperCarousel from './SwiperCarousel';
 
-export default function TextCtaSection() {
+export default function TextCarouselSection() {
     const [sectionData, setSectionData] = useState([]);
 
     // Fetch data from JSON
@@ -18,16 +20,20 @@ export default function TextCtaSection() {
     return (
         <>
         {sectionData.map((data) => (
-            <section className="textSection" key={data.id}>
-                {data?.txtCtaSection.map((section) => (
-                    <div className="grid-2-2 textSection__cntr" key={section.id}> 
-                        <div className="grid-2-2__col-1 headline-cntr">
+            <section className="textSection" key={data.id}> <hr/>
+                {data?.txtSliderSection.map((section) => (
+                    <>
+                    <div className="textSection__tag">
+                        <p>{section.tag}</p>
+                    </div>
+                    
+                    <div className="textSection__cntr grid-1-2" key={section.id}> 
+                        <div className="grid-1-2__col-1 headline-cntr">
                             <h2>{section.headline}</h2>
-                            <h2>{section.headline2nd}</h2>   
                         </div>    
                                     
-                        <div className="grid-2-2__col-2-4 txt-cntr">
-                            <div className="txt-cntr__inner-cntr">
+                        <div className="grid-1-2__col-2 txt-cntr">
+                            <div className="txt-cntr__inner-cntr">                            
                                 <div className="subheader">
                                     <p>
                                         <span>
@@ -39,21 +45,15 @@ export default function TextCtaSection() {
                                         {section.subheadline}
                                     </p>                                
                                 </div>
-                               
-                                <p>{section.text}</p>
-                                {section?.link.map((link) => (
-                                    <CtaBtn key={link.id} link={link}/>                          
-                                ))}   
                             </div>                                                               
-                        </div>
+                        </div>                        
 
-                        <div className="grid-2-2__col-3 img-cntr">
-                            {section?.img.map((img) => (
-                              <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
-                            ))}                              
-                        </div>                    
-                    </div>            
+                    </div>       
+                    </>     
                 ))} 
+
+                <SwiperCarousel/>
+
             </section>        
         ))}  
         </>

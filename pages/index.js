@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import TextCtaSection from '../components/TextCtaSection'
 import TextEventSection from '../components/TextEventSection'
-import TextSliderSection from '../components/TextSliderSection'
+import TextCarouselSection from '../components/TextCarouselSection'
 
 export default function Home() {
   return (
@@ -19,9 +19,8 @@ export default function Home() {
       <main className="page">
         <Hero/>
         <TextCtaSection/>
-        <TextSliderSection/>
+        <TextCarouselSection/>
         <TextEventSection/>
-
       </main>
  
     </div>
