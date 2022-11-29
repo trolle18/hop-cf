@@ -1,0 +1,79 @@
+.mason-article {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &__img-cntr {
+        height: 100%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 90%;
+            width: 90%;
+            margin: 1em auto 0 auto;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .txt-cntr {
+        height: 100%;
+        width: auto;
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        z-index: 100;
+
+        &__tag {
+            text-transform: uppercase;
+            color: $clr_m_grey;
+        }
+
+        &__headline {
+            font-size: $fs_xl;
+        }
+
+        &__date {
+            height: auto;
+            width: max-content;
+            display: flex;
+            flex-direction: row;
+            color: $clr_midnight_green;
+
+            span {
+                content: '';
+                width: 1em;
+                height: 1px;
+                margin: auto .25em;
+                background-color: $clr_midnight_green;
+            }
+        }
+
+        a {
+            width: fit-content;
+            color: $clr_m_grey;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 110%;
+                height: 1px;
+                background-color: $clr_m_grey;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 992px) {
+
+}

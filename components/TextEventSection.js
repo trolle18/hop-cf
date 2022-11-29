@@ -28,9 +28,9 @@ export default function TextEventSection() {
                         <div className="mason-grid">
                             {section?.articles.map((article) => (
 
-                                <article key={article.id} className="mason-grid__event-article">
+                                <article key={article.id} className="mason-article">
                                 
-                                    <div className="img-cntr">
+                                    <div className="mason-article__img-cntr">
                                         {article?.img.map((img) => (
                                             <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
                                         ))}                              
@@ -42,11 +42,11 @@ export default function TextEventSection() {
                                             <a key={link.id} href={link.url}>{link.text}</a>
                                         ))} 
                                         <div className="txt-cntr__date">
-                                            <span>{article.dayMonth}</span> - <span>{article.year}</span>
+                                            <p>{article.dayMonth}</p><span></span><p>{article.year}</p>
                                         </div>
                                     </div>
                                 </article> 
-                                                        
+
                             ))}   
                         </div>
 
