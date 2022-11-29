@@ -1,11 +1,7 @@
-/* eslint-disable import/no-anonymous-default-export */
-/* eslint-disable react/display-name */
 import { useEffect, useState, useRef } from "react";
 import SwiperArticle from "./SwiperArticle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-// import "swiper/scss/navigation";
-
 
 const SwiperCarousel = () => {
     const [sectionData, setSectionData] = useState([]);
@@ -28,9 +24,9 @@ const SwiperCarousel = () => {
         }
     }
 
-
     return (
         <>
+        <div className="swiper-cntr">        
             <div className="swiper-controls">
                 <button className="swiper-controls__btn prev-btn" onClick={() => swiperRef.current?.slidePrev()}></button>
                 <div className="swiper-controls__dots swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
@@ -72,7 +68,9 @@ const SwiperCarousel = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+        </div>
         </>
     )
 } 
+
 export default SwiperCarousel;

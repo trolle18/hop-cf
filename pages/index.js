@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import ArticleSection from '../components/ArticleSection'
 import Hero from '../components/Hero'
-import MySwiper from '../components/MySwiper'
 import Nav from '../components/Nav'
 import TextCtaSection from '../components/TextCtaSection'
 import TextEventSection from '../components/TextEventSection'
@@ -21,7 +19,6 @@ export default function Home() {
       <main className="page">
         <Hero/>
         <TextCtaSection/>
-        <MySwiper/>
         <TextSliderSection/>
         <TextEventSection/>
 
