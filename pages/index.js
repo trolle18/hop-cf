@@ -20,7 +20,7 @@ export default function Home() {
         <Hero/>
         <TextCtaSection/>
         <TextCarouselSection/>
-        <TextEventSection/>
+        <TextEventSection/>        
       </main>
  
     </div>
