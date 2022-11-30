@@ -7,4 +7,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    .hero-wrapper {
+        min-height: 600px;
+        width: calc(100% + 2em);
+    }
 }

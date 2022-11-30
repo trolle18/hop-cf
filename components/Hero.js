@@ -16,29 +16,30 @@ export default function Hero() {
 
     return (
         <>
-        {sectionData.map((data) => (
-            <div className="hero-cntr" key={data.id}>
-                {data?.hero.map((hero) => (
-                <div key={hero.id}>                    
-                    <div className="hero-cntr__img-cntr">
-                        {/* <Image src={hero.imgSrc} alt="" width={100} height={100}/> */}
-                    </div>
-                    <div className="hero-cntr__txt-cntr">
-                        <h1>{hero.headline}</h1>
-                        <p>{hero.text}</p>
-                    </div>
-                    <a className="hero-cntr__cta" href={hero.ctaUrl}>
-                        <div className="cta-inner-cntr">
-                            <p>{hero.ctaTxt}</p>
-                            <div className="loop-svg"></div>
+        <section className="hero-wrapper">
+            {sectionData.map((data) => (            
+                <div className="hero-cntr" key={data.id}>
+                    {data?.hero.map((hero) => (
+                    <div key={hero.id}>                    
+                        <div className="hero-cntr__img-cntr">
+                            {/* <Image src={hero.imgSrc} alt="" width={100} height={100}/> */}
                         </div>
-                    </a>
-                    
+                        <div className="hero-cntr__txt-cntr">
+                            <h1>{hero.headline}</h1>
+                            <p>{hero.text}</p>
+                        </div>
+                        <a className="hero-cntr__cta" href={hero.ctaUrl}>
+                            <div className="cta-inner-cntr">
+                                <p>{hero.ctaTxt}</p>
+                                <div className="loop-svg"></div>
+                            </div>
+                        </a>
+                        
+                    </div>            
+                    ))} 
                 </div>            
-                ))} 
-            </div>
-        
-        ))}  
+            ))}
+        </section>
         </>
     )
 }
