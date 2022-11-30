@@ -15,8 +15,9 @@ export default function TextInfoSection() {
 
     return (
         <>
+        <section className="hero-wrapper theme-midnight-green">
             {sectionData.map((data) => (
-                <section className="textSection" key={data.id}>
+                <section className="textSection theme-midnight-green" key={data.id}>
                     {data?.txtInfoSection.map((section) => (
                         <>
                         <div className="textSection__tag">
@@ -35,8 +36,8 @@ export default function TextInfoSection() {
                                         <div className="txt-cntr__list__item" key={category.id}>
                                             <span className="pointer">
                                                 <svg width="48" height="9" viewBox="0 0 48 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="4.5" cy="4.5" r="3.7" fill="#183428" stroke="#183428" stroke-width="1.6"/>
-                                                    <line x1="3" y1="4.25" x2="48" y2="4.25" stroke="#183428" stroke-width="1.5"/>
+                                                    <circle cx="4.5" cy="4.5" r="3.7" stroke-width="1.6"/>
+                                                    <line x1="3" y1="4.25" x2="48" y2="4.25" stroke-width="1.5"/>
                                                 </svg>
                                             </span>
                                             <p>{category.name}</p>
@@ -45,11 +46,10 @@ export default function TextInfoSection() {
                                 </div>  
                                 <div className="txt-cntr__right">
                                     <div className="slider-cntr">
-                                        <span className="slider"></span>
+                                        <div className="slider"> <span className="slider__icon"></span></div>
                                     </div>
                                     {section.articles?.map((article) => (
                                         <div className="txt-section" key={article.id}>
-                                            {/* <p>{article.tag}</p> */}
                                             {article.text?.map((text) => (
                                                 <div className="txt-section__column" key={text.id}>
                                                     <p>{text.column}</p>
@@ -65,6 +65,7 @@ export default function TextInfoSection() {
                     ))} 
                 </section>        
             ))}
+            </section>
         </>
     )
 }

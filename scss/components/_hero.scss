@@ -13,14 +13,6 @@
             background-repeat: no-repeat;
             background-position: left center;
             background-size: cover;
-
-
-            // img {
-            //     margin: 0;
-            //     height: 100%;
-            //     width: 100%;
-            //     object-fit: cover;
-            // }
         }
 
         &__txt-cntr {
@@ -67,6 +59,15 @@
             }
         }
     }
+
+    .textSection {
+        margin: 0 auto;
+        width: calc(100% - 2em);
+    }
+}
+
+.hero-wrapper.theme-midnight-green {
+    background-color: $clr_midnight_green;
 }
 
 @media (min-width: 600px) {
