@@ -20,10 +20,11 @@ export default function TextCarouselSection() {
     return (
         <>
         {sectionData.map((data) => (
-            <section className="textSection" key={data.id}> <hr/>
+            <section className="textSection" key={data.id}>
                 {data?.txtSliderSection.map((section) => (
                     <>
                     <div className="textSection__tag">
+                        <hr/>
                         <p>{section.tag}</p>
                     </div>
                     

@@ -1,5 +1,4 @@
 
-
 .mason-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -16,6 +15,22 @@
 
     .mason-article:nth-child(3n) {
         background-color: $clr_ml_grey;
+        .mason-article__img-cntr {
+            height: calc(100% - 1em);
+            width: auto;
+            left: -1em;
+            top: .5em;
+            position: absolute;
+            border-radius: 100px;
+            overflow: hidden;
+
+            img {                     
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                object-position: center;                              
+            }
+        }
     }
 }
 
@@ -23,64 +38,37 @@
     .mason-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         gap: 1em;
     
         .mason-article:nth-child(1n) {
             grid-area: 2 / 1 / 5 / 2;
-            background-color: $clr_orange;
         }
     
         .mason-article:nth-child(2n) {
             grid-area: 1 / 2 / 4 / 3;
-            background-color: $clr_lightest_green;
         }
     
         .mason-article:nth-child(3n) {
+            height: max-content;
             grid-area: 4 / 2 / 6 / 3;
-            background-color: $clr_ml_grey;
-
-            .mason-article__img-cntr {
-                height: 100%;
-                width: auto;
-                position: absolute;
-
-                img {                     
-                    height: 90%;
-                    width: 100%;
-                    // margin: auto 0;
-                    opacity: .8;
-                    border-radius: 100px;
-                    object-fit: cover;          
-                    object-position: center;                              
-                }
-            }
         }
     }
 }
 
 @media (min-width: 992px) {
-    // .mason-grid {
-    //     grid-template-columns: repeat(2, 1fr);
-    //     grid-template-rows: repeat(5, 1fr);
-    
-    //     .mason-article:nth-child(1n) {
-    //         grid-area: 2 / 1 / 5 / 2;
-    //         background-color: $clr_light_orange;
-    //     }
-    
-    //     .mason-article:nth-child(2n) {
-    //         grid-area: 1 / 2 / 4 / 3;
-    //         background-color: $clr_lightest_green;
-    //     }
-    
-    //     .mason-article:nth-child(3n) {
-    //         grid-area: 4 / 2 / 6 / 3;
-    //         background-color: $clr_ml_grey;
-    
-    //         .img-cntr {
-    //             display: none;
-    //         }
-    //     }
-    // }
+    .mason-grid {    
+
+        .mason-article:nth-child(3n) {
+            height: 100%;
+            grid-area: 4 / 2 / 6 / 3;
+            
+            .mason-article__txt-cntr {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        
+    }
 }
