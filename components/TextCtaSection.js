@@ -20,7 +20,7 @@ export default function TextCtaSection() {
         {sectionData.map((data) => (
             <section className="textSection" key={data.id}>
                 {data?.txtCtaSection.map((section) => (
-                    <div className="grid-2-2 textSection__cntr" key={section.id}> 
+                    <div className="textSection__cntr grid-cntr grid-2-2 " key={section.id}> 
                         <div className="grid-2-2__col-1 headline-cntr">
                             <h2>{section.headline}</h2>
                             <h2>{section.headline2nd}</h2>   

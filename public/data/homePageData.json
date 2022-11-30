@@ -71,8 +71,8 @@
       {
         "id": 275,
         "tag": "Kalender",
-        "headline": "Begivenheder 2023",
-        "headline2nd": "",
+        "headline": "Begivenheder",
+        "headline2nd": "2023",
         "subheadline": "",
         "text": "",
         "img": [
@@ -149,6 +149,89 @@
             "link": [
               {
                 "id": 551,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    
+    "txtInfoSection": [
+      {
+        "id": 296,
+        "tag": "Hvad støtter Carlsbergfondet",
+        "headline": "420 Mio. gode grunde til at søge støtte.",
+        "link": [
+          {
+            "id": 2962,
+            "text": "Hvem kan søge?",
+            "url": "/"
+          }
+        ],
+        "articles": [
+          {
+            "id": 33,
+            "tag": "01. Naturvidenskab",
+            "headline": "Naturvidenskab",
+            "text": [
+              {
+                "id": 134,
+                "column": "Naturvidenskab. Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af."
+              },
+              {
+                "id": 234,
+                "column": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af."
+              }
+            ],
+            "link": [
+              {
+                "id": 331,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "id": 34,
+            "tag": "02. Humanistisk videnskab",
+            "headline": "Humanistisk videnskab",
+            "text": [
+              {
+                "id": 134,
+                "column": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af."
+              },
+              {
+                "id": 234,
+                "column": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af."
+              }
+            ],
+            "link": [
+              {
+                "id": 341,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "id": 36,
+            "tag": "03. Samfundsvidenskab",
+            "headline": "Samfundsvidenskab",
+            "text": [
+              {
+                "id": 134,
+                "column": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af."
+              },
+              {
+                "id": 234,
+                "column": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af."
+              }
+            ],
+            "link": [
+              {
+                "id": 361,
                 "text": "Mere info",
                 "url": "/"
               }

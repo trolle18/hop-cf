@@ -15,6 +15,7 @@
 
     .mason-article:nth-child(3n) {
         background-color: $clr_ml_grey;
+        
         .mason-article__img-cntr {
             height: calc(100% - 1em);
             width: auto;
@@ -61,11 +62,12 @@
 
         .mason-article:nth-child(3n) {
             height: 100%;
+            width: auto;
             grid-area: 4 / 2 / 6 / 3;
             
             .mason-article__txt-cntr {
                 position: absolute;
-                bottom: 0;
+                bottom: 1em;
             }
         }
 
