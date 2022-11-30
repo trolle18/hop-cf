@@ -29,21 +29,35 @@ export default function TextInfoSection() {
                                 <h2>{section.headline}</h2>
                             </div>    
                                         
-                            <div className="txt-cntr">
-                                <div className="txt-cntr__inner-cntr">  
-                                    {section.articles.map((article) => (
-                                        <p key={article.id}>
-                                            <span>
+                            <div className="txt-cntr flx-row">
+                                <div className="txt-cntr__list subheader">
+                                    {section.categories.map((category) => (
+                                        <div className="txt-cntr__list__item" key={category.id}>
+                                            <span className="pointer">
                                                 <svg width="48" height="9" viewBox="0 0 48 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="4.5" cy="4.5" r="3.7" fill="#183428" stroke="#183428" stroke-width="1.6"/>
                                                     <line x1="3" y1="4.25" x2="48" y2="4.25" stroke="#183428" stroke-width="1.5"/>
                                                 </svg>
                                             </span>
-                                            {article.tag}
-                                        </p>
-                                    ))}                          
-                                    
-                                </div>                                                               
+                                            <p>{category.name}</p>
+                                        </div>
+                                    ))}                                    
+                                </div>  
+                                <div className="txt-cntr__right">
+                                    <div className="slider-cntr">
+                                        <span className="slider"></span>
+                                    </div>
+                                    {section.articles?.map((article) => (
+                                        <div className="txt-section" key={article.id}>
+                                            {/* <p>{article.tag}</p> */}
+                                            {article.text?.map((text) => (
+                                                <div className="txt-section__column" key={text.id}>
+                                                    <p>{text.column}</p>
+                                                </div>
+                                           ))}   
+                                        </div>
+                                    ))}   
+                                </div>                                                             
                             </div>                        
 
                         </div>       
