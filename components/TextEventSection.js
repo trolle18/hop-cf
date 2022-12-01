@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import CtaBtn from './CTAbtn';
+import CtaLink from './CtaLink';
 
 export default function TextEventSection() {
     const [sectionData, setSectionData] = useState([]);
@@ -46,12 +47,18 @@ export default function TextEventSection() {
                                         <div className='mason-article__txt-cntr__cont'>
                                             <p className="mason-article__txt-cntr__cont__tag">{article.tag}</p>
                                             <p className="mason-article__txt-cntr__cont__headline">{article.headline}</p>
-                                            <div className='mason-article__txt-cntr__cont__link'>
-                                                {article?.link.map((link) => (
-                                                    <a key={link.id} href={link.url}>{link.text}</a>
+                                            {/* <div className='mason-article__txt-cntr__cont__link'> */}
+                                                {/* {article?.link.map((data) => (
+                                                    <a key={data.id} href={data.url}>{data.text}</a>
+                                                ))}  */}
+                                                {article?.link.map((data) => (
+                                                    <div key={data.id} className="arrow-right">
+                                                        <CtaLink key={data.id} data={data}/>
+                                                    </div>
                                                 ))} 
-                                            </div>                                            
+                                            {/* </div>                                             */}
                                         </div>    
+                                       
 
                                         <div className="mason-article__txt-cntr__vertical-right">
                                             <div className="mason-article__txt-cntr__vertical-right__inner-cntr">
@@ -64,10 +71,11 @@ export default function TextEventSection() {
                             ))}   
                         </div>
 
-                        {section?.link.map((link) => (
-                            <div className="textSection__cntr__seeMore" key={link.id}>
-                                <a href={link.url}>{link.text}</a>
+                        {section?.link.map((data) => (
+                            <div key={data.id} className="arrow-down">
+                                <CtaLink key={data.id} data={data}/>
                             </div>
+                            
                         ))}                     
                     </div>  
                 </>          
