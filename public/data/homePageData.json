@@ -66,6 +66,149 @@
           }
         ]
       }
+    ],
+    "txtEventSection": [
+      {
+        "id": 275,
+        "tag": "Kalender",
+        "headline": "Begivenheder",
+        "headline2nd": "2023",
+        "subheadline": "",
+        "text": "",
+        "img": [
+          {
+            "id": 255,
+            "src": "",
+            "alt": ""
+
+          }
+        ],
+        "link": [
+          {
+            "id": 422,
+            "text": "Flere bevigenheder",
+            "url": "/"
+          }
+        ],
+        "articles": [
+          {
+            "id": 53,
+            "tag": "Foredrag",
+            "headline": "Kom til en aften i selskab med hekse, gryder og koste.",
+            "dayMonth": "17.02",
+            "year": "2023",
+            "img": [
+              {
+                "id": 530,
+                "src": "/data/media/witchesimg.png",
+                "alt": "witches"
+              }
+            ],
+            "link": [
+              {
+                "id": 531,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "id": 54,
+            "tag": "Kulturnatten: Åbent hus",
+            "headline": "Vi åbner de ellers lukkede døre til kælderen på Glyptotektet.",
+            "dayMonth": "12.05",
+            "year": "2023",
+            "img": [
+              {
+                "id": 540,
+                "src": "/data/media/sculpture.png",
+                "alt": "fungus"
+              }
+            ],
+            "link": [
+              {
+                "id": 541,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "id": 55,
+            "tag": "Foredrag",
+            "headline": "Kom med til en aften i selskab med hekse, gryder og koste.",
+            "dayMonth": "16.03",
+            "year": "2023",
+            "img": [
+              {
+                "id": 550,
+                "src": "/data/media/Mask-group2.svg",
+                "alt": "Lines"
+              }
+            ],
+            "link": [
+              {
+                "id": 551,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    
+    "txtInfoSection": [
+      {
+        "id": 296,
+        "tag": "Hvad støtter Carlsbergfondet",
+        "headline": "420 Mio. gode grunde til at søge støtte.",
+        "link": [
+          {
+            "id": 2962,
+            "text": "Hvem kan søge?",
+            "url": "/"
+          }
+        ],
+        "categories": [
+          {
+            "id": 123,
+            "name": "01. Naturvidenskab"
+          },
+          {
+            "id": 124,
+            "name": "02. Humanistisk videnskab"
+          },
+          {
+            "id": 125,
+            "name": "03. Samfundsvidenskab"
+          }
+        ],
+        "articles": [
+          {
+            "id": 33,
+            "tag": "01. Naturvidenskab",
+            "headline": "Naturvidenskab",
+            "text": [
+              {
+                "id": 134,
+                "column": "Naturvidenskab. Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af."
+              },
+              {
+                "id": 234,
+                "column": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af."
+              }
+            ],
+            "link": [
+              {
+                "id": 331,
+                "text": "Mere info",
+                "url": "/"
+              }
+            ]
+          }          
+        ]
+      }
     ]
   }
 ]

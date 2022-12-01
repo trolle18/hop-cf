@@ -10,29 +10,12 @@ export default function Article ( {data} ) {
                     <Image key={img.id} src={img.src} alt={img.alt} height={100} width={100} />
                 ))}
                 </div>
-                <div className="article-cntn">
-                    <div className="article-cntn__txt">
-                        <div className="txt-top">
-                            <span>{data.category}</span>
-                            <span>{data.createdDate}</span>
-                        </div>
-
-                        <h3 className="article-headline">{data.title}</h3>
-                        <span>{data.tag}</span>
-                        <p>{data.desc}</p>
-                    </div>
-
-                    <div className="article-cntn__btm">
-                        {data.link.map((link) => (
-                            <a className="btm-link" key={link.id}>
-                                {link.txt}
-                            </a>
-                        ))}
+                <div className="article-cnt">
+                    <div className="article-cnt__txt">
+                        <span className="article-cnt__txt__details">{data.createdDate}</span>
+                        <p className="article-cnt__txt__headline">{data.title}</p>
                     </div>
                 </div>
-                
-               
-
             </article>
         </>
     )

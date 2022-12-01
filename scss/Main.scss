@@ -11,10 +11,18 @@
 @import 'components/nav';
 @import 'components/hero';
 @import 'components/article';
+@import 'components/masonArticle';
 @import 'components/searchField';
+@import 'components/swiper';
+@import 'components/swiperArticle';
+@import 'components/swiperControls';
 @import 'components/CTAbtn';
 @import 'components/textSection';
 
 // Layout
+@import 'layout/masonGrid';
 @import 'layout/sectionGrid';
 @import 'layout/sectionWrapper';
+
+// Pages
+@import 'pages/page';

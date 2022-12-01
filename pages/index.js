@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import ArticleSection from '../components/ArticleSection'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import TextCtaSection from '../components/TextCtaSection'
-import TextSliderSection from '../components/TextSliderSection'
+import TextEventSection from '../components/TextEventSection'
+import TextCarouselSection from '../components/TextCarouselSection'
+import TextInfoSection from '../components/TextInfoSection'
 
 export default function Home() {
   return (
@@ -19,9 +20,9 @@ export default function Home() {
       <main className="page">
         <Hero/>
         <TextCtaSection/>
-        <TextSliderSection/>
-        <ArticleSection/>
-
+        <TextCarouselSection/>
+        <TextEventSection/>    
+        <TextInfoSection/>    
       </main>
  
     </div>
