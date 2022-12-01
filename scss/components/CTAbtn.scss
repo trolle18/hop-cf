@@ -1,30 +1,30 @@
 
 
 .cta-btn {
+  height: auto;
+  width: auto;
+  margin: auto auto;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  border: none;
+  background-color: $clr_lightest_green;
+  font-size: $fs_m;
+  border-radius: 50px;
+
+  &__svg-cntr {
     height: auto;
     width: auto;
-    margin: auto auto;
-    padding: 1em 2em;
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    border: none;
-    background-color: $clr_lightest_green;
-    font-size: $fs_m;
-    border-radius: 50px;
-
-    &__svg-cntr {
-        height: auto;
-        width: auto;
-    }
+  }
 }
 
 @media (min-width: 600px) {
    
-    .cta-btn {
-        width: max-content;
-        padding: 1em 2.25em;
-    }
+  .cta-btn {
+    width: max-content;
+    padding: 1em 2.25em;
+  }
 }
 
 @media (min-width: 992px) {}
