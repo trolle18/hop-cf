@@ -1,4 +1,7 @@
 .hero-wrapper {
+    // min-height: 600px;
+    // width: 100%;
+
     .hero-cntr {
         min-height: 600px;
         width: 100%;
@@ -14,7 +17,6 @@
             background-position: left center;
             background-size: cover;
         }
-
         &__txt-cntr {
             height: auto;
             width: auto;
@@ -29,13 +31,11 @@
                 width: 100%;
                 font-size: $fs_3xl;
             }
-
             p {
                 width: 100%;
                 font-size: $fs_l;
             }
         }
-
         &__cta {
             height: auto;
             width: auto;
@@ -53,22 +53,22 @@
                 flex-direction: row;
                 gap: 5em;   
             }
-
             &:hover {
                 background-color: $clr_lightest_green;
             }
         }
     }
-
     .textSection {
         margin: 0 auto;
         width: calc(100% - 2em);
     }
 }
 
-.hero-wrapper.theme-midnight-green {
+
+.theme-midnight-green {
     background-color: $clr_midnight_green;
 }
+
 
 @media (min-width: 600px) {
     .hero-wrapper {
@@ -81,6 +81,7 @@
         }
     }
 }
+
 
 @media (min-width: 992px) {
     .hero-wrapper {
