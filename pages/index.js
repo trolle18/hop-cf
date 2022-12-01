@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import TextCtaSection from '../components/TextCtaSection'
-import TextEventSection from '../components/TextEventSection'
+import MasonGridSection from '../components/MasonGridSection'
 import TextCarouselSection from '../components/TextCarouselSection'
 import TextInfoSection from '../components/TextInfoSection'
 
@@ -21,7 +21,7 @@ export default function Home() {
         <Hero/>
         <TextCtaSection/>
         <TextCarouselSection/>
-        <TextEventSection/>    
+        <MasonGridSection/>    
         <TextInfoSection/>    
       </main>
  

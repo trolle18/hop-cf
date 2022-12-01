@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CtaLink from './CtaLink';
 import MasonArticle from './MasonArticle';
 
-export default function TextEventSection() {
+export default function MasonGridSection() {
     const [sectionData, setSectionData] = useState([]);
 
     // Fetch data from JSON
