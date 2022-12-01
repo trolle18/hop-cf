@@ -5,6 +5,7 @@ import TextCtaSection from '../components/TextCtaSection'
 import MasonGridSection from '../components/MasonGridSection'
 import TextCarouselSection from '../components/TextCarouselSection'
 import TextInfoSection from '../components/TextInfoSection'
+import VideoSection from '../components/VideoSection'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <TextCarouselSection/>
         <MasonGridSection/>    
         <TextInfoSection/>    
+        <VideoSection/>
       </main>
  
     </div>
