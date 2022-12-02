@@ -45,9 +45,12 @@ export default function BurgerMenu({data}) {
       </button>
       <div className={`nav-mob-links__dropdown hidden ${show && ""}`} id="dropdown">
         {data?.navLinks.map((navLink) => (
-          <a key={navLink.id} href={navLink.link}>
-            {navLink.linkTxt}
-          </a>
+          <div  key={navLink.id} className="nav-mob-links__dropdown__link">
+            <a key={navLink.id} href={navLink.link}>
+              <span>{navLink.linkTxt}</span>              
+            </a>
+          </div>
+          
         ))} 
       </div>
     </>
