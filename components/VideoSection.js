@@ -5,6 +5,7 @@ import CtaBtn from './CTAbtn';
 import SwiperCarousel from './SwiperCarousel';
 import VideoArticle from './VideoArticle';
 import TagHeadlineSubheadline from './TextSectionModules/TagHeadlineSubheadline';
+import SwiperCarouselVideos from './SwiperCarouselVideos';
 
 export default function VideoSection() {
     const [sectionData, setSectionData] = useState([]);
@@ -51,7 +52,8 @@ export default function VideoSection() {
                             </div>   
                         </div>
                     ))}
-                    </div>                     
+                    </div>   
+                    <SwiperCarouselVideos/>                  
                 </section>   
                 </>     
             ))}
