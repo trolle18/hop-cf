@@ -1,5 +1,19 @@
 .infoSection {
 
+  .textSection__tag {
+    p {
+      color: $clr_ml_grey;
+
+      &::before {
+        content: "";
+        height: 0px;
+        width: 100%;
+        margin: 0em 0;
+        display: none;
+      }
+    }
+  }
+
   .txt-cntr {
     display: flex;
     flex-direction: column;

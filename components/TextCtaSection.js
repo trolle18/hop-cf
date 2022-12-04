@@ -20,7 +20,8 @@ export default function TextCtaSection() {
         {sectionData.map((data) => (
             <section className="textSection" key={data.id}>
                 {data?.txtCtaSection.map((section) => (
-                    <div className="textSection__cntr grid-cntr grid-2-2 " key={section.id}> 
+                    <div key={section.id} className="textSection__cntr">
+                    <div className="textSection__cntr__inner-cntr grid-cntr grid-2-2"> 
                         <div className="grid-2-2__col-1 headline-cntr">
                             <h2>{section.headline}</h2>
                             <h2>{section.headline2nd}</h2>   
@@ -52,7 +53,8 @@ export default function TextCtaSection() {
                               <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
                             ))}                              
                         </div>                    
-                    </div>            
+                    </div>   
+                    </div>         
                 ))} 
             </section>        
         ))}  

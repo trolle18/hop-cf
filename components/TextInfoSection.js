@@ -27,9 +27,11 @@ export default function TextInfoSection() {
                         </div>
                         
                         <div className="textSection__cntr" key={section.id}> 
-                            <div className="headline-cntr headline-60w">
-                                <h2>{section.headline}</h2>
-                            </div>    
+                            <div className="textSection__cntr__inner-cntr">
+                                <div className="headline-cntr headline-60w">
+                                    <h2>{section.headline}</h2>
+                                </div>
+                            </div>
                                         
                             <div className="txt-cntr flx-row">
                                 <div className="txt-cntr__list subheader">
