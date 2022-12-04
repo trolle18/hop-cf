@@ -22,23 +22,38 @@ export default function VideoSection() {
     return (
         <>
             {sectionData.map((data) => (
+                <>
                 <section className="textSection" key={data.id}>
                     {data?.videoSection.map((section) => (
-                        <>
-                        <TagHeadlineSubheadline key={section.id} section={section}/>     
+                        <TagHeadlineSubheadline key={section.id} section={section}/>      
+                    ))}  
+                </section>   
 
-                        <div className="video-section">
-                            <div className="video-section__cntr">
-                                {section.articles?.map((data) => (
-                                
+                <section className="video-section" key={data.id}>
+
+                    <div className="video-section-main">
+                    {data?.videoSection.map((section) => (
+                        <div key={section.id} className="video-section-main__feature-cntr">
+                            <div className="video-section-main__feature-cntr__feature">
+                                {section.articles
+                                .filter((data) => data.type.includes('feature'))
+                                .map((data) => (
                                     <VideoArticle key={data.id} data={data}/>
-
-                                ))}   
-                            </div>
-                        </div> 
-                        </>     
-                    ))} 
-                </section>        
+                                ))}
+                            </div>  
+                            <div className="video-section-main__feature-cntr__regular">
+                            <p className="video-section-main__feature-cntr__regular__title">{section.text}</p>
+                                {section.articles
+                                    .filter((data) => data.type.includes('regular'))
+                                .map((data) => (
+                                    <VideoArticle key={data.id} data={data}/>
+                                ))}
+                            </div>   
+                        </div>
+                    ))}
+                    </div>                     
+                </section>   
+                </>     
             ))}
         </>
     )
