@@ -43,14 +43,14 @@ export default function BurgerMenu({data}) {
       <button onClick={openMenu} className="nav-mob-links__menu-btn" id="menu-btn">
         <svg viewBox="0 0 10 8"><path d="M1 1h8M1 4h 8M1 7h8"/></svg>
       </button>
+
       <div className={`nav-mob-links__dropdown hidden ${show && ""}`} id="dropdown">
         {data?.navLinks.map((navLink) => (
           <div  key={navLink.id} className="nav-mob-links__dropdown__link">
             <a key={navLink.id} href={navLink.link}>
               <span>{navLink.linkTxt}</span>              
             </a>
-          </div>
-          
+          </div>          
         ))} 
       </div>
     </>
