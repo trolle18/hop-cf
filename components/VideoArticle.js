@@ -11,18 +11,18 @@ export default function VideoArticle ( {data} ) {
                             <Image key={img.id} src={img.src} alt={img.alt} height={100} width={100} />
                         ))}
                     </div>
-                    <button className="article-img__play-btn">
+                    
                     {data.link.map((link) => (
                         <>
+                        <button className="play-btn">
                         {/* <a className="article-img__play-btn__link" key={link.id}> */}
-                            <span className="article-img__play-btn__text">{link.text}</span>
-                            <span className="article-img__play-btn__icon"></span>
+                            <span className="play-btn__text">{link.text}</span>
+                            <span className="play-btn__icon"></span>
                         {/* </a> */}
+                        </button>
                         </>
                         ))}
-                        {/* <span className="article-img__play-btn__text">{data.link.text}</span>
-                        <span className="article-img__play-btn__icon"></span> */}
-                    </button>
+                    
                 </div>
                 <div className="article-cnt">
                     <div className="article-cnt__txt">

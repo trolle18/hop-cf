@@ -232,11 +232,15 @@
         "articles": [
           {
             "id": 113,
-            "type": "feature",
+            "online": "y",
+            "type": "video",
+            "styleTag": "feature",
             "tag": "Talk",
             "headline": "Uden galakser ville vi slet ikke eksistere",
             "text": "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
             "time": "10:37",
+            "createdDate": "12.11.2022",
+            "updatedDate": "12.11.2022",
             "img": [
               {
                 "id": 1330,
@@ -251,14 +255,19 @@
                 "url": "/"
               }
             ]
-          },
+          },        
           {
             "id": 5224,
-            "type": "regular",
+            "online": "y",
+            "type": "video",
+            "styleTag": "regular",
             "tag": "Talk",
+            "category": "category",
             "headline": "På jagt efter spike proteinets akilleshæl",
             "text": "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
             "time": "03:57",
+            "createdDate": "12.11.2022",
+            "updatedDate": "12.11.2022",
             "img": [
               {
                 "id": 620,
@@ -273,14 +282,18 @@
                 "url": "/"
               }
             ]
-          },
+          },        
           {
             "id": 532,
-            "type": "regular",
+            "online": "y",
+            "type": "video",
+            "styleTag": "regular",
             "tag": "Talk",
             "headline": "Indlandsisen vil smelte hurtigere mod 2100 end hidtil antaget.",
             "text": "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
             "time": "03:57",
+            "createdDate": "12.11.2022",
+            "updatedDate": "12.11.2022",
             "img": [
               {
                 "id": 8360,
@@ -295,14 +308,18 @@
                 "url": "/"
               }
             ]
-          },
+          },        
           {
             "id": 995,
-            "type": "regular",
+            "online": "y",
+            "type": "video",
+            "styleTag": "regular",
             "tag": "Talk",
             "headline": "På jagt efter spike proteinets akilleshæl",
             "text": "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
             "time": "03:57",
+            "createdDate": "12.11.2022",
+            "updatedDate": "12.11.2022",
             "img": [
               {
                 "id": 5141,

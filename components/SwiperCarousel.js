@@ -28,18 +28,22 @@ const SwiperCarousel = () => {
         <>
         <div className="swiper-cntr">        
             <div className="swiper-controls">
-                <button className="swiper-controls__btn prev-btn" onClick={() => swiperRef.current?.slidePrev()}></button>
-                <div className="swiper-controls__dots swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
-                <button className="swiper-controls__btn next-btn" onClick={() => swiperRef.current?.slideNext()}></button>
+                <button className="swiper-controls__btn-cntr" onClick={() => swiperRef.current?.slidePrev()}>
+                    <span className="swiper-controls__btn-cntr__btn prev-btn"></span>
+                </button>
+                {/* <div className="swiper-controls__dots swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div> */}
+                <button className="swiper-controls__btn-cntr" onClick={() => swiperRef.current?.slideNext()}>
+                    <span className="swiper-controls__btn-cntr__btn next-btn"></span>
+                </button>
             </div>
             <Swiper
             spaceBetween={ 20 }
             slidesPerView={ 3 }
             allowTouchMove={ true }
             touchStartPreventDefault={ false }
-            pagination={ pagination }
+            // pagination={ pagination }
             navigation={ true }
-            modules={ [Pagination, Navigation] }
+            modules={ [Navigation] }
             onBeforeInit={ (swiper) => {
                 swiperRef.current = swiper;
             }}

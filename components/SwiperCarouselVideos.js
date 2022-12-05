@@ -3,7 +3,7 @@ import SwiperArticle from "./SwiperArticle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
-const SwiperCarouselVideos = () => {
+const SwiperCarouselVideos = ( {data} ) => {
     const [sectionData, setSectionData] = useState([]);
     const swiperRef = useRef();
 
@@ -16,30 +16,33 @@ const SwiperCarouselVideos = () => {
         getData();
     }, []);
 
-    const pagination = {
-        clickable: true,
-        el: '.swiper-controls__dots',
-        renderBullet: (index, className) => {
-            return '<span key="' + index + '" class="' + className + '">' + ("") + "</span>";
-        }
-    }
+    // const pagination = {
+    //     clickable: true,
+    //     el: '.swiper-controls__dots',
+    //     renderBullet: (index, className) => {
+    //         return '<span key="' + index + '" class="' + className + '">' + ("") + "</span>";
+    //     }
+    // }
 
     return (
         <>
         <div className="swiper-cntr">        
             <div className="swiper-controls">
-                <button className="swiper-controls__btn prev-btn" onClick={() => swiperRef.current?.slidePrev()}></button>
-                <div className="swiper-controls__dots swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
-                <button className="swiper-controls__btn next-btn" onClick={() => swiperRef.current?.slideNext()}></button>
+            <button className="swiper-controls__btn-cntr" onClick={() => swiperRef.current?.slidePrev()}>
+                    <span className="swiper-controls__btn-cntr__btn prev-btn"></span>
+                </button>
+                {/* <div className="swiper-controls__dots swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div> */}
+                <button className="swiper-controls__btn-cntr" onClick={() => swiperRef.current?.slideNext()}>
+                    <span className="swiper-controls__btn-cntr__btn next-btn"></span>
+                </button>
             </div>
             <Swiper
             spaceBetween={ 20 }
             slidesPerView={ 3 }
             allowTouchMove={ true }
             touchStartPreventDefault={ false }
-            pagination={ pagination }
             navigation={ true }
-            modules={ [Pagination, Navigation] }
+            modules={ [Navigation] }
             onBeforeInit={ (swiper) => {
                 swiperRef.current = swiper;
             }}
@@ -62,7 +65,7 @@ const SwiperCarouselVideos = () => {
                 }
             }}
             >
-                {sectionData.videoSection?.articles.map((data) => (
+                {sectionData.map((data) => (
                     <SwiperSlide key={data.id}>
                         <SwiperArticle data={data}/>
                     </SwiperSlide>

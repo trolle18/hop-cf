@@ -23,33 +23,6 @@
         position: absolute;
       }
     }
-
-    &__play-btn {
-      height: 2.5em;
-      width: 2.5em;
-      position: absolute;
-      right: 1.25em;
-      bottom: 1.25em;
-      border: none;
-      border-radius: 100%;
-      background-color: $semitrans_light_grey_90;
-
-        &__icon {
-          height: .6em;
-          width: .6em;
-          margin: auto auto;
-          display: inline-block;
-          background-image: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.71695 4.68236C9.34404 5.07396 9.34404 5.98714 8.71695 6.37875L1.69922 10.7612C1.03316 11.1771 0.169534 10.6983 0.169534 9.91299L0.169535 1.14811C0.169535 0.362841 1.03316 -0.116029 1.69922 0.299914L8.71695 4.68236Z' fill='%23183428'/%3E%3C/svg%3E%0A");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
-        }
-
-        &__text {
-          font-size: $fs_m;
-          display: none;
-        }      
-    }
   }
 
   .article-cnt {
