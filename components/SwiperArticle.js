@@ -11,18 +11,18 @@ export default function SwiperArticle ( {data} ) {
                     ))}
 
                     
-                        {data.link
+                        {/* {data.link
                         .filter((link) => link.type.includes('play'))
                         .map((link) => (
                             <>
                             <button className="play-btn">
-                            {/* <a className="article-img__play-btn__link" key={link.id}> */}
+                            <a className="article-img__play-btn__link" key={link.id}>
                                 <span className="play-btn__text">{link.text}</span>
                                 <span className="play-btn__icon"></span>
-                            {/* </a> */}
+                            </a>
                              </button>
                             </>
-                        ))}
+                        ))} */}
 
                    
                 </div>

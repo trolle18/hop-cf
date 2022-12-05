@@ -12,16 +12,16 @@ export default function VideoArticle ( {data} ) {
                         ))}
                     </div>
                     
-                    {data.link.map((link) => (
+                    {/* {data.link.map((link) => (
                         <>
                         <button className="play-btn">
-                        {/* <a className="article-img__play-btn__link" key={link.id}> */}
+                        <a className="article-img__play-btn__link" key={link.id}>
                             <span className="play-btn__text">{link.text}</span>
                             <span className="play-btn__icon"></span>
-                        {/* </a> */}
+                        </a>
                         </button>
                         </>
-                        ))}
+                    ))} */}
                     
                 </div>
                 <div className="article-cnt">

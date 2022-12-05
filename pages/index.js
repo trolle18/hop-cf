@@ -6,6 +6,7 @@ import MasonGridSection from '../components/MasonGridSection'
 import TextCarouselSection from '../components/TextCarouselSection'
 import TextInfoSection from '../components/TextInfoSection'
 import VideoSection from '../components/VideoSection'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       </main>
  
     </div>
+    <Footer/>
     </>
   )
 }

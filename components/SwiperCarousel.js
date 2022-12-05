@@ -27,14 +27,16 @@ const SwiperCarousel = () => {
     return (
         <>
         <div className="swiper-cntr">        
-            <div className="swiper-controls">
-                <button className="swiper-controls__btn-cntr" onClick={() => swiperRef.current?.slidePrev()}>
-                    <span className="swiper-controls__btn-cntr__btn prev-btn"></span>
-                </button>
-                {/* <div className="swiper-controls__dots swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div> */}
-                <button className="swiper-controls__btn-cntr" onClick={() => swiperRef.current?.slideNext()}>
-                    <span className="swiper-controls__btn-cntr__btn next-btn"></span>
-                </button>
+            <div className="swiper-controls-cntr">
+                <div className="swiper-controls">
+                    <button className="swiper-controls__btn-cntr" onClick={() => swiperRef.current?.slidePrev()}>
+                        <span className="swiper-controls__btn-cntr__btn prev-btn"></span>
+                    </button>
+                    {/* <div className="swiper-controls__dots swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div> */}
+                    <button className="swiper-controls__btn-cntr" onClick={() => swiperRef.current?.slideNext()}>
+                        <span className="swiper-controls__btn-cntr__btn next-btn"></span>
+                    </button>
+                </div>
             </div>
             <Swiper
             spaceBetween={ 20 }

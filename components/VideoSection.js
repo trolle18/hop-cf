@@ -53,18 +53,19 @@ export default function VideoSection() {
                                 ))}
                             </div>  
                             <div className="video-section-main__feature-cntr__regular">
-                            <p className="video-section-main__feature-cntr__regular__title">{section.text}</p>
-                                {section.articles
+                            {/* <p className="video-section-main__feature-cntr__regular__title">{section.text}</p> */}
+                                {/* {section.articles
                                 .filter((data) => data.styleTag.includes('regular'))
                                 .map((data) => (
                                     <VideoArticle key={data.id} data={data}/>
-                                ))}
+                                ))} */}
+                                <SwiperCarouselVideos />  
                             </div>   
                         </div>
                     ))}
                 </div>
             ))}
-            <SwiperCarouselVideos />                                  
+            {/* <SwiperCarouselVideos />                                   */}
         </section>
         </>
     )
