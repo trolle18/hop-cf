@@ -74,6 +74,13 @@ const SwiperCarousel = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
+            <div className="seeMore-cntr">
+                <div>
+                    <div><span></span></div>
+                    <p>Flere artikler</p>
+                </div>
+            </div>
         </div>
         </>
     )

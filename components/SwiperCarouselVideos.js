@@ -74,6 +74,12 @@ const SwiperCarouselVideos = ( {data} ) => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <div className="seeMore-cntr">
+                <div className="seeMore-cntr__inner-cntr">
+                    <div className="arrow-top-right-cntr"><span className="arrow-top-right"></span></div>
+                    <p>Flere videoer</p>
+                </div>
+            </div>
         </div>
         </>
     )
