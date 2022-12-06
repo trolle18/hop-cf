@@ -8,12 +8,48 @@
       {
         
         "id": 212,
-        "headline": "420 Mio. gode grunde til at søge støtte",
-        "text": "Carlsbergfondet støtter skelsættende og visionær forskning med over 420 mio. kr. årligt. Forskning som gør os klogere, løser globale problemer og som alle har glæde af.",
+        "headline": "Vi brygger viden for en oplyst fremtid",
+        "text": "Carlsbergfondet støtter fri grundforskning inden for naturvidenskab, humaniora og samfundsvidenskab.",
         "imgSrc": "/data/media/petridish1.png",
         "imgAlt": "hero image",
-        "ctaTxt": "Søg støtte",
+        "ctaTxt": "Ansøg om bevilling",
         "ctaUrl": "/"
+      }
+    ],
+
+    "txtBlock": [
+      {
+        "id": 213,
+        "headline": "Husk at ansøge før 1 oktober",
+        "headline2nd": "",
+        "subheadline": "",
+        "textSec": [
+          {
+            "id": 12,
+            "text": "Ønsker du at få del i Carlsbergfondets midler til grundforskning inden for naturvidenskab, samfundsvidenskab og humaniora?"
+          },
+          {
+            "id": 13,
+            "text": "Dyk ned i fondets efterårsopslag, der tilbyder en lang række virkemidler rette mod såvel yngre postdocs som etablerede forskere på lektor professorniveau."
+          }
+        ],
+        "text": "Ønsker du at få del i Carlsbergfondets midler til grundforskning inden for naturvidenskab, samfundsvidenskab og humaniora? Dyk ned i fondets efterårsopslag, der tilbyder en lang række virkemidler rette mod såvel yngre postdocs som etablerede forskere på lektor professorniveau.",
+        "img": [
+          {
+            "id": 111,
+            "src": "/data/media/Bryggeren5.jpg",
+            "alt": "calendar image"
+
+          }
+        ],
+        "link": [
+          {
+            "id": 122,
+            "text": "Søg nu",
+            "url": "/"
+
+          }
+        ]
       }
     ],
 
