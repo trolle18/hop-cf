@@ -64,6 +64,25 @@
   }
 }
 
+// CTA BUTTON - Plain
+.cta-btn-cntr.plain-light-cta {
+  .cta-btn {
+    background-color: transparent;
+    
+    &__text {
+      color: $clr_l_grey;
+    }
+  
+    &__svg-cntr {
+      border: solid $clr_l_grey 1px;
+  
+      // .arrow {
+      //   display: none;
+      // }
+    }
+  }
+}
+
 // CTA BUTTON - Yellow
 .cta-btn-cntr.ylw-cta {
   .cta-btn {

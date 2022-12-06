@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
+import CtaBtn from './CtaBtn';
 
 export default function Hero() {
     const [sectionData, setSectionData] = useState([]);
@@ -18,23 +19,33 @@ export default function Hero() {
         <>
         <section className="hero-wrapper">
             {sectionData.map((data) => (            
-                <div className="hero-cntr" key={data.id}>
+                <div className="hero" key={data.id}>
                     {data?.hero.map((hero) => (
-                    <div key={hero.id}>                    
-                        <div className="hero-cntr__img-cntr">
-                            {/* <Image src={hero.imgSrc} alt="" width={100} height={100}/> */}
-                        </div>
+                    <div key={hero.id} className="hero-cntr">                    
+                        <div className="hero-cntr__img-cntr"></div>
+
                         <div className="hero-cntr__txt-cntr">
-                            <h1>{hero.headline}</h1>
-                            <p>{hero.text}</p>
-                        </div>
-                        <a className="hero-cntr__cta" href={hero.ctaUrl}>
-                            <div className="cta-inner-cntr">
-                                <p>{hero.ctaTxt}</p>
-                                <div className="loop-svg"></div>
+                            <div className="hero-cntr__txt-cntr__headline">
+                                <h1>{hero.headline}</h1>
                             </div>
-                        </a>
-                        
+                            <div className="hero-cntr__txt-cntr__btm">
+                                <div className="hero-cntr__txt-cntr__btm__text">
+                                    <p>{hero.text}</p>
+                                </div>
+
+                                <div className="hero-cntr__txt-cntr__btm__cta" href={hero.ctaUrl}>
+                                
+                                    <div className="cta-inner-cntr">
+                                        <div className="cta-btn-cntr plain-light-cta arrow-top-r">
+                                            {hero?.link.map((link) => (
+                                                <CtaBtn key={link.id} link={link}/>                          
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+
                     </div>            
                     ))} 
                 </div>            

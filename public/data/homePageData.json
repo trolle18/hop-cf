@@ -4,6 +4,7 @@
     "online": "y",
     "title": "Homepage",
     "desc": "",
+
     "hero": [
       {
         
@@ -13,7 +14,14 @@
         "imgSrc": "/data/media/petridish1.png",
         "imgAlt": "hero image",
         "ctaTxt": "Ansøg om bevilling",
-        "ctaUrl": "/"
+        "ctaUrl": "/",
+        "link": [
+          {
+            "id": 122,
+            "text": "Ansøg om bevilling",
+            "url": "/"
+          }
+        ]
       }
     ],
 
@@ -47,7 +55,6 @@
             "id": 122,
             "text": "Søg nu",
             "url": "/"
-
           }
         ]
       }
