@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
-import CtaBtn from './CTAbtn';
+import CtaBtn from './CtaBtn';
 
 export default function TextBlock() {
     const [sectionData, setSectionData] = useState([]);
@@ -46,7 +46,7 @@ export default function TextBlock() {
                                         ))}                              
                                     </div>
                                 </div>
-                                <div className="cta-btn-cntr ">
+                                <div className="cta-btn-cntr ylw-cta arrow-top-r">
                                     {section?.link.map((link) => (
                                         <CtaBtn key={link.id} link={link}/>                          
                                     ))}
