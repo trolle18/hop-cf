@@ -76,9 +76,9 @@ const SwiperCarousel = () => {
             </Swiper>
 
             <div className="seeMore-cntr">
-                <div>
-                    <div><span></span></div>
-                    <p>Flere artikler</p>
+                <div className="seeMore-cntr__inner-cntr">
+                    <div className="arrow-top-right-cntr"><span className="arrow-top-right"></span></div>
+                    <p>Flere nyheder</p>
                 </div>
             </div>
         </div>

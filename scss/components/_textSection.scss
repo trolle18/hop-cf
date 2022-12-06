@@ -7,7 +7,7 @@
     width: auto;
     height: auto;
     margin: 0 0 2em 0;
-    padding: 0 1em;
+    padding: 0 2em;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -30,7 +30,7 @@
   &__cntr {
     height: auto;
     max-width: 100vw;
-    padding: 0 1em;
+    padding: 0 2em;
 
     &__inner-cntr {
       width: 100%;
@@ -98,8 +98,12 @@
           }
         }
 
+        .headline-cntr.headline-80w {
+          width: 80%;
+        }
+
         .headline-cntr.headline-60w {
-          width: 60%;
+          width: 80%;
         }
 
         .txt-cntr {

@@ -59,13 +59,13 @@ export default function VideoSection() {
                                 .map((data) => (
                                     <VideoArticle key={data.id} data={data}/>
                                 ))} */}
-                                <SwiperCarouselVideos />  
+                                {/* <SwiperCarouselVideos />   */}
                             </div>   
                         </div>
                     ))}
                 </div>
             ))}
-            {/* <SwiperCarouselVideos />                                   */}
+            <SwiperCarouselVideos />                                  
         </section>
         </>
     )
