@@ -381,6 +381,44 @@
         ]
 
       }
+    ],
+
+    "newsletterBlock": [
+      {
+        "id": 213,
+        "tag": "Nyhedsbrev",
+        "headline": "Får du seneste nyt?",
+        "headline2nd": "",
+        "subheadline": "",        
+        "text": "Hvis du vil være på forkant med hvad der rør sig indenfor videnskab, forskning og kultur, kan du tilmelde dig vores nyhedsbrev lige herunder.",
+        "inputfields": [
+          {
+            "id": 1212,
+            "type": "name",
+            "text": "Navn"
+          },
+          {
+            "id": 1922,
+            "type": "email",
+            "text": "Email"
+          }
+        ],
+        "img": [
+          {
+            "id": 111,
+            "src": "/data/media/Bryggeren5.jpg",
+            "alt": "calendar image"
+
+          }
+        ],
+        "link": [
+          {
+            "id": 122,
+            "text": "Tilmeld",
+            "url": "/"
+          }
+        ]
+      }
     ]
 
   }

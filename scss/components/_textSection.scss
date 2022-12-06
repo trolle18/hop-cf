@@ -3,6 +3,19 @@
   width: 100%;
   margin: 4em 0em;
 
+  &.textSection-underlined {
+    height: auto;
+    width: auto;
+    &::after {
+      content: "";
+      height: 1px;
+      width: inherit;
+      margin: 4em 2em 0 2em;
+      display: block;
+      background-color:$clr_m_grey;
+    }
+  }
+
   &__tag {
     width: auto;
     height: auto;
@@ -13,17 +26,7 @@
     gap: 1em;
 
     p {
-      // text-transform: uppercase;
       color: $clr_midnight_green;
-
-      // &::before {
-      //   content: "";
-      //   height: 2px;
-      //   width: 100%;
-      //   margin: 0 0 1em 0;
-      //   display: block;
-      //   background-color: $semitrans_midnight_green_20;
-      // }
     }
   }
 

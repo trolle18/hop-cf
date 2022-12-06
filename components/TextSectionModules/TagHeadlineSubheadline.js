@@ -2,10 +2,8 @@
 export default function TagHeadlineSubheadline({section}) {
 
     return (
-        <>
-
+        <>        
         <div className="textSection__tag">
-            {/* <hr/> */}
             <p>{section.tag}</p>
         </div>
         
@@ -19,21 +17,13 @@ export default function TagHeadlineSubheadline({section}) {
                     <div className="txt-cntr__inner-cntr">                            
                         <div className="subheader">
                             <p>
-                                {/* <span>
-                                    <svg width="48" height="9" viewBox="0 0 48 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="4.5" cy="4.5" r="3.7" fill="#183428" stroke="#183428" stroke-width="1.6"/>
-                                        <line x1="3" y1="4.25" x2="48" y2="4.25" stroke="#183428" stroke-width="1.5"/>
-                                    </svg>
-                                </span> */}
                                 {section.subheadline}
                             </p>                                
                         </div>
                     </div>                                                               
                 </div>     
             </div>                   
-
         </div>       
-
         </>
     )
 }

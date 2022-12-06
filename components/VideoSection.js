@@ -33,7 +33,7 @@ export default function VideoSection() {
     return (
         <>
         {sectionData.map((data) => (
-            <section className="textSection" key={data.id}>
+            <section className="textSection textSection-underlined" key={data.id}>
                 {data?.videoSection.map((section) => (
                     <TagHeadlineSubheadline key={section.id} section={section}/>      
                 ))}  
@@ -53,13 +53,6 @@ export default function VideoSection() {
                                 ))}
                             </div>  
                             <div className="video-section-main__feature-cntr__regular">
-                            {/* <p className="video-section-main__feature-cntr__regular__title">{section.text}</p> */}
-                                {/* {section.articles
-                                .filter((data) => data.styleTag.includes('regular'))
-                                .map((data) => (
-                                    <VideoArticle key={data.id} data={data}/>
-                                ))} */}
-                                {/* <SwiperCarouselVideos />   */}
                             </div>   
                         </div>
                     ))}

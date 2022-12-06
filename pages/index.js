@@ -8,6 +8,7 @@ import TextInfoSection from '../components/TextInfoSection'
 import VideoSection from '../components/VideoSection'
 import Footer from '../components/Footer'
 import TextBlock from '../components/TextBlock'
+import NewsletterBlock from '../components/NewsletterBlock'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <MasonGridSection/>    
         <TextInfoSection/>    
         <VideoSection/>
+        <NewsletterBlock/>
       </main>
  
     </div>
