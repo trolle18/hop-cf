@@ -106,7 +106,7 @@
   color: $clr_midnight_green;
   border-radius: 100px;
   border: solid $clr_midnight_green 1px;
-  transition: ease-in .05s;
+  transition: $hover_easein-05;
   
   &::after {
     width: auto;
