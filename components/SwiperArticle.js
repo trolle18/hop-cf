@@ -28,7 +28,12 @@ export default function SwiperArticle ( {data} ) {
                 </div>
                 <div className="swiper-article-cont">
                     <div className="swiper-article-cont__txt">
-                        <span className="swiper-article-cont__txt__details">{data.createdDate}</span>
+                        <div className="swiper-article-cont__txt__details">
+                            <span className="show-details">{data?.tag}</span>
+                            <span className="show-details">{data?.episodes}</span>
+                            <span>{data?.createdDate}</span>
+                        </div>
+                       
                         <p className="swiper-article-cont__txt__headline">{data.headline}</p>
                     </div>
                 </div>

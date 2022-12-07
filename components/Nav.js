@@ -37,38 +37,39 @@ const Nav = () => {
   }, []);
 
 
-    return (
-        <>
-            <nav className={`active ${show && ''}`} id="nav">
-                {sectionData.map((data) => (
-                    <div key={data.id} className="nav-cntr">
-                        <div className="nav-inner-cntr">
-                            <div className="nav-inner-cntr__logo"> 
-                                {data?.logoLink.map((logoLink) => (
-                                <a key={logoLink.id} href={logoLink.url}>
-                                    <div className="logo-svg"></div>
-                                </a>
-                                ))}    
+  return (
+    <>
+      <nav className={`active ${show && ''}`} id="nav">
+        {sectionData.map((data) => (
+          <div key={data.id} className="nav-cntr">
+            <div className="nav-inner-cntr">
 
-                            </div>
-                            <div className="nav-inner-cntr__links">
-                                {data?.navLinks.map((navLink) => (
-                                    <a key={navLink.id} href={navLink.link}>
-                                        {navLink.linkTxt}
-                                    </a>
-                                ))}    
-                                <SearchField/>
-                            </div>
+              <div className="nav-mob-links">                 
+                <BurgerMenu data={data}/>               
+              </div>   
+              <div className="nav-inner-cntr__links">
+                {data?.navLinks.map((navLink) => (
+                  <a key={navLink.id} href={navLink.link}>
+                    {navLink.linkTxt}
+                  </a>
+                ))}    
+                  {/* <SearchField/> */}
+              </div>
 
-                            <div className="nav-mob-links">                 
-                                <BurgerMenu data={data}/>               
-                            </div>                              
-                        </div>
-                    </div>
+              <div className="nav-inner-cntr__logo"> 
+                {data?.logoLink.map((logoLink) => (
+                  <a key={logoLink.id} href={logoLink.url}>
+                    <div className="logo-svg"></div>
+                  </a>
                 ))}
-            </nav>
-        </>       
-    );
+              </div>
+              
+            </div>
+          </div>
+        ))}
+      </nav>
+    </>       
+  );
 };
 
 export default Nav;

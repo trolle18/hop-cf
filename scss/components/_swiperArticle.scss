@@ -38,7 +38,13 @@
         gap: .75em;
 
         &__details {
+          display: flex;
+          flex-direction: row;
+          gap: .5em;
           color: $clr_ml_grey;
+          .show-details {
+            display: none;
+          }
         }
 
         &__headline {
@@ -64,6 +70,10 @@
       }
   }   
 // }
+
+
+  
+
 
 // .swiper-article-theme {
   &.theme-plain {

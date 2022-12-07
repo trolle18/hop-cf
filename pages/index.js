@@ -9,6 +9,7 @@ import VideoSection from '../components/VideoSection'
 import Footer from '../components/Footer'
 import TextBlock from '../components/TextBlock'
 import NewsletterBlock from '../components/NewsletterBlock'
+import PodcastSection from '../components/PodcastSection'
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <MasonGridSection/>    
         <TextInfoSection/>    
         <VideoSection/>
+        <PodcastSection/>
         <NewsletterBlock/>
       </main>
  
