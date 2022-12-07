@@ -33,24 +33,29 @@ export default function NewsletterBlock() {
                             {section?.inputfields
                             .filter((input) => input.type.includes('name'))
                             .map((input) => (
-                                <div className="inputfield" key={input.id}>
-                                    <input placeholder={input.text} />
+                                <div key={input.id} className="inputfield">
+                                    <input placeholder={input.text} type="text" id="name" name="name"/>
                                 </div>
                             ))}
 
                             {section?.inputfields
                             .filter((input) => input.type.includes('email'))
                             .map((input) => (
-                                <div className="inputfield" key={input.id}>
-                                    <input placeholder={input.text} />
+                                <div key={input.id} className="inputfield">
+                                    <input placeholder={input.text} type="text" id="email" name="email"/>
                                 </div>
                             ))}
 
                                 <div className="cta-btn-cntr ylw-cta arrow-top-r">
                                     {section?.link.map((link) => (
-                                        <CtaBtn key={link.id} link={link}/>                          
+                                        <button className="cta-btn" key={link.id} onClick={console.log("submit")}>
+                                            <span className="cta-btn__arrow"></span>
+                                            <p className="cta-btn__text">{link.text}</p>
+                                            <span className="cta-btn__svg-cntr"><span className="arrow"></span></span>         
+                                        </button>
+                                        
                                     ))}
-                                </div>
+                                </div>{/* <CtaBtn key={link.id} link={link}/>*/}
                         </div>   
                     </div>         
                 ))} 

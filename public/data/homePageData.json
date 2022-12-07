@@ -115,7 +115,7 @@
 
     "txtEventSection": [
       {
-        "id": 275,
+        "id": 27775,
         "tag": "Kalender",
         "headline": "Begivenheder 2023",
         "headline2nd": "2023",
@@ -389,7 +389,7 @@
         "tag": "Nyhedsbrev",
         "headline": "Får du seneste nyt?",
         "headline2nd": "",
-        "subheadline": "",        
+        "subheadline": "Hvis du vil være på forkant med hvad der rør sig indenfor videnskab, forskning og kultur, kan du tilmelde dig vores nyhedsbrev lige herunder.",
         "text": "Hvis du vil være på forkant med hvad der rør sig indenfor videnskab, forskning og kultur, kan du tilmelde dig vores nyhedsbrev lige herunder.",
         "inputfields": [
           {
