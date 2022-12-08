@@ -55,28 +55,28 @@
           height: auto;
           width: auto;
           bottom: 0;
-          padding: 1em 0em;
+          padding: 0em 0em;
           display: flex;
-          flex-direction: column;
-          gap: 1em;
+          flex-direction: column-reverse;
+          gap: .5em;
 
           &__text {
             height: auto;
-            width: auto;
+            width: 85%;
             margin: 0 0;
-            padding: 1em 1em;
-            color: $clr_l_grey;
+            padding: 1em 1em 2em 1em;
+            background-color: $clr_white;
 
             p {
-              font-size: $fs_m;
+              font-size: $fs_l;
             }
           }
 
           &__cta {     
             height: auto;
             width: auto;
-            margin: 0 0 1em 0;
-            padding: 1em 1em;
+            margin: auto 0em;
+            padding: 1em .5em;
             transition: ease-in .10s; 
 
             .cta-inner-cntr {
@@ -88,13 +88,13 @@
               color: $clr_l_grey;  
 
               .cta-btn-cntr {
-                margin: 0 0 0 auto;
+                margin: 0 auto 0 0;
 
                 .cta-btn {
                   padding: .5em;
 
                   &__text {
-                    font-size: $fs_s;
+                    font-size: $fs_m;
                   }
                 }
               }
@@ -120,20 +120,6 @@
   background-color: $clr_midnight_green;
   color: $clr_midnight_green !important;
   filter: none !important;    
-  
-  .hero-cntr__txt-cntr {
-
-    // &__headline {
-    //   color: $clr_midnight_green;
-
-    //   h1 {
-    //     color: $clr_midnight_green;
-    //   }
-    
-  // }   
-}
-
-
 }
 
 .theme-midnight-green {
