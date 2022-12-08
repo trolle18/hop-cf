@@ -1,6 +1,7 @@
 import SwiperArticle from "./SwiperArticle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+import SwiperArticlePodcast from "./SwiperArticlePodcast";
 
 const SwiperCarouselPodcasts = ({ data }) => {
 
@@ -28,14 +29,14 @@ const SwiperCarouselPodcasts = ({ data }) => {
                     centeredSlides: false,
                 },
                 992: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     centeredSlides: false,
                 }
             }}
             >
                 {data.articles.map((data) => (
                     <SwiperSlide key={data.id}>
-                        <SwiperArticle data={data}/>
+                        <SwiperArticlePodcast data={data}/>
                     </SwiperSlide>
                 ))}
             </Swiper>
