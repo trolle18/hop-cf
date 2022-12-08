@@ -367,6 +367,36 @@ export const homepageData = [
     ],
 
 
+    purposeSection: [
+      {
+        id: 222999,
+        tag: "",
+        headline: "Fondets formål",
+        headline2nd: "",
+        subheadline: "",
+        textSec: [
+          {
+            id: 8832,
+            headline: "Udbredelse",
+            text: "Gennem en bestemmende aktiepost at sikre værdiskabelsen i Carlsberg A/S, udbredelse af Carlsberg som et anerkendt ølmærke samt udvikle ølbrygning til den størst mulige fuldkommenhed."
+          },
+          {
+            id: 9933,
+            headline: "Støtte",
+            text: "Uddeling af aktier i Carlsberg A/S til velgørende formål ved at virke til fremme af og støtte for naturvidenskaberne samt matematik og filosofi, de humanistiske videnskaber og samfundsvidenskaberne."
+          }
+        ],
+        link: [
+          {
+            id: 12912,
+            text: "Om fondet",
+            url: "/"
+          }
+        ],
+      }
+    ],
+
+
     videoSection: [
       {
         id: 31175,

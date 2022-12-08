@@ -7,6 +7,7 @@ import VideoSection from '../components/VideoSection'
 import TextBlock from '../components/TextBlock'
 import NewsletterBlock from '../components/NewsletterBlock'
 import PodcastSection from '../components/PodcastSection'
+import PurposeSection from '../components/PurposeSection';
 
 export default function Home() {
   const [sectionData, setSectionData] = useState(null)
@@ -48,6 +49,10 @@ export default function Home() {
               <TextCarouselSection key={data.id} data={data}/>
             ))} 
 
+            {data.purposeSection?.map((data) => ( 
+              <PurposeSection key={data.id} data={data}/>
+            ))} 
+            
             {data.videoSection?.map((data) => ( 
               <VideoSection key={data.id} data={data}/>
             ))} 
@@ -59,6 +64,8 @@ export default function Home() {
             {data.newsletterBlock?.map((data) => ( 
               <NewsletterBlock key={data.id} data={data}/>
             ))} 
+
+            
           </>   
         ))}
 
