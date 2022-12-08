@@ -14,49 +14,83 @@ export const aboutpageData = [
             text: "",
             url: ""
           }
+        ],
+        img: [
+          {
+            id: 2434,
+            src: "",
+            alt: ""
+          }
         ]
       }
     ],
-    
 
-    txtCtaSection: [
+
+    purposeSection: [
       {
         id: 1244,
         tag: "",
-        headline: "Fondets formål",
+        headline: "Fondets to formål",
         headline2nd: "",
         subheadline: "Vi er et af verdens ældste ervhervsdrivende fonde. Her blomstrer ambitiøs bryggerivirksomhed side om side med forskning og støtte til det ypperste inden for videnskab, kunst og kultur.",
         text: "",
         img: [
           {
             id: 313,
-            src: "/data/media/calendar.svg",
-            alt: "calendar image"
+            src: "",
+            alt: "image"
 
+          }
+        ],
+        link: [
+          {
+            id: 46723,
+            text: "",
+            url: "/"
+
+          }
+        ],
+        articles: [
+          {
+            id: 235,
+            styleTag: "feature",
+            headline: "Her blomstrer bryggeri side om side med forskning",
+            subtext: "Majken Schultz, Formand Carlsbergfondet",
+            link: [
+              {
+                id: 2125,
+                text: "",
+                url: "/"
+              }
+            ],
+            img: [
+              {
+                id: 313,
+                src: "/data/media/CF_aboutarticle1.png",
+                alt: "image"
+    
+              }
+            ]
+            // textBlock: [
+            //   {
+            //     id: 12203,
+            //     text: "Carlsbergfondet blev grundlagt på en passion. En passion for perfektion. Passion-en kan findes i alt, hvad fondet foretager sig og er gengivet i de første linjer af Carlsberg-fondets fundats og indgraveret i marmor tavlen, som hænger over indgangsporten til Carlsbergs hovedsæde i Valby, København, som den dag i dag"
+            //   },
+            //   {
+            //     id: 9923717,
+            //     text: "stadig stråler af klarsyn den dag i dag. ”De Gyldne Ord” er en hyldest til det excellente og sublime. De slår fast, at Carlsbergfondet skal stræbe efter den højst mulige kvalitet i alt, hvad fondet gør, og at man i driften af Carlsberg-bryggeriet aldrig kun skal have fokus på forretningen."
+            //   }
+            // ]
           }
         ],
         textSec: [
           {
-            id: 235,
-            headline: "Her blomstrer bryggeri side om side med forskning",
-            text: "Majken Schultz, Formand Carlsbergfondet",
-            link: [
-              {
-                id: 2125,
-                text: "Læs mere",
-                url: "/"
-              }
-            ],
-            textBlock: [
-              {
-                id: 12203,
-                text: "Carlsbergfondet blev grundlagt på en passion. En passion for perfektion. Passion-en kan findes i alt, hvad fondet foretager sig og er gengivet i de første linjer af Carlsberg-fondets fundats og indgraveret i marmor tavlen, som hænger over indgangsporten til Carlsbergs hovedsæde i Valby, København, som den dag i dag"
-              },
-              {
-                id: 9923717,
-                text: "stadig stråler af klarsyn den dag i dag. ”De Gyldne Ord” er en hyldest til det excellente og sublime. De slår fast, at Carlsbergfondet skal stræbe efter den højst mulige kvalitet i alt, hvad fondet gør, og at man i driften af Carlsberg-bryggeriet aldrig kun skal have fokus på forretningen."
-              }
-            ]
+            id: 12203,
+            text: "Carlsbergfondet blev grundlagt på en passion. En passion for perfektion. Passion-en kan findes i alt, hvad fondet foretager sig og er gengivet i de første linjer af Carlsberg-fondets fundats og indgraveret i marmor tavlen, som hænger over indgangsporten til Carlsbergs hovedsæde i Valby, København, som den dag i dag"
+          },
+          {
+            id: 9923717,
+            text: "stadig stråler af klarsyn den dag i dag. ”De Gyldne Ord” er en hyldest til det excellente og sublime. De slår fast, at Carlsbergfondet skal stræbe efter den højst mulige kvalitet i alt, hvad fondet gør, og at man i driften af Carlsberg-bryggeriet aldrig kun skal have fokus på forretningen."
           }
         ]
       }
@@ -192,37 +226,6 @@ export const aboutpageData = [
         ]
       }
     ],
-
-
-    purposeSection: [
-      {
-        id: 222999,
-        tag: "",
-        headline: "Fondets formål",
-        headline2nd: "",
-        subheadline: "",
-        textSec: [
-          {
-            id: 8832,
-            headline: "Udbredelse",
-            text: "Gennem en bestemmende aktiepost at sikre værdiskabelsen i Carlsberg A/S, udbredelse af Carlsberg som et anerkendt ølmærke samt udvikle ølbrygning til den størst mulige fuldkommenhed."
-          },
-          {
-            id: 9933,
-            headline: "Støtte",
-            text: "Uddeling af aktier i Carlsberg A/S til velgørende formål ved at virke til fremme af og støtte for naturvidenskaberne samt matematik og filosofi, de humanistiske videnskaber og samfundsvidenskaberne."
-          }
-        ],
-        link: [
-          {
-            id: 12912,
-            text: "Om fondet",
-            url: "/"
-          }
-        ],
-      }
-    ],
-
 
     midlerSection: [
       {

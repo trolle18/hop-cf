@@ -42,7 +42,7 @@ export const data = [
         {
           id: 3297,
           linkTxt: "Om fondet",
-          url: "/"
+          url: "/omfondet"
         }
       ]
     }

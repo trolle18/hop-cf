@@ -7,8 +7,12 @@ import TextBlock from '../components/TextBlock'
 import NewsletterBlock from '../components/NewsletterBlock'
 import PodcastSection from '../components/PodcastSection'
 import PurposeSection from '../components/PurposeSection';
+import TextCtaSection from '../components/TextCtaSection';
+import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
+import AboutPurposeSection from '../components/AboutPurposeSection';
+import SubpageHero from '../components/SubpageHero';
 
-export default function Home() {
+export default function About() {
   const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)
   
@@ -34,20 +38,26 @@ export default function Home() {
       </Head>
 
       <main className="page">
-        {sectionData.homepageData.map((data) => (    
+        {sectionData.aboutpageData.map((data) => (    
           <>
             {data.hero?.map((data) => ( 
-              <Hero key={data.id}  data={data}/>
-            ))}    
+              <SubpageHero key={data.id}  data={data}/>
+            ))}  
             
+            {data.purposeSection?.map((data) => ( 
+              <AboutPurposeSection key={data.id} data={data}/>
+            ))}   
+{/*             
             {data.txtBlock?.map((data) => ( 
               <TextBlock key={data.id} data={data}/>
-            ))}  
+            ))}   */}
 
             {data.txtSliderSection?.map((data) => ( 
               <TextCarouselSection key={data.id} data={data}/>
             ))} 
 
+            
+{/* 
             {data.purposeSection?.map((data) => ( 
               <PurposeSection key={data.id} data={data}/>
             ))} 
@@ -58,7 +68,7 @@ export default function Home() {
 
             {data.podcastSection?.map((data) => ( 
               <PodcastSection key={data.id} data={data}/>
-            ))} 
+            ))}  */}
 
             {data.newsletterBlock?.map((data) => ( 
               <NewsletterBlock key={data.id} data={data}/>

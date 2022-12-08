@@ -55,7 +55,7 @@ const Nav = () => {
               </div>   
               <div className="nav-inner-cntr__links">
                 {data?.navLinks.map((navLink) => (
-                  <a key={navLink.id} href={navLink.link}>
+                  <a key={navLink.id} href={navLink.url}>
                     {navLink.linkTxt}
                   </a>
                 ))}    
