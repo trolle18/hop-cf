@@ -11,6 +11,7 @@ import TextCtaSection from '../components/TextCtaSection';
 import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
 import AboutPurposeSection from '../components/AboutPurposeSection';
 import SubpageHero from '../components/SubpageHero';
+import Nav from '../components/Nav';
 
 export default function About() {
   const [sectionData, setSectionData] = useState(null)
@@ -37,9 +38,9 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="page">
-        {sectionData.aboutpageData.map((data) => (    
-          <>
+      <Nav/>
+      {sectionData.aboutpageData.map((data) => (    
+        <main className="page" key={data.id}>
             {data.hero?.map((data) => ( 
               <SubpageHero key={data.id}  data={data}/>
             ))}  
@@ -47,41 +48,17 @@ export default function About() {
             {data.purposeSection?.map((data) => ( 
               <AboutPurposeSection key={data.id} data={data}/>
             ))}   
-{/*             
-            {data.txtBlock?.map((data) => ( 
-              <TextBlock key={data.id} data={data}/>
-            ))}   */}
 
             {data.txtSliderSection?.map((data) => ( 
               <TextCarouselSection key={data.id} data={data}/>
             ))} 
 
-            
-{/* 
-            {data.purposeSection?.map((data) => ( 
-              <PurposeSection key={data.id} data={data}/>
-            ))} 
-            
-            {data.videoSection?.map((data) => ( 
-              <VideoSection key={data.id} data={data}/>
-            ))} 
-
-            {data.podcastSection?.map((data) => ( 
-              <PodcastSection key={data.id} data={data}/>
-            ))}  */}
-
             {data.newsletterBlock?.map((data) => ( 
               <NewsletterBlock key={data.id} data={data}/>
             ))} 
 
-            
-          </>   
-        ))}
-
-        {/* <TextCtaSection/> */}
-        {/* <MasonGridSection/>     */}
-        {/* <TextInfoSection/>     */}
-      </main>
+        </main>
+      ))}
     </>
   )
 }

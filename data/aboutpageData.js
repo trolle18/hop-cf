@@ -1,25 +1,34 @@
 export const aboutpageData = [
   {
+    id: 110022,
+    type: "subpage",
+    theme: "theme-midnight-green",
+    nav: [
+      {
+        id: 11002,
+        theme: "theme-midnight-green"
+      }
+    ],
+
+
     hero: [
       {
         
         id: 1904,
         headline: "Introduktion til Carlsbergfondet og formål",
         text: "",
-        imgSrc: "/data/media/petridish1.png",
-        imgAlt: "hero image",
+        img: [
+          {
+            id: 1012912,
+            src: "/data/media/hero.png",
+            alt: "hero image"
+          }
+        ],
         link: [
           {
             id: 2434,
             text: "",
             url: ""
-          }
-        ],
-        img: [
-          {
-            id: 2434,
-            src: "",
-            alt: ""
           }
         ]
       }

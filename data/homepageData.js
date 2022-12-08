@@ -1,15 +1,28 @@
 export const homepageData = [
   {
-    hero: [
+    id: 110022,
+    type: "landingpage",
+    theme: "theme-midnight-green",
+    nav: [
       {
-        
+        id: 11002,
+        theme: "theme-midnight-green"
+      }
+    ],
+
+
+    hero: [
+      {        
         id: 212,
         headline: "Vi brygger viden for en oplyst fremtid",
         text: "Carlsbergfondet støtter fri grundforskning inden for naturvidenskab, humaniora og samfundsvidenskab.",
-        imgSrc: "/data/media/petridish1.png",
-        imgAlt: "hero image",
-        ctaTxt: "Ansøg om bevilling",
-        ctaUrl: "/",
+        img: [
+          {
+            id: 1010122,
+            src: "/data/media/hero.png",
+            alt: "hero image"
+          }
+        ],
         link: [
           {
             id: 122,
