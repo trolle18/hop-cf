@@ -2,6 +2,7 @@
   .hero {
     .hero-cntr {
       height: 95vh;
+      max-height: 700px;
       width: auto;
       position: relative;
       
@@ -132,6 +133,7 @@
     .hero {
       .hero-cntr {
         height: 90vh;
+        max-height: 700px;
 
         &__txt-cntr {
           gap: 2em;
