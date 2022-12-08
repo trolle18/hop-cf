@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BurgerMenu from './BurgerMenu';
-import SearchField from './SearchField';
+// import SearchField from './SearchField';
 
 const Nav = () => {
   const [show, setShow] = useState(true);
@@ -25,16 +25,6 @@ const Nav = () => {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastScrollY]);
-
-  // Fetch data from JSON
-  // useEffect(() => {
-  //   async function getData() {
-  //       const response = await fetch("/data/components/navData.json");
-  //       const data = await response.json();
-  //       setSectionData(data);             
-  //   }       
-  //     getData();        
-  // }, []);
 
   const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)

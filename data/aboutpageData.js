@@ -1,0 +1,445 @@
+export const aboutpageData = [
+  {
+    hero: [
+      {
+        
+        id: 1904,
+        headline: "Introduktion til Carlsbergfondet og formål",
+        text: "",
+        imgSrc: "/data/media/petridish1.png",
+        imgAlt: "hero image",
+        link: [
+          {
+            id: 2434,
+            text: "",
+            url: ""
+          }
+        ]
+      }
+    ],
+    
+
+    txtCtaSection: [
+      {
+        id: 1244,
+        tag: "",
+        headline: "Fondets formål",
+        headline2nd: "",
+        subheadline: "Vi er et af verdens ældste ervhervsdrivende fonde. Her blomstrer ambitiøs bryggerivirksomhed side om side med forskning og støtte til det ypperste inden for videnskab, kunst og kultur.",
+        text: "",
+        img: [
+          {
+            id: 313,
+            src: "/data/media/calendar.svg",
+            alt: "calendar image"
+
+          }
+        ],
+        textSec: [
+          {
+            id: 235,
+            headline: "Her blomstrer bryggeri side om side med forskning",
+            text: "Majken Schultz, Formand Carlsbergfondet",
+            link: [
+              {
+                id: 2125,
+                text: "Læs mere",
+                url: "/"
+              }
+            ],
+            textBlock: [
+              {
+                id: 12203,
+                text: "Carlsbergfondet blev grundlagt på en passion. En passion for perfektion. Passion-en kan findes i alt, hvad fondet foretager sig og er gengivet i de første linjer af Carlsberg-fondets fundats og indgraveret i marmor tavlen, som hænger over indgangsporten til Carlsbergs hovedsæde i Valby, København, som den dag i dag"
+              },
+              {
+                id: 9923717,
+                text: "stadig stråler af klarsyn den dag i dag. ”De Gyldne Ord” er en hyldest til det excellente og sublime. De slår fast, at Carlsbergfondet skal stræbe efter den højst mulige kvalitet i alt, hvad fondet gør, og at man i driften af Carlsberg-bryggeriet aldrig kun skal have fokus på forretningen."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+
+
+    txtSliderSection: [
+      {
+        id: 214,
+        tag: "",
+        headline: "Bestyrelsen",
+        headline2nd: "",
+        subheadline: "",
+        text: "",
+        link: [
+          {
+            id: 122,
+            text: "",
+            url: ""
+
+          }
+        ],
+        articles: [
+          {
+            id: 184745,
+            online: "y",
+            type: "article",
+            styleTag: "regular",
+            tag: "Forkvinde",
+            category: "",
+            headline: "Maiken Schultz",
+            text: "",
+            img: [
+              {
+                id: 112330,
+                src: "/data/media/vidarticle1.png",
+                alt: "img"
+              }
+            ],
+            link: [
+              {
+                id: 14451,
+                text: "",
+                url: "/",
+              }
+            ]
+          },        
+          {
+            id: 1927515,
+            online: "y",
+            type: "article",
+            styleTag: "regular",
+            tag: "Næstformand",
+            category: "",
+            headline: "Søren-Peter Olesen",
+            text: "",
+            img: [
+              {
+                id: 112330,
+                src: "/data/media/vidarticle1.png",
+                alt: "img"
+              }
+            ],
+            link: [
+              {
+                id: 14451,
+                text: "",
+                url: "/",
+              }
+            ]
+          },        
+          {
+            id: 3287145,
+            online: "y",
+            type: "article",
+            styleTag: "regular",
+            tag: "Bestyreæsesmedlem",
+            category: "",
+            headline: "Peter Hjort",
+            text: "",
+            img: [
+              {
+                id: 112330,
+                src: "/data/media/vidarticle1.png",
+                alt: "img"
+              }
+            ],
+            link: [
+              {
+                id: 14451,
+                text: "",
+                url: "/",
+              }
+            ]
+          }
+        ]
+      }
+    ],
+
+    
+    txtBevillingSection: [
+      {
+        id: 344114,
+        tag: "",
+        headline: "Hvem kan få bevilling?",
+        headline2nd: "",
+        subheadline: "Carlsbergfondet støtter de bedste forskere med de mest lovende projekter. Fondet ønsker at fremme international-iseringen og vækstlaget i danske grundforskning ved at støtte de i særklasse bedste og mest talentfulde yngre forskere.",
+        text: "",
+        textSec: [
+          {
+            id: 8771,
+            text: "Carlsbergfondet støtter de bedste forskere med de mest lovende projekter. Fondet ønsker at fremme internationaliseringen og vækstlaget i dansk grundforskning ved at støtte de i særklasse bedste og mest talentfulde yngre forskere. "
+          },
+          {
+            id: 9238237,
+            text: "Derfor sender fondet forskere ud til de mest anerkendte universiteter i verden for at give dem international erfaring og netværk. Således bliver vækstlaget plejet, og der bliver skabt gunstige forudsætninger for at gennemføre et smidigt generationsskifte på de danske universiteter."
+          },
+          {
+            id: 19774,
+            text: "Carlsbergfondet prioriterer også forskere, der arbejder på tværs af videnskabelige fagområder. Det er ofte i grænseområderne, at de virkelig banebrydende resultater opstår. Særligt når forskere, der ikke normalt udveksler resultater, bliver bragt sammen, kan der ske spændende nybrud."
+          },
+          {
+            id: 1234,
+            text: "I forlængelse af fundatsen bliver forskning støttet af Carlsbergfondet udført af danske og udenlandske forskere med tilknytning til det danske forskningsmiljø."
+          }
+        ],
+        link: [
+          {
+            id: 8277272,
+            text: "Hele fondets fundats",
+            url: "/"
+          }
+        ]
+      }
+    ],
+
+
+    purposeSection: [
+      {
+        id: 222999,
+        tag: "",
+        headline: "Fondets formål",
+        headline2nd: "",
+        subheadline: "",
+        textSec: [
+          {
+            id: 8832,
+            headline: "Udbredelse",
+            text: "Gennem en bestemmende aktiepost at sikre værdiskabelsen i Carlsberg A/S, udbredelse af Carlsberg som et anerkendt ølmærke samt udvikle ølbrygning til den størst mulige fuldkommenhed."
+          },
+          {
+            id: 9933,
+            headline: "Støtte",
+            text: "Uddeling af aktier i Carlsberg A/S til velgørende formål ved at virke til fremme af og støtte for naturvidenskaberne samt matematik og filosofi, de humanistiske videnskaber og samfundsvidenskaberne."
+          }
+        ],
+        link: [
+          {
+            id: 12912,
+            text: "Om fondet",
+            url: "/"
+          }
+        ],
+      }
+    ],
+
+
+    midlerSection: [
+      {
+        id: 9911275,
+        tag: "",
+        headline: "Fondets midler",
+        headline2nd: "",
+        subheadline: "GFondet ønsker at fremme international iseringen og vækstlaget i danske grundforskning ved at støtte de i særklasse bedste og mest talent fulde yngre forskere.",
+        text: "",
+        link: [
+          {
+            id: 962522,
+            text: "",
+            url: "/"
+          }
+        ],
+        articles: [
+          {
+            id: 5155,
+            online: "y",
+            type: "",
+            styleTag: "",
+            tag: "",
+            category: "1",
+            headline: "2018",
+            number: "276",
+            text: "mio",
+            link: [
+              {
+                id: 5951,
+                text: "",
+                url: "/"
+              }
+            ]
+          },
+        
+          {
+            id: 155578,
+            online: "y",
+            type: "",
+            styleTag: "",
+            tag: "",
+            category: "2",
+            headline: "2019",
+            number: "414",
+            text: "mio",
+            link: [
+              {
+                id: 661,
+                text: "",
+                url: "/"
+              }
+            ]
+          },
+        
+          {
+            id: 37731,
+            online: "y",
+            type: "",
+            styleTag: "",
+            tag: "",
+            category: "3",
+            headline: "2020",
+            number: "537",
+            text: "mio",
+            link: [
+              {
+                id: 853,
+                text: "",
+                url: "/"
+              }
+            ]
+          },
+        
+          {
+            id: 2682,
+            online: "y",
+            type: "",
+            styleTag: "",
+            tag: "",
+            category: "4",
+            headline: "2021",
+            number: "612",
+            text: "mio",
+            link: [
+              {
+                id: 3921,
+                text: "",
+                url: "/"
+              }
+            ]
+          }
+        ]
+
+      }
+    ],
+
+
+    otherProjectsSection: [
+      {
+        id: 93822,
+        tag: "",
+        headline: "Andre projekter",
+        headline2nd: "",
+        subheadline: "",
+        text: "",
+        link: [
+          {
+            id: 99941,
+            text: "",
+            url: "/"
+          }
+        ],
+        articles: [
+          {
+            id: 14566,
+            tag: "",
+            headline: "Vores fundats",
+            text: "Ikke den slags man pynter en kage med.",
+            img: [
+              {
+                id: 5250,
+                src: "/data/media/pod1.png",
+                alt: "billede"
+              }
+            ],
+            link: [
+              {
+                id: 531,
+                text: "",
+                url: "/"
+              }
+            ]
+          },
+          {
+            id: 111937,
+            tag: "",
+            headline: "Søg støtte",
+            text: "Er dit projekt inden for vores områder kan du søge støtte inden 1 oktober.",
+            img: [
+              {
+                id: 190,
+                src: "/data/media/pod2.png",
+                alt: "billede"
+              }
+            ],
+            link: [
+              {
+                id: 551,
+                text: "",
+                url: "/"
+              }
+            ]
+          },
+          {
+            id: 9274711,
+            tag: "",
+            headline: "Fondets historie",
+            text: "For at gøre en lang historie spændende kan du besøge vores tidslinje",
+            img: [
+              {
+                id: 190,
+                src: "/data/media/pod2.png",
+                alt: "billede"
+              }
+            ],
+            link: [
+              {
+                id: 551,
+                text: "",
+                url: "/"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+
+
+    newsletterBlock: [
+      {
+        id: 213,
+        tag: "Nyhedsbrev",
+        headline: "Får du seneste nyt?",
+        headline2nd: "",
+        subheadline: "Hvis du vil være på forkant med hvad der rør sig indenfor videnskab, forskning og kultur, kan du tilmelde dig vores nyhedsbrev lige herunder.",
+        text: "Hvis du vil være på forkant med hvad der rør sig indenfor videnskab, forskning og kultur, kan du tilmelde dig vores nyhedsbrev lige herunder.",
+        inputfields: [
+          {
+            id: 1212,
+            type: "name",
+            text: "Navn"
+          },
+          {
+            id: 1922,
+            type: "email",
+            text: "Email"
+          }
+        ],
+        img: [
+          {
+            id: 111,
+            src: "/data/media/Bryggeren5.jpg",
+            alt: "calendar image"
+
+          }
+        ],
+        link: [
+          {
+            id: 122,
+            text: "Tilmeld",
+            url: "/"
+          }
+        ]
+      }
+    ]
+
+
+  }
+]
