@@ -1,16 +1,16 @@
 .section-wrapper {
-  margin: 2em .75em;   
-  // padding: 0 1em;
+  height: auto;
+  width: auto;
 }
 
-@media (min-width: 600px) {
-  .section-wrapper {
-    margin: 1em 2em;
-  }
+.theme-l-grey {
+  background-color: $clr_l_grey;
 }
 
-@media (min-width: 992px) {
-  .section-wrapper {
-    margin: 1em 2em;
-  }
+.theme-d-grey {
+  background-color: $semitrans_dark_grey;
+}
+
+.theme-l-orange {
+  background-color: $clr_light_orange;
 }

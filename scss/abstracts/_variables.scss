@@ -18,11 +18,12 @@ $ff-main: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 
 // Colors
 $clr_black: #000;
-$clr_d_grey: #282828;
+// $clr_d_grey: #282828;
 $clr_md_grey: #585858;
 $clr_m_grey: #6e6e6e;
 
 $clr_ml_grey: #c7c7c7;
+$clr_d_grey: #c7c7c7;
 $clr_l_grey: #f2f2f2;
 $clr_white: #fff;
 
@@ -42,5 +43,6 @@ $semitrans_lightest_green_80: rgba(204, 242, 219, .8);
 $semitrans_midnight_green_20: rgba(24, 52, 40, .20);
 $semitrans_midnight_green_30: rgba(24, 52, 40, .30);
 $semitrans_midnight_green_70: rgba(24, 52, 40, .70);
+$semitrans_dark_grey: rgba(199, 199, 199, .5);
 
 $hover_easein-05: ease-in .05s;

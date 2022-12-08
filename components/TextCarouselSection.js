@@ -5,7 +5,7 @@ export default function TextCarouselSection({ data }) {
 
     return (
         <>
-                <section className="textSection" key={data.id}>
+                <section className="textSection theme-l-orange" key={data.id}>
                     <TagHeadlineSubheadline data={data}/>
                     <SwiperCarousel/>
                 </section>        
