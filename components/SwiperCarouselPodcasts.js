@@ -4,18 +4,34 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import PodcastArticle from "./PodcastArticle";
 
-const SwiperCarouselPodcasts = ( {data} ) => {
-    const [sectionData, setSectionData] = useState([]);
-    // const swiperRef = useRef();
+const SwiperCarouselPodcasts = () => {
+    // const [sectionData, setSectionData] = useState([]);
+    // // const swiperRef = useRef();
 
+    // useEffect(() => {
+    //     async function getData() {
+    //         const response = await fetch("/data/components/podcastData.json");
+    //         const data = await response.json();
+    //         setSectionData(data)
+    //     }
+    //     getData();
+    // }, []);
+
+    const [sectionData, setSectionData] = useState(null)
+    const [isLoading, setLoading] = useState(false)
+  
     useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/components/podcastData.json");
-            const data = await response.json();
-            setSectionData(data)
-        }
-        getData();
-    }, []);
+      setLoading(true)
+      fetch('/api/podcasts')
+        .then((res) => res.json())
+        .then((sectionData) => {
+          setSectionData(sectionData)
+          setLoading(false)
+        })
+    }, [])
+  
+    if (isLoading) return <p>Loading...</p>
+    if (!sectionData) return <p>No data</p>
 
     return (
         <>
@@ -46,7 +62,7 @@ const SwiperCarouselPodcasts = ( {data} ) => {
                 }
             }}
             >
-                {sectionData.map((data) => (
+                {sectionData.data.map((data) => (
                     <SwiperSlide key={data.id}>
                         <SwiperArticle data={data}/>
                     </SwiperSlide>

@@ -1,6 +1,12 @@
 import Image from "next/image";
 
 export default function SwiperArticle ( {data} ) {
+    // const { data, error } = useSWR(`/api/articles/${id}`, fetcher)
+    // return {
+    //     data: data,
+    //     isLoading: !error && !data,
+    //     isError: error
+    //   }
 
     return (
         <>

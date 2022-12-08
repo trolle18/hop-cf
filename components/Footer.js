@@ -2,23 +2,39 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 export default function Footer() {
-    const [sectionData, setSectionData] = useState([]);
+    // const [sectionData, setSectionData] = useState([]);
 
-    // Fetch data from JSON
+    // // Fetch data from JSON
+    // useEffect(() => {
+    //     async function getData() {
+    //         const response = await fetch("/data/components/footerData.json");
+    //         const data = await response.json();
+    //         setSectionData(data);             
+    //     }       
+    //     getData();        
+    // }, []);
+
+    const [sectionData, setSectionData] = useState(null)
+    const [isLoading, setLoading] = useState(false)
+  
     useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/components/footerData.json");
-            const data = await response.json();
-            setSectionData(data);             
-        }       
-        getData();        
-    }, []);
+      setLoading(true)
+      fetch('/api/footer')
+        .then((res) => res.json())
+        .then((sectionData) => {
+          setSectionData(sectionData)
+          setLoading(false)
+        })
+    }, [])
+  
+    if (isLoading) return <p>Loading...</p>
+    if (!sectionData) return <p>No data</p>
 
 
     return (
         <>        
         <footer>
-            {sectionData.map((data) => (
+            {sectionData.data.map((data) => (
                 <div key={data.id} className="footer-cntr">
                     <div className="footer-top">
                         <div className="footer-top__col-1">

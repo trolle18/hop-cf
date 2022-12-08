@@ -30,8 +30,8 @@ export default function PodcastSection() {
         <>
         {sectionData.map((data) => (
             <section className="textSection" key={data.id}>
-                {data?.podcastSection.map((section) => (
-                    <TagHeadlineSubheadline key={section.id} section={section}/>      
+                {data?.podcastSection.map((data) => (
+                    <TagHeadlineSubheadline key={data.id} data={data}/>      
                 ))}  
             </section>   
         ))}

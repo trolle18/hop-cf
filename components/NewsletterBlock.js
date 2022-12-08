@@ -19,8 +19,8 @@ export default function NewsletterBlock() {
         <>
         {sectionData.map((data) => (
             <section className="textSection" key={data.id}>
-                {data?.newsletterBlock.map((section) => (
-                    <TagHeadlineSubheadline key={section.id} section={section}/>      
+                {data?.newsletterBlock.map((data) => (
+                    <TagHeadlineSubheadline key={data.id} data={data}/>      
                 ))}  
             </section>   
         ))}

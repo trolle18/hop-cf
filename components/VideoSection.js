@@ -7,46 +7,46 @@ import VideoArticle from './VideoArticle';
 import TagHeadlineSubheadline from './TextSectionModules/TagHeadlineSubheadline';
 import SwiperCarouselVideos from './SwiperCarouselVideos';
 
-export default function VideoSection() {
-    const [sectionData, setSectionData] = useState([]);
-    const [articleData, setArticleData] = useState([]);
+export default function VideoSection({ data }) {
+    // const [sectionData, setSectionData] = useState([]);
+    // const [articleData, setArticleData] = useState([]);
 
-    // Fetch data from JSON
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/homePageData.json");
-            const data = await response.json();
-            setSectionData(data);             
-        }       
-        getData();        
-    }, []);
+    // // Fetch data from JSON
+    // useEffect(() => {
+    //     async function getData() {
+    //         const response = await fetch("/data/homePageData.json");
+    //         const data = await response.json();
+    //         setSectionData(data);             
+    //     }       
+    //     getData();        
+    // }, []);
 
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/components/videoArticles.json");
-            const data = await response.json();
-            setArticleData(data);             
-        }       
-        getData();        
-    }, []);
+    // useEffect(() => {
+    //     async function getData() {
+    //         const response = await fetch("/data/components/videoArticles.json");
+    //         const data = await response.json();
+    //         setArticleData(data);             
+    //     }       
+    //     getData();        
+    // }, []);
 
     return (
         <>
-        {sectionData.map((data) => (
+        {/* {sectionData.map((data) => ( */}
             <section className="textSection textSection-underlined" key={data.id}>
-                {data?.videoSection.map((section) => (
-                    <TagHeadlineSubheadline key={section.id} section={section}/>      
-                ))}  
+                {/* {data?.videoSection.map((data) => ( */}
+                    <TagHeadlineSubheadline key={data.id} data={data}/>      
+                {/* ))}   */}
             </section>   
-        ))}
+        {/* ))} */}
         
         <section className="video-section">
-            {sectionData.map((data) => (
+            {/* {sectionData.map((data) => ( */}
                 <div key={data.id} className="video-section-main">
-                    {data?.videoSection.map((section) => (
-                        <div key={section.id} className="video-section-main__feature-cntr">
+                    {/* {data?.articles.map((section) => ( */}
+                        <div className="video-section-main__feature-cntr">
                             <div className="video-section-main__feature-cntr__feature">
-                                {section.articles
+                                {data.articles
                                 .filter((data) => data.styleTag.includes('feature'))
                                 .map((data) => (
                                     <VideoArticle key={data.id} data={data}/>
@@ -55,10 +55,10 @@ export default function VideoSection() {
                             <div className="video-section-main__feature-cntr__regular">
                             </div>   
                         </div>
-                    ))}
+                    {/* ))} */}
                 </div>
-            ))}
-            <SwiperCarouselVideos />                                  
+            {/* ))} */}
+            <SwiperCarouselVideos key={data.id} data={data} />                                  
         </section>
         </>
     )

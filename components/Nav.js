@@ -5,7 +5,7 @@ import SearchField from './SearchField';
 const Nav = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [sectionData, setSectionData] = useState([]);
+  // const [sectionData, setSectionData] = useState([]);
 
   // Hide navbar on scroll
   const controlNavbar = () => {
@@ -27,20 +27,36 @@ const Nav = () => {
   }, [lastScrollY]);
 
   // Fetch data from JSON
-  useEffect(() => {
-    async function getData() {
-        const response = await fetch("/data/components/navData.json");
-        const data = await response.json();
-        setSectionData(data);             
-    }       
-      getData();        
-  }, []);
+  // useEffect(() => {
+  //   async function getData() {
+  //       const response = await fetch("/data/components/navData.json");
+  //       const data = await response.json();
+  //       setSectionData(data);             
+  //   }       
+  //     getData();        
+  // }, []);
+
+  const [sectionData, setSectionData] = useState(null)
+    const [isLoading, setLoading] = useState(false)
+  
+    useEffect(() => {
+      setLoading(true)
+      fetch('/api/nav')
+        .then((res) => res.json())
+        .then((sectionData) => {
+          setSectionData(sectionData)
+          setLoading(false)
+        })
+    }, [])
+  
+    if (isLoading) return <p>Loading...</p>
+    if (!sectionData) return <p>No data</p>
 
 
   return (
     <>
       <nav className={`active ${show && ''}`} id="nav">
-        {sectionData.map((data) => (
+        {sectionData.data.map((data) => (
           <div key={data.id} className="nav-cntr">
             <div className="nav-inner-cntr">
 
