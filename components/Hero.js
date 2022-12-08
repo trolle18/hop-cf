@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import CtaBtn from './CtaBtn';
+import { onSnapshot, query } from 'firebase/firestore';
+import { homepageRef } from '../firebaseConfig';
 
-export default function Hero() {
+export default function Hero({data}) {
     const [sectionData, setSectionData] = useState([]);
 
     // Fetch data from JSON
@@ -14,6 +16,17 @@ export default function Hero() {
         }       
         getData();        
     }, []);
+
+    // useEffect(() => {
+    //     const q = query(homepageRef);
+    //     const unsubscribe = onSnapshot(q, (data) => {
+    //       const homepageData = data.docs.map((doc) => {
+    //         return { ...doc.data(), id: doc.id };
+    //       });
+    //       setSectionData(homepageData);
+    //     });
+    //     return () => unsubscribe();
+    //   }, []);
 
     return (
         <>
