@@ -51,15 +51,20 @@ export default function Home() {
             {data.videoSection?.map((data) => ( 
               <VideoSection key={data.id} data={data}/>
             ))} 
+
+            {data.podcastSection?.map((data) => ( 
+              <PodcastSection key={data.id} data={data}/>
+            ))} 
+
+            {data.newsletterBlock?.map((data) => ( 
+              <NewsletterBlock key={data.id} data={data}/>
+            ))} 
           </>   
         ))}
 
         {/* <TextCtaSection/> */}
         {/* <MasonGridSection/>     */}
         {/* <TextInfoSection/>     */}
-        {/* <VideoSection/> */}
-        <PodcastSection/>
-        <NewsletterBlock/>
       </main>
     </>
   )
