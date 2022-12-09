@@ -253,7 +253,7 @@ export const homepageData = [
         link: [
           {
             id: 422,
-            text: "Flere bevigenheder",
+            text: "Flere begivenheder",
             url: "/"
           }
         ],
@@ -435,7 +435,7 @@ export const homepageData = [
         link: [
           {
             id: 9342,
-            text: "Flere videor",
+            text: "Flere videoer",
             url: "/"
           }
         ],

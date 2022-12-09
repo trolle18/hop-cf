@@ -9,7 +9,7 @@ export default function SwiperArticlePodcast ( {data} ) {
                     {data.img.map((img) => (
                         <Image key={img.id} src={img.src} alt={img.alt} height={100} width={100} />
                     ))}
-
+                    <div className="podcast-icon"></div>
                    
                 </div>
                 <div className="swiper-article-cont">
@@ -24,7 +24,7 @@ export default function SwiperArticlePodcast ( {data} ) {
                     </div>
                     
                     <div className="seeMore-cntr">
-                        <div className="seeMore-cntr__inner-cntr">
+                        <div className="seeMore-cntr__inner-cntr"> 
                             <div className="arrow-top-right-cntr"><span className="arrow-top-right"></span></div>
                         </div>
                     </div>

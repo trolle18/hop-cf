@@ -89,22 +89,20 @@
       object-position: center center;
       position: absolute;
     }
+    .podcast-icon {
+      position: absolute;
+      height: 4em;
+      width: 4em;
+      right: .5em;
+      top: .5em;
+      z-index: 999;
+      background-image: url("../abstracts/assets/podhop.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, .25));
+    } 
   }
-
-  // &__img-cntr {
-  //   height: 280px;
-  //   width: 100%;
-  //   position: relative;
-
-  //   img {            
-  //     height: 100%;
-  //     width: 100%;
-  //     margin: 0;
-  //     object-fit: cover;
-  //     object-position: center center;
-  //     position: absolute;
-  //   }
-  // }
 
   .swiper-article-cont {
       &__txt {
@@ -137,20 +135,15 @@
       margin: 0 0;
       padding: 1em 0 1em 0;
       border-top: 0px;
-      border-bottom: solid $clr_m_grey 1px;
+      border-bottom: solid $clr_ml_grey 1px;
     
       &__inner-cntr {
-        .arrow-top-right-cntr {
-          margin: 0 0 0 auto;
-          right: 0;
-          display: flex;
-          align-items: flex-end;
-          transform: rotate(90deg);
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
 
-          .arrow-top-right {
-            right: 0;
-            margin: 0 0 0 auto;
-          }
+        .arrow-top-right-cntr {
+          transform: rotate(90deg);
         }
       }
     }

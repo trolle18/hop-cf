@@ -16,7 +16,7 @@ export default function PodcastSection({ data }) {
 
         <section className="textSection theme-l-grey"> */}
             <div className="textSection__cntr"> 
-                <div className="seeMore-cntr">
+                <div className="seeMore-cntr no-bordertopline">
                     <SeeMoreCtaLink data={data}/>
                 </div> 
             </div>
