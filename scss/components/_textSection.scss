@@ -36,7 +36,7 @@
     padding: 0 2em;
 
     &__inner-cntr {
-      width: 100%;
+      width: 100%;     
 
       .txt-cntr {
         display: flex;
@@ -81,11 +81,14 @@
     }
 
   }
-
-  
 }
 
-
+.top-bottom-spacer {
+  margin: 5em 0 8em 0;
+}
+.top-bottom-pad {
+  margin: 4em 0;
+}
 
 @media (min-width: 600px) {
   .textSection {    
@@ -106,7 +109,7 @@
         }
 
         .headline-cntr.headline-60w {
-          width: 80%;
+          width: 60%;
         }
 
         .txt-cntr {
@@ -199,7 +202,5 @@
         }
       }
     }
-   
   }
-
 }

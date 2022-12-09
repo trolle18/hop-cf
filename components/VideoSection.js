@@ -1,6 +1,8 @@
 import VideoArticle from './VideoArticle';
 import TagHeadlineSubheadline from './TextSectionModules/TagHeadlineSubheadline';
 import SwiperCarouselVideos from './SwiperCarouselVideos';
+import SeeMoreCtaLink from './SeeMoreCtaLink';
+import SwiperCarousel from './SwiperCarousel';
 
 export default function VideoSection({ data }) {
 
@@ -9,7 +11,7 @@ export default function VideoSection({ data }) {
             <section className="textSection textSection-underlined theme-l-grey">
                 <TagHeadlineSubheadline data={data}/>      
             </section>   
-            {/* <section className='section-wrapper'> */}
+
             <section className="video-section theme-l-grey">
                 <div className="video-section-main">
                     <div className="video-section-main__feature-cntr">
@@ -24,11 +26,16 @@ export default function VideoSection({ data }) {
                         </div>   
                     </div>
                 </div>
-                <div  className="theme-d-grey">
-                <SwiperCarouselVideos key={data.id} data={data} />                                  
-                </div>
+                                         
+                <section className="textSection theme-d-grey">
+                    <SwiperCarousel key={data.id} data={data} />
+                    <div className="textSection__cntr"> 
+                        <div className="seeMore-cntr">
+                            <SeeMoreCtaLink data={data}/>
+                        </div> 
+                    </div>     
+                </section>
             </section>
-            {/* </section> */}
         </>
     )
 }

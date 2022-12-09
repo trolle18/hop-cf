@@ -108,8 +108,8 @@ export const homepageData = [
         link: [
           {
             id: 122,
-            text: "",
-            url: ""
+            text: "Flere nyheder",
+            url: "/"
 
           }
         ],
@@ -391,12 +391,26 @@ export const homepageData = [
           {
             id: 8832,
             headline: "Udbredelse",
-            text: "Gennem en bestemmende aktiepost at sikre værdiskabelsen i Carlsberg A/S, udbredelse af Carlsberg som et anerkendt ølmærke samt udvikle ølbrygning til den størst mulige fuldkommenhed."
+            text: "Gennem en bestemmende aktiepost at sikre værdiskabelsen i Carlsberg A/S, udbredelse af Carlsberg som et anerkendt ølmærke samt udvikle ølbrygning til den størst mulige fuldkommenhed.",
+            img: [
+              {
+                id: 121213,
+                src: "/data/media/udbredelse.svg",
+                alt: "Udbredelse svg"
+              }
+            ]
           },
           {
             id: 9933,
             headline: "Støtte",
-            text: "Uddeling af aktier i Carlsberg A/S til velgørende formål ved at virke til fremme af og støtte for naturvidenskaberne samt matematik og filosofi, de humanistiske videnskaber og samfundsvidenskaberne."
+            text: "Uddeling af aktier i Carlsberg A/S til velgørende formål ved at virke til fremme af og støtte for naturvidenskaberne samt matematik og filosofi, de humanistiske videnskaber og samfundsvidenskaberne.",
+            img: [
+              {
+                id: 121213,
+                src: "/data/media/støtte.svg",
+                alt: "Støtte svg"
+              }
+            ]
           }
         ],
         link: [
