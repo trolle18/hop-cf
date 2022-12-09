@@ -8,7 +8,7 @@ export default function VideoSection({ data }) {
 
     return (
         <>
-            <section className="textSection textSection-underlined theme-l-grey">
+            <section className="textSection theme-l-grey">
                 <TagHeadlineSubheadline data={data}/>      
             </section>   
 

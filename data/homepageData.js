@@ -100,10 +100,10 @@ export const homepageData = [
     txtSliderSection: [
       {
         id: 214,
-        tag: "Nyheder",
-        headline: "Hvad sker der?",
+        tag: "",
+        headline: "Nyheder",
         headline2nd: "",
-        subheadline: "Nyt om projekter, ansøgninger og alt det andet spændende der er relateret til og omkring Carlsberg-fondets arbejde.",
+        // subheadline: "Nyt om projekter, ansøgninger og alt det andet spændende der er relateret til og omkring Carlsberg-fondets arbejde.",
         text: "",
         link: [
           {
