@@ -16,11 +16,13 @@ const Nav = () => {
       } else { setShow(true) } // if scroll up show the navbar
       setLastScrollY(window.scrollY); // remember current page location to use in the next move
     }
-      // const y = window.getElementById("dropdown");
-      // if (y.classList.contains("show")) {
-      //   setShow(true); 
-      // } 
-      // else { setShow(false) }
+    // if (typeof window !== 'undefined') { 
+      const y = document.getElementById("dropdown");
+      const n = document.getElementById("nav");
+      if (y.classList.contains("show")) { // if dropdown is shown, dont hide nav on scroll
+        n.classList.add("show")
+        setShow(true); 
+      }  
   };
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -31,24 +33,6 @@ const Nav = () => {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lastScrollY]);
-
-  // Open burger menu
-  const openMenu = () => {
-    const button = document.getElementById("menu-btn");
-    const y = document.getElementById("dropdown");
-    const x = document.getElementById("nav");
-    button.classList.toggle("change");
-
-    if (y.classList.contains("hidden")) {
-      y.classList.remove("hidden");
-      y.classList.add("show");    
-    } else {
-      y.classList.remove("show");
-      y.classList.add("hidden");
-      x.classList.add("show");
-      x.classList.remove("false");
-    }
-  }
 
   // Fetch data
   useEffect(() => {
@@ -74,19 +58,7 @@ const Nav = () => {
             <div className="nav-inner-cntr">
 
               <div className="nav-mob-links">                 
-                {/* <BurgerMenu data={data}/> */}
-                <button onClick={openMenu} className="nav-mob-links__menu-btn" id="menu-btn">
-                  <svg viewBox="0 0 10 8"><path d="M1 1h8M1 4h 8M1 7h8"/></svg>
-                </button>
-                <div className="nav-mob-links__dropdown hidden" id="dropdown">
-                  {data?.navLinks.map((navLink) => (
-                    <div  key={navLink.id} className="nav-mob-links__dropdown__link">
-                      <a key={navLink.id} href={navLink.link}>
-                        <span>{navLink.linkTxt}</span>              
-                      </a>
-                    </div>          
-                  ))} 
-                </div>
+                <BurgerMenu data={data}/>
               </div>   
 
               <div className="nav-inner-cntr__links">
