@@ -19,7 +19,7 @@ export const homepageData = [
         img: [
           {
             id: 1010122,
-            src: "/data/media/hero.png",
+            src: "/data/media/gettywhales.png",
             alt: "hero image"
           }
         ],

@@ -40,7 +40,7 @@ export default function TextCtaSection({ data }) {
 
                         <div className="grid-2-2__col-3 img-cntr">
                             {data?.img?.map((img) => (
-                              <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
+                              <Image key={img.id} src={img.src} alt={img.alt} width={300} height={300} />
                             ))}                              
                         </div>                    
                     </div>   

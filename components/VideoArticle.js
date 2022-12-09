@@ -8,7 +8,7 @@ export default function VideoArticle ( {data} ) {
                 <div className="article-img">
                     <div className="article-img__img-cntr">
                         {data.img.map((img) => (
-                            <Image key={img.id} src={img.src} alt={img.alt} height={100} width={100} />
+                            <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1000} />
                         ))}
                     </div>
                     

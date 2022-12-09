@@ -49,18 +49,14 @@ const SwiperCarouselVideos = ({ data }) => {
                 }
             }}
             >
-                {data.articles.map((data) => (
+                {data.articles
+                .filter((data) => data.styleTag.includes('regular'))
+                .map((data) => (
                     <SwiperSlide key={data.id}>
                         <SwiperArticle data={data}/>
                     </SwiperSlide>
                 ))}
             </Swiper>
-            {/* <div className="seeMore-cntr">
-                <div className="seeMore-cntr__inner-cntr">
-                    <div className="arrow-top-right-cntr"><span className="arrow-top-right"></span></div>
-                    <p>Flere videoer</p>
-                </div>
-            </div> */}
         </div>
         </>
     )

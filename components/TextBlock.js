@@ -26,7 +26,7 @@ export default function TextBlock({ data }) {
                             <div className="img-cntr">
                                 <div className="img-cntr__inner-cntr">
                                     {data?.img.map((img) => (
-                                        <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
+                                        <Image key={img.id} src={img.src} alt={img.alt} width={600} height={600} />
                                     ))}                              
                                 </div>
                             </div>                           

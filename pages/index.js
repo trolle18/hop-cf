@@ -9,6 +9,7 @@ import NewsletterBlock from '../components/NewsletterBlock'
 import PodcastSection from '../components/PodcastSection'
 import PurposeSection from '../components/PurposeSection';
 import Nav from '../components/Nav';
+import LoadModal from '../components/LoadModal';
 
 export default function Home() {
   const [sectionData, setSectionData] = useState(null)
@@ -40,6 +41,10 @@ export default function Home() {
         <>
         <Nav/>
         <main className="page" key={data.id}>
+
+        {/* {data.hero?.map((data) => (  */}
+            <LoadModal />
+          {/* ))}  */}
 
           {data.hero?.map((data) => ( 
             <Hero key={data.id}  data={data}/>

@@ -1,0 +1,81 @@
+.modal-wrapper {
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  overflow: hidden;
+  display: block;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .modal {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: $clr_lightest_green;
+    animation: expand .8s ease forwards;
+
+    .modal-cntr {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    
+    &__img-cntr {
+      position: absolute;
+      height: 20%;
+      width: 20%;
+      background-color: $clr_lightest_green;
+      background-image: url("../../public/data/media/logo/Hops-Large-DarkGreen-Fill.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;   
+    }
+  
+  }
+  }
+}
+
+.overlay {
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -10;
+  background-color: $clr_lightest_green;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100vw) scale(.2);
+  }
+  100% {
+    transform: translateX(0pvw) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300vhx);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(0vw);
+  } 
+  50% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  } 
+}
+
+

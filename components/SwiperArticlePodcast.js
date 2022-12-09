@@ -7,7 +7,7 @@ export default function SwiperArticlePodcast ( {data} ) {
             <article className="swiper-article podcast-article" key={data.id}>
                 <div className="img-cntr">
                     {data.img.map((img) => (
-                        <Image key={img.id} src={img.src} alt={img.alt} height={100} width={100} />
+                        <Image key={img.id} src={img.src} alt={img.alt} height={600} width={600} />
                     ))}
                     <div className="podcast-icon"></div>
                    
