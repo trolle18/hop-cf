@@ -10,17 +10,9 @@ export default function TextBlock({ data }) {
                     <div className="textBlock__cntr__inner-cntr"> 
 
                         <div className="textBlock__cntr__inner-cntr__col-1">
-                        {/* <div className="col-1-img-cntr">
-                                <div className="img-cntr__inner-cntr">
-                                    {data?.img.map((img) => (
-                                        <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
-                                    ))}                              
-                                </div>
-                            </div> */}
                             <div className="textBlock__cntr__inner-cntr__col-1__headline">
                                 <h2>{data?.headline}</h2>
                             </div>   
-
                             <div className="textBlock__cntr__inner-cntr__col-1__text">
                                 {data?.textSec.map((text) => (
                                     <p key={text.id}>
@@ -37,14 +29,18 @@ export default function TextBlock({ data }) {
                                         <Image key={img.id} src={img.src} alt={img.alt} width={100} height={100} />
                                     ))}                              
                                 </div>
-                            </div>
+                            </div>                           
+                        </div>
+                    {/* </div>
+                    <div className="textBlock__cntr__inner-cntr">  */}
 
+                        <div className="textBlock__cntr__inner-cntr__col-3">
                             <div className="cta-btn-cntr ylw-cta arrow-top-r">
                                 {data?.link.map((link) => (
                                     <CtaBtn key={link.id} link={link}/>                          
                                 ))}
                             </div>
-                        </div>
+                        </div>                          
 
                     </div>   
                 </div>         
