@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        z-index: 999;
+        z-index: 10;
         gap: 5em;
 
         &__headline {
@@ -95,7 +95,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 2em;
-        z-index: 999;
+        z-index: 10;
 
         .cta-btn-cntr {
           margin: 0 auto;

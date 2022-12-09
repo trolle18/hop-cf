@@ -5,26 +5,26 @@ export default function BurgerMenu({data}) {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  // HIDE DROPDOWN ON SCROLL
-  const controlShow = () => {
-    if (typeof window !== 'undefined') { 
-      if (window.scrollY > lastScrollY) { // if scroll down hide
-        setShow(false); 
-      } else { setShow(true) } // if scroll up show 
-      setLastScrollY(window.scrollY); // remember current page location to use in the next move
-    }
-  };
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlShow);
-      return () => { // cleanup function
-        window.removeEventListener('scroll', controlShow);
-      };
-    }
-  }, [lastScrollY]);
+  // Hide drop down on scroll
+  // const controlShow = () => {
+  //   if (typeof window !== 'undefined') { 
+  //     if (window.scrollY > lastScrollY) { // if scroll down hide
+  //       setShow(false); 
+  //     } else { setShow(true) } // if scroll up show 
+  //     setLastScrollY(window.scrollY); // remember current page location to use in the next move
+  //   }
+  // };
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     window.addEventListener('scroll', controlShow);
+  //     return () => { // cleanup function
+  //       window.removeEventListener('scroll', controlShow);
+  //     };
+  //   }
+  // }, [lastScrollY]);
 
 
-  // OPEN BURGER MENU
+  // Open burger menu
   const openMenu = () => {
     const button = document.getElementById("menu-btn");
     const y = document.getElementById("dropdown");
