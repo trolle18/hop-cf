@@ -55,22 +55,6 @@ export default function TextFondetsMidler({ data }) {
 
                                 </div>
 
-                                {/* <div className="grid-rows__row-cntr__inner-cntr__col">                               
-                                    <div className="grid-rows__row-cntr__inner-cntr__col__link">
-
-
-                                        {data.link.map((data) => (
-                                            <div className="seeMore-cntr__inner-cntr" key={data.id}>  
-                                                <div className="arrow-cntr">
-                                                    <span className="arrow-down-right"></span>
-                                                </div>                                        
-                                                <p>{data.text}</p>                                            
-                                            </div>  
-                                        ))}
-
-                                    </div>
-                                </div> */}
-
                             </div>
                         </div>
                     ))} 
