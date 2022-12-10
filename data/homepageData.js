@@ -466,6 +466,13 @@ export const homepageData = [
                 alt: "img"
               }
             ],
+            video: [
+              {
+                id: 988332,
+                src: "/data/media/videos/galaxer.mp4",
+                alt: "video"
+              }
+            ],
             link: [
               {
                 id: 5951,
@@ -493,6 +500,13 @@ export const homepageData = [
                 id: 620,
                 src: "/data/media/vidarticle2.png",
                 alt: "img"
+              }
+            ],
+            video: [
+              {
+                id: 92824,
+                src: "/data/media/videos/greenland1.mp4",
+                alt: "video"
               }
             ],
             link: [
@@ -524,6 +538,13 @@ export const homepageData = [
                 alt: "img"
               }
             ],
+            video: [
+              {
+                id: 87824,
+                src: "/data/media/videos/science.mp4",
+                alt: "video"
+              }
+            ],
             link: [
               {
                 id: 853,
@@ -551,6 +572,13 @@ export const homepageData = [
                 id: 5141,
                 src: "/data/media/vidarticle4.png",
                 alt: "img"
+              }
+            ],
+            video: [
+              {
+                id: 11137324,
+                src: "/data/media/videos/greenland2.mp4",
+                alt: "video"
               }
             ],
             link: [
