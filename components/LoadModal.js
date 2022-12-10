@@ -4,14 +4,12 @@ export default function LoadModal() {
 
     return (
         <>
-        <section className="modal-wrapper">
+        <section className="modal-wrapper modal-theme-lightest-green modal-hops-light-green">
+            <div className="modal-overlay"></div>
             <div className="modal">
-                <div className='overlay'></div>
+                
                 <div className="modal-cntr">                    
                     <div className="modal-cntr__img-cntr">
-                        {/* {data.img.map((img) => ( */}
-                            {/* <Image src="/data/img" alt="modal" height={1000} width={1000} /> */}
-                        {/* ))} */}
                     </div>
                 </div>            
                 

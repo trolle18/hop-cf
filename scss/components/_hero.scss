@@ -22,7 +22,13 @@
           width: auto;
           top: 0%;
           right: 0%;
-          // background-position: right;
+        }
+        &::after {
+          height: 100%;
+          width: auto;
+          display: block;
+          position: absolute;
+          background-color: rgba(0, 0, 0, .6);
         }
       }
 
