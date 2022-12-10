@@ -36,12 +36,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
-      {sectionData.homepageData.map((data) => (
-        <>
-        <Nav/>
-        <main className="page" key={data.id}>
+      <Nav />
 
+      {sectionData.homepageData.map((data) => (
+        
+        <main className="page" key={data.id}>
         {/* {data.hero?.map((data) => (  */}
             <LoadModal />
           {/* ))}  */}
@@ -75,7 +74,6 @@ export default function Home() {
           ))}       
 
       </main>
-      </>
       ))}
     </>
   )

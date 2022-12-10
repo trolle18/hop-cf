@@ -24,6 +24,20 @@
         position: absolute;
       }
     }
+    &__video-cntr {
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      video {            
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+      }
+    }
   }
 
   .article-cnt {

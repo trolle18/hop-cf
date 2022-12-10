@@ -1,30 +1,12 @@
-import { useEffect, useState, useRef } from "react";
 import SwiperArticle from "./SwiperArticle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 
 const SwiperCarousel = ({ data }) => {
 
-    // const [sectionData, setSectionData] = useState(null)
-    // const [isLoading, setLoading] = useState(false)
-  
-    // useEffect(() => {
-    //   setLoading(true)
-    //   fetch('/api/articles')
-    //     .then((res) => res.json())
-    //     .then((sectionData) => {
-    //       setSectionData(sectionData)
-    //       setLoading(false)
-    //     })
-    // }, [])
-  
-    // if (isLoading) return <p>Loading...</p>
-    // if (!sectionData) return <p>No data</p>
-
-
     return (
         <>
-        <div className="swiper-cntr">        
+        <div className="swiper-cntr swiper-news-cntr">        
             <Swiper
             spaceBetween={ 20 }
             slidesPerView={ 3 }

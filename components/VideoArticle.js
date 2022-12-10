@@ -2,26 +2,43 @@ import Image from "next/image";
 
 export default function VideoArticle ( {data} ) {
 
+    function getMedia(data) {
+        if (data.video.alt === "video") {
+            return (
+                <div className="article-img__video-cntr">
+                    {data.video?.map((video) => (
+                        <video
+                        key={video.id}
+                        // autoPlay
+                        muted
+                        controls={true}
+                        // loop
+                        >
+                            <source src={video.src}/>
+                        </video>
+                    ))}                        
+                </div>
+                
+            )
+        }
+          if (data.video.alt != "video") {
+            return (
+                <div className="article-img__img-cntr">
+                    {data.img.map((img) => (
+                        <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1000} />
+                    ))}
+                </div>
+            )
+        }
+    }
+    
+
+
     return (
         <>
             <article className="video-article" key={data.id}>
                 <div className="article-img">
-                    <div className="article-img__img-cntr">
-                        {data.img.map((img) => (
-                            <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1000} />
-                        ))}
-                    </div>
-                    
-                    {/* {data.link.map((link) => (
-                        <>
-                        <button className="play-btn">
-                        <a className="article-img__play-btn__link" key={link.id}>
-                            <span className="play-btn__text">{link.text}</span>
-                            <span className="play-btn__icon"></span>
-                        </a>
-                        </button>
-                        </>
-                    ))} */}
+                    {getMedia(data)}
                     
                 </div>
                 <div className="article-cnt">

@@ -3,6 +3,8 @@ export const homepageData = [
     id: 110022,
     type: "landingpage",
     theme: "theme-midnight-green",
+
+    
     nav: [
       {
         id: 11002,
@@ -128,7 +130,7 @@ export const homepageData = [
             styleTag: "styletag",
             tag: "news",
             category: "news",
-            headline: "En nyhed behøver ikke altid et billede. Der kan bruges f.eks et citat fra en forsker.",
+            headline: "Indlandsis, hvalfangere og jordbrug kan blandt andet stå her som en overskrift.",
             text: "Lorem ipsum dolor sit amet",
             createdDate: "12.11.2022",
             updatedDate: "12.11.2022",
@@ -143,7 +145,7 @@ export const homepageData = [
             img: [
               {
                 id: 3121,
-                src: "/data/media/newsarticle.png",
+                src: "/data/media/article1.png",
                 alt: "Citat img"
               }
             ]
@@ -156,7 +158,7 @@ export const homepageData = [
             styleTag: "styletag",
             tag: "news",
             category: "news",
-            headline: "Da H.H.M. Dronningen kom på uanmeldt visit",
+            headline: "Carlsbergfondet får en ny direktør",
             text: "Lorem ipsum dolor sit amet",
             createdDate: "12.11.2022",
             updatedDate: "12.11.2022",
@@ -171,7 +173,7 @@ export const homepageData = [
             img: [
               {
                 id: 2331,
-                src: "/data/media/hhmnewsarticle.png",
+                src: "/data/media/direktør1.png",
                 alt: "img"
               }
             ]
@@ -184,7 +186,7 @@ export const homepageData = [
             styleTag: "styletag",
             tag: "news",
             category: "news",
-            headline: "Noget om en ny ansat i fondet.",
+            headline: "Månedens forsker: Jeg har været facineret af detaljen",
             text: "Lorem ipsum dolor sit amet",
             createdDate: "12.11.2022",
             updatedDate: "12.11.2022",
@@ -494,7 +496,8 @@ export const homepageData = [
               {
                 id: 988332,
                 src: "/data/media/videos/galaxer.mp4",
-                alt: "video"
+                alt: "video",
+                img: "/data/media/vidarticle1.png"
               }
             ],
             link: [
@@ -505,8 +508,7 @@ export const homepageData = [
                 type: "play"
               }
             ]
-          },
-        
+          },        
           {
             id: 5224,
             online: "y",
@@ -530,7 +532,8 @@ export const homepageData = [
               {
                 id: 92824,
                 src: "/data/media/videos/greenland1.mp4",
-                alt: "video"
+                alt: "video",
+                img: "/data/media/vidarticle2.png"
               }
             ],
             link: [
@@ -541,8 +544,7 @@ export const homepageData = [
                 type: "play"
               }
             ]
-          },
-        
+          },        
           {
             id: 532,
             online: "y",
@@ -566,7 +568,8 @@ export const homepageData = [
               {
                 id: 87824,
                 src: "/data/media/videos/science.mp4",
-                alt: "video"
+                alt: "video",
+                img: "/data/media/vidarticle3.png"
               }
             ],
             link: [
@@ -577,8 +580,7 @@ export const homepageData = [
                 type: "play"
               }
             ]
-          },
-        
+          },        
           {
             id: 995,
             online: "y",
@@ -602,7 +604,152 @@ export const homepageData = [
               {
                 id: 11137324,
                 src: "/data/media/videos/greenland2.mp4",
-                alt: "video"
+                alt: "video",
+                img:  "/data/media/vidarticle4.png"
+              }
+            ],
+            link: [
+              {
+                id: 3921,
+                text: "Afspil",
+                url: "/",
+                type: "play"
+              }
+            ]
+          },
+          {
+            id: 29276,
+            online: "y",
+            type: "video",
+            styleTag: "regular",
+            tag: "Talk",
+            category: "category",
+            headline: "På jagt efter spike proteinets akilleshæl",
+            text: "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
+            time: "03:53",
+            createdDate: "12.11.2022",
+            updatedDate: "12.11.2022",
+            img: [
+              {
+                id: 5141,
+                src: "/data/media/vidarticleimg.png",
+                alt: "img"
+              }
+            ],
+            video: [
+              {
+                id: 11137324,
+                src: "/data/media/videos/greenland1.mp4",
+                alt: "video",
+                img: "/data/media/vidarticle4.png",
+              }
+            ],
+            link: [
+              {
+                id: 3921,
+                text: "Afspil",
+                url: "/",
+                type: "play"
+              }
+            ]
+          },
+          {
+            id: 51922,
+            online: "y",
+            type: "video",
+            styleTag: "regular",
+            tag: "Talk",
+            category: "category",
+            headline: "Indlandsisen vil smelte hurtigere mod 2100 end hidtil antaget.",
+            text: "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
+            time: "03:53",
+            createdDate: "12.11.2022",
+            updatedDate: "12.11.2022",
+            img: [
+              {
+                id: 8360,
+                src: "/data/media/vidarticle3.png",
+                alt: "img"
+              }
+            ],
+            video: [
+              {
+                id: 87824,
+                src: "/data/media/videos/science.mp4",
+                alt: "video",
+                img: "/data/media/vidarticle3.png"
+              }
+            ],
+            link: [
+              {
+                id: 853,
+                text: "Afspil",
+                url: "/",
+                type: "play"
+              }
+            ]
+          },        
+          {
+            id: 21915,
+            online: "y",
+            type: "video",
+            styleTag: "regular",
+            tag: "Talk",
+            category: "category",
+            headline: "På jagt efter spike proteinets akilleshæl",
+            text: "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
+            time: "03:53",
+            createdDate: "12.11.2022",
+            updatedDate: "12.11.2022",
+            img: [
+              {
+                id: 5141,
+                src: "/data/media/vidarticle4.png",
+                alt: "img"
+              }
+            ],
+            video: [
+              {
+                id: 11137324,
+                src: "/data/media/videos/greenland2.mp4",
+                alt: "video",
+                img:  "/data/media/vidarticle4.png"
+              }
+            ],
+            link: [
+              {
+                id: 3921,
+                text: "Afspil",
+                url: "/",
+                type: "play"
+              }
+            ]
+          },
+          {
+            id: 991188446,
+            online: "y",
+            type: "video",
+            styleTag: "regular",
+            tag: "Talk",
+            category: "category",
+            headline: "På jagt efter spike proteinets akilleshæl",
+            text: "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
+            time: "03:53",
+            createdDate: "12.11.2022",
+            updatedDate: "12.11.2022",
+            img: [
+              {
+                id: 5141,
+                src: "/data/media/vidarticleimg.png",
+                alt: "img"
+              }
+            ],
+            video: [
+              {
+                id: 11137324,
+                src: "/data/media/videos/greenland1.mp4",
+                alt: "video",
+                img: "/data/media/vidarticle4.png",
               }
             ],
             link: [
