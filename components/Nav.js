@@ -15,7 +15,7 @@ const Nav = () => {
     // Hide navbar on scroll
     const navBackground = () => {
       if (typeof window !== 'undefined') { 
-        if (window.scrollY > 400) { // if scroll down hide the navbar
+        if (window.scrollY > 600) { // if scroll down hide the navbar
           setNavbg(false); 
         } else { setNavbg(true) } // if scroll up show the navbar
       }
