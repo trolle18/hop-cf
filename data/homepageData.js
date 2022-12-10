@@ -79,7 +79,7 @@ export const homepageData = [
 
     txtCtaSection: [
       {
-        id: 213,
+        id: 21983,
         headline: "Frist:",
         headline2nd: "1 Oktober",
         subheadline: "Ønsker du at få del i Carlsbergfondets midler til grundvidenskabelig forskning inden for naturvidenskab, samfundsvidenskab og humaniora?",
@@ -122,119 +122,143 @@ export const homepageData = [
         ],
         articles: [
           {
-            id: 113,
+            id: 312,
             online: "y",
-            type: "video",
-            styleTag: "feature",
-            tag: "Talk",
-            category: "category",
-            headline: "Uden galakser ville vi slet ikke eksistere",
-            text: "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
-            time: "10:37",
+            type: "article",
+            styleTag: "styletag",
+            tag: "news",
+            category: "news",
+            headline: "En nyhed behøver ikke altid et billede. Der kan bruges f.eks et citat fra en forsker.",
+            text: "Lorem ipsum dolor sit amet",
             createdDate: "12.11.2022",
             updatedDate: "12.11.2022",
-            img: [
-              {
-                id: 1330,
-                src: "/data/media/vidarticle1.png",
-                alt: "img"
-              }
-            ],
             link: [
               {
-                id: 5951,
-                text: "Afspil",
+                id: 2220,
+                txt: "Læs mere",
                 url: "/",
-                type: "play"
+                type: "read"
+              }
+            ],
+            img: [
+              {
+                id: 3121,
+                src: "/data/media/newsarticle.png",
+                alt: "Citat img"
               }
             ]
           },
         
           {
-            id: 5224,
+            id: 233,
             online: "y",
-            type: "video",
-            styleTag: "feature",
-            tag: "Talk",
-            category: "category",
-            headline: "På jagt efter spike proteinets akilleshæl",
-            text: "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
-            time: "03:53",
+            type: "article",
+            styleTag: "styletag",
+            tag: "news",
+            category: "news",
+            headline: "Da H.H.M. Dronningen kom på uanmeldt visit",
+            text: "Lorem ipsum dolor sit amet",
             createdDate: "12.11.2022",
             updatedDate: "12.11.2022",
-            img: [
-              {
-                id: 620,
-                src: "/data/media/vidarticle2.png",
-                alt: "img"
-              }
-            ],
             link: [
               {
-                id: 661,
-                text: "Afspil",
+                id: 2220,
+                txt: "Læs mere",
                 url: "/",
-                type: "play"
+                type: "read"
+              }
+            ],
+            img: [
+              {
+                id: 2331,
+                src: "/data/media/hhmnewsarticle.png",
+                alt: "img"
               }
             ]
           },
         
           {
-            id: 532,
+            id: 647,
             online: "y",
-            type: "video",
-            styleTag: "feature",
-            tag: "Talk",
-            category: "category",
-            headline: "Indlandsisen vil smelte hurtigere mod 2100 end hidtil antaget.",
-            text: "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
-            time: "03:53",
+            type: "article",
+            styleTag: "styletag",
+            tag: "news",
+            category: "news",
+            headline: "Noget om en ny ansat i fondet.",
+            text: "Lorem ipsum dolor sit amet",
             createdDate: "12.11.2022",
             updatedDate: "12.11.2022",
-            img: [
-              {
-                id: 8360,
-                src: "/data/media/vidarticle3.png",
-                alt: "img"
-              }
-            ],
             link: [
               {
-                id: 853,
-                text: "Afspil",
+                id: 2220,
+                txt: "Læs mere",
                 url: "/",
-                type: "play"
+                type: "read"
+              }
+            ],
+            img: [
+              {
+                id: 6471,
+                src: "/data/media/personnewsimg.png",
+                alt: "img"
               }
             ]
           },
         
           {
-            id: 995,
+            id: 222,
             online: "y",
-            type: "video",
-            styleTag: "feature",
-            tag: "Talk",
-            category: "category",
-            headline: "På jagt efter spike proteinets akilleshæl",
-            text: "Der har ikke altid eksisteret galakser. De er opstået i løbet af universets historie. Galakser bestsår af en form for fortætning af “mørkt stof” og gas. Tror Professor Johan Fynbo på at der er liv på andre planeter?",
-            time: "03:53",
+            type: "article",
+            styleTag: "styletag",
+            tag: "news",
+            category: "news",
+            headline: "En artikel omkring et gennembrud eller en opdagelse",
+            text: "Lorem ipsum dolor sit amet",
             createdDate: "12.11.2022",
             updatedDate: "12.11.2022",
-            img: [
-              {
-                id: 5141,
-                src: "/data/media/vidarticle4.png",
-                alt: "img"
-              }
-            ],
             link: [
               {
-                id: 3921,
-                text: "Afspil",
+                id: 2220,
+                txt: "Læs mere",
                 url: "/",
-                type: "play"
+                type: "read"
+              }
+            ],
+            img: [
+              {
+                id: 2221,
+                src: "/data/media/hedgehog.png",
+                alt: "News article"
               }
             ]
+          },
+        
+          {
+            id: 267,
+            online: "y",
+            type: "article",
+            styleTag: "styletag",
+            tag: "news",
+            category: "news",
+            headline: "Et forskningsprojekt der handler om bevarelsen af verdenshavene ",
+            text: "Lorem ipsum dolor sit amet",
+            createdDate: "12.11.2022",
+            updatedDate: "12.11.2022",
+            link: [
+              {
+                id: 2220,
+                txt: "Læs mere",
+                url: "/",
+                type: "read"
+              }
+            ],
+            img: [
+                {
+                  id: 2221,
+                  src: "/data/media/gettywhales.png",
+                  alt: "News article"
+                }
+              ]
           }
         ]
       }
@@ -598,7 +622,7 @@ export const homepageData = [
 
     newsletterBlock: [
       {
-        id: 213,
+        id: 2138276,
         tag: "Nyhedsbrev",
         headline: "Får du seneste nyt?",
         headline2nd: "",
@@ -618,7 +642,7 @@ export const homepageData = [
         ],
         img: [
           {
-            id: 111,
+            id: 11184411,
             src: "/data/media/Bryggeren5.jpg",
             alt: "calendar image"
 
@@ -626,7 +650,7 @@ export const homepageData = [
         ],
         link: [
           {
-            id: 122,
+            id: 122647,
             text: "Tilmeld",
             url: "/"
           }

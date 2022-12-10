@@ -5,12 +5,12 @@ export default function NewsletterBlock({ data }) {
 
     return (
         <>
-        <section className="textSection" key={data.id}>
-            <TagHeadlineSubheadline key={data.id} data={data}/>      
+        <section className="textSection" >
+            <TagHeadlineSubheadline data={data}/>      
         </section>   
 
-        <section className="newsletterBlock" key={data.id}>
-            <div key={data.id} className="newsletterBlock__cntr">
+        <section className="newsletterBlock" >
+            <div  className="newsletterBlock__cntr">
                 <div className="newsletterBlock__cntr__inner-cntr"> 
 
                     {data?.inputfields

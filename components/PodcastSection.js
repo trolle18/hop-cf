@@ -6,12 +6,12 @@ export default function PodcastSection({ data }) {
 
     return (
         <>
-        <section className="textSection theme-l-grey" key={data.id}>
-                <TagHeadlineSubheadline key={data.id} data={data}/>      
+        <section className="textSection theme-l-grey" >
+                <TagHeadlineSubheadline data={data}/>      
         {/* </section>    */}
         
         {/* <section className="video-section theme-l-grey"> */}
-            <SwiperCarouselPodcasts key={data.id} data={data}/>                        
+            <SwiperCarouselPodcasts data={data}/>                        
         {/* </section>
 
         <section className="textSection theme-l-grey"> */}

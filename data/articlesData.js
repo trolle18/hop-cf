@@ -19,12 +19,12 @@ export const data = [
       }
     ],
     img: [
-        {
-          id: 3121,
-          src: "/data/media/newsarticle.png",
-          alt: "Citat img"
-        }
-      ]
+      {
+        id: 3121,
+        src: "/data/media/newsarticle.png",
+        alt: "Citat img"
+      }
+    ]
   },
 
   {
@@ -103,39 +103,39 @@ export const data = [
       }
     ],
     img: [
+      {
+        id: 2221,
+        src: "/data/media/hedgehog.png",
+        alt: "News article"
+      }
+    ]
+  },
+
+  {
+    id: 267,
+    online: "y",
+    type: "article",
+    styleTag: "styletag",
+    tag: "news",
+    category: "news",
+    headline: "Et forskningsprojekt der handler om bevarelsen af verdenshavene ",
+    text: "Lorem ipsum dolor sit amet",
+    createdDate: "12.11.2022",
+    updatedDate: "12.11.2022",
+    link: [
+      {
+        id: 2220,
+        txt: "Læs mere",
+        url: "/",
+        type: "read"
+      }
+    ],
+    img: [
         {
           id: 2221,
-          src: "/data/media/hedgehog.png",
+          src: "/data/media/gettywhales.png",
           alt: "News article"
         }
       ]
-    },
-
-    {
-      id: 267,
-      online: "y",
-      type: "article",
-      styleTag: "styletag",
-      tag: "news",
-      category: "news",
-      headline: "Et forskningsprojekt der handler om bevarelsen af verdenshavene ",
-      text: "Lorem ipsum dolor sit amet",
-      createdDate: "12.11.2022",
-      updatedDate: "12.11.2022",
-      link: [
-        {
-          id: 2220,
-          txt: "Læs mere",
-          url: "/",
-          type: "read"
-        }
-      ],
-      img: [
-          {
-            id: 2221,
-            src: "/data/media/gettywhales.png",
-            alt: "News article"
-          }
-        ]
-      }
-  ]
+  }
+]
