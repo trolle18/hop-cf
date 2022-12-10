@@ -1,17 +1,11 @@
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react';
-import Hero from '../components/Hero'
 import TextCarouselSection from '../components/TextCarouselSection'
-import VideoSection from '../components/VideoSection'
-import TextBlock from '../components/TextBlock'
 import NewsletterBlock from '../components/NewsletterBlock'
-import PodcastSection from '../components/PodcastSection'
-import PurposeSection from '../components/PurposeSection';
-import TextCtaSection from '../components/TextCtaSection';
-import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
 import AboutPurposeSection from '../components/AboutPurposeSection';
 import SubpageHero from '../components/SubpageHero';
 import Nav from '../components/Nav';
+
 
 export default function About() {
   const [sectionData, setSectionData] = useState(null)

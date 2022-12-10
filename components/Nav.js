@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import BurgerMenu from './BurgerMenu';
+import NavBurgerMenu from './NavBurgerMenu';
+import { NavLink } from './NavLink';
 // import SearchField from './SearchField';
 
 const Nav = () => {
@@ -55,22 +56,25 @@ const Nav = () => {
         {sectionData.data.map((data) => (
 
           <div key={data.id} className="nav-cntr" id="nav-overflow">
-            <div className="nav-inner-cntr">
+            <div className="nav-outer-cntr">
+              <div className="nav-inner-cntr">
 
-              <div className="nav-mob-links">                 
-                <BurgerMenu data={data}/>
-              </div>   
+                <div className="nav-mob-links">                 
+                  <NavBurgerMenu data={data}/>
+                </div>   
 
-              <div className="nav-inner-cntr__links">
-                {data?.navLinks.map((navLink) => (
-                  <a key={navLink.id} href={navLink.url}>
-                    {navLink.linkTxt}
-                  </a>
-                ))}    
-                  {/* <SearchField/> */}
+                <div className="nav-inner-cntr__links">
+                  {data?.navLinks.map((link) => (
+                    <NavLink key={link.id} href={link.url} >
+                    {link.linkTxt}
+                  </NavLink>
+                  ))}    
+                
+                    {/* <SearchField/> */}
+                </div>
               </div>
 
-              <div className="nav-inner-cntr__logo"> 
+              <div className="nav-outer-cntr__logo"> 
                 {data?.logoLink.map((logoLink) => (
                   <a key={logoLink.id} href={logoLink.url}>
                     <div className="logo-svg"></div>
