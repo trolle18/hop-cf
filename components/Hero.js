@@ -1,3 +1,4 @@
+// import Image from 'next/image';
 import CtaBtn from './CtaBtn';
 
 export default function Hero({ data }) {
@@ -8,12 +9,13 @@ export default function Hero({ data }) {
             <div className="hero" key={data.id}>
                 
                 <div className="hero-cntr">                    
-                    <div className="hero-cntr__img-cntr">
-                        {/* {data.img.map((img) => (
+                    {/* <div className="hero-cntr__img-cntr">
+                        {data.img.map((img) => (
                             <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1000} />
                    
-                        ))} */}
-
+                        ))}
+                    </div> */}
+                    <div className="hero-cntr__video-cntr">
                         {data.video.map((video) => (
                             <video
                             key={video.id}
@@ -25,7 +27,6 @@ export default function Hero({ data }) {
                             </video>
                         ))}
                         <div className='hero-overlay'></div>
-
                     </div>
 
 
