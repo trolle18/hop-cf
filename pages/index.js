@@ -12,20 +12,32 @@ import Nav from '../components/Nav';
 
 export default function Home() {
   const [sectionData, setSectionData] = useState(null)
-    const [isLoading, setLoading] = useState(false)
+  const [isLoading, setLoading] = useState(false)
   
-    useEffect(() => {
-      setLoading(true)
-      fetch('/api/homepage')
-        .then((res) => res.json())
-        .then((sectionData) => {
-          setSectionData(sectionData)
-          setLoading(false)
-        })
-    }, [])
-  
-    if (isLoading) return <p>Loading...</p>
-    if (!sectionData) return <p>No data</p>
+  useEffect(() => {
+    setLoading(true)
+    fetch('/api/homepage')
+      .then((res) => res.json())
+      .then((sectionData) => {
+        setSectionData(sectionData)
+        setLoading(false)
+      })
+  }, [])
+
+  if (isLoading) return <p>Loading...</p>
+  if (!sectionData) return <p>No data</p>
+
+  // const nav = document.getElementById("nav")
+  // window.onscroll = function () {     
+  //   if (document.body.scrollTop >= 200 ) {
+  //       nav.classList.add("nav-colored");
+  //   } 
+  //   else {
+  //       nav.classList.remove("nav-colored");
+  //   }
+  // }
+
+
 
   return (
     <>

@@ -5,11 +5,15 @@ export default function NavBurgerMenu({data}) {
   // const [show, setShow] = useState(true);
   // const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Open burger menu
-  const openMenu = () => {
-    const button = document.getElementById("menu-btn");
+  const button = document.getElementById("menu-btn");
     const y = document.getElementById("dropdown");
     const n = document.getElementById("nav");
+
+  // Open burger menu
+  const openMenu = () => {
+    // const button = document.getElementById("menu-btn");
+    // const y = document.getElementById("dropdown");
+    // const n = document.getElementById("nav");
     button.classList.toggle("change");
     
     if (y.classList.contains("hidden")) {
