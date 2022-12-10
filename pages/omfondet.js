@@ -8,6 +8,7 @@ import Nav from '../components/Nav';
 import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
 import SwiperCarousel from '../components/SwiperCarousel';
 import TextBevillingSection from '../components/TextBevillingSection';
+import TextFondetsMidler from '../components/TextFondetsMidler';
 
 
 export default function About() {
@@ -55,6 +56,10 @@ export default function About() {
 
             {data.txtBevillingSection?.map((data) => ( 
               <TextBevillingSection key={data.id} data={data}/>
+            ))} 
+
+            {data.midlerSection?.map((data) => ( 
+              <TextFondetsMidler key={data.id} data={data}/>
             ))} 
 
             {data.newsletterBlock?.map((data) => ( 

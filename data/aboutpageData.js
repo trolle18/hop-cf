@@ -355,6 +355,13 @@ export const aboutpageData = [
                 text: "",
                 url: "/"
               }
+            ],
+            img: [
+              {
+                id:29581,
+                src: "/data/media/midlerstep1.svg",
+                alt: ""
+              }
             ]
           },
         
@@ -373,6 +380,13 @@ export const aboutpageData = [
                 id: 661,
                 text: "",
                 url: "/"
+              }
+            ],
+            img: [
+              {
+                id: 918813,
+                src: "/data/media/midlerstep2.svg",
+                alt: ""
               }
             ]
           },
@@ -393,6 +407,13 @@ export const aboutpageData = [
                 text: "",
                 url: "/"
               }
+            ],
+            img: [
+              {
+                id: 988222,
+                src: "/data/media/midlerstep3.svg",
+                alt: ""
+              }
             ]
           },
         
@@ -411,6 +432,13 @@ export const aboutpageData = [
                 id: 3921,
                 text: "",
                 url: "/"
+              }
+            ],
+            img: [
+              {
+                id: 197111,
+                src: "/data/media/midlerstep4.svg",
+                alt: ""
               }
             ]
           }
