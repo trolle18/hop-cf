@@ -186,7 +186,29 @@
     }
   }
 }
-@media (min-width: 600px) {
+
+@media (min-width: 420px) {
+  .inner-grid-cntr {
+    width: 100%;
+    flex-direction: column;
+    gap: 4em;
+    
+    .inner-grid-column {
+
+      &__img-cntr {
+        height: 160px;
+        padding: 0 0 2em 0;
+      }
+
+      &__headline  {
+        margin: .75em 0;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 678px) {
   .inner-grid-cntr {
     width: 100%;
     flex-direction: row;

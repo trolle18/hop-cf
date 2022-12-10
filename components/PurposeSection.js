@@ -20,7 +20,7 @@ export default function PurposeSection({ data }) {
                                             <div key={data.id} className="inner-grid-column">
                                                 {data.img.map((img) => (
                                                     <div key={img.id} className="inner-grid-column__img-cntr">
-                                                        <Image src={img.src} alt={img.alt} height={100} width={100}/>
+                                                        <Image src={img.src} alt={img.alt} height={600} width={600}/>
                                                     </div>
                                                 ))} 
                                                 <h3 className="inner-grid-column__headline">
