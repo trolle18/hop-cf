@@ -1,48 +1,19 @@
-import { useEffect, useState, useRef } from "react";
 import SwiperArticle from "./SwiperArticle";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 
-const SwiperCarousel = () => {
-    const [sectionData, setSectionData] = useState([]);
-    const swiperRef = useRef();
-
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/components/articlesData.json");
-            const data = await response.json();
-            setSectionData(data)
-        }
-        getData();
-    }, []);
-
-    const pagination = {
-        clickable: true,
-        el: '.swiper-controls__dots',
-        renderBullet: (index, className) => {
-            return '<span key="' + index + '" class="' + className + '">' + ("") + "</span>";
-        }
-    }
+const SwiperCarousel = ({ data }) => {
 
     return (
         <>
-        <div className="swiper-cntr">        
-            <div className="swiper-controls">
-                <button className="swiper-controls__btn prev-btn" onClick={() => swiperRef.current?.slidePrev()}></button>
-                <div className="swiper-controls__dots swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"></div>
-                <button className="swiper-controls__btn next-btn" onClick={() => swiperRef.current?.slideNext()}></button>
-            </div>
+        <div className="swiper-cntr swiper-news-cntr">        
             <Swiper
             spaceBetween={ 20 }
             slidesPerView={ 3 }
             allowTouchMove={ true }
             touchStartPreventDefault={ false }
-            pagination={ pagination }
             navigation={ true }
-            modules={ [Pagination, Navigation] }
-            onBeforeInit={ (swiper) => {
-                swiperRef.current = swiper;
-            }}
+            modules={ [Navigation] }
             breakpoints= {{
                  310: {
                     slidesPerView: 1,
@@ -62,8 +33,8 @@ const SwiperCarousel = () => {
                 }
             }}
             >
-                {sectionData.map((data) => (
-                    <SwiperSlide key={data.id}>
+                {data?.articles.map((data) => (
+                    <SwiperSlide key={data.id} data={data}>
                         <SwiperArticle data={data}/>
                     </SwiperSlide>
                 ))}

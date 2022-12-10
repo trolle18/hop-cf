@@ -21,16 +21,26 @@
       "navLinks": [
         {
           "id": 981,
-          "linkTxt": "Aktuelt",
+          "linkTxt": "Nyheder",
           "url": "/"
         },
         {
           "id": 761,
-          "linkTxt": "Det støtter vi",
+          "linkTxt": "Viden",
           "url": "/"
         },
         {
           "id": 812,
+          "linkTxt": "Hvad har vi støttet",
+          "url": "/"
+        },
+        {
+          "id": 1161,
+          "linkTxt": "Ansøg nu",
+          "url": "/"
+        },
+        {
+          "id": 3297,
           "linkTxt": "Om fondet",
           "url": "/"
         }

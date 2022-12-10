@@ -1,44 +1,60 @@
-import React, { useState, useEffect } from 'react';
-import Image from "next/image";
+// import Image from 'next/image';
+import CtaBtn from './CtaBtn';
 
-export default function Hero() {
-    const [sectionData, setSectionData] = useState([]);
-
-    // Fetch data from JSON
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/homePageData.json");
-            const data = await response.json();
-            setSectionData(data);             
-        }       
-        getData();        
-    }, []);
+export default function Hero({ data }) {
 
     return (
         <>
-        <section className="hero-wrapper">
-            {sectionData.map((data) => (            
-                <div className="hero-cntr" key={data.id}>
-                    {data?.hero.map((hero) => (
-                    <div key={hero.id}>                    
-                        <div className="hero-cntr__img-cntr">
-                            {/* <Image src={hero.imgSrc} alt="" width={100} height={100}/> */}
+        <section className="hero-wrapper" key={data.id} >
+            <div className="hero" key={data.id}>
+                
+                <div className="hero-cntr">                    
+                    {/* <div className="hero-cntr__img-cntr">
+                        {data.img.map((img) => (
+                            <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1000} />
+                   
+                        ))}
+                    </div> */}
+                    <div className="hero-cntr__video-cntr">
+                        {data.video.map((video) => (
+                            <video
+                            key={video.id}
+                            autoPlay
+                            muted
+                            // loop
+                            >
+                                <source src={video.src}/>
+                            </video>
+                        ))}
+                        <div className='hero-overlay'></div>
+                    </div>
+
+
+                    <div className="hero-cntr__txt-cntr">
+                        <div className="hero-cntr__txt-cntr__headline">
+                            <h1>{data.headline}</h1>
                         </div>
-                        <div className="hero-cntr__txt-cntr">
-                            <h1>{hero.headline}</h1>
-                            <p>{hero.text}</p>
-                        </div>
-                        <a className="hero-cntr__cta" href={hero.ctaUrl}>
-                            <div className="cta-inner-cntr">
-                                <p>{hero.ctaTxt}</p>
-                                <div className="loop-svg"></div>
+                        <div className="hero-cntr__txt-cntr__btm">
+                            <div className="hero-cntr__txt-cntr__btm__text">
+                                <p>{data.text}</p>
                             </div>
-                        </a>
-                        
-                    </div>            
-                    ))} 
+
+                            <div className="hero-cntr__txt-cntr__btm__cta" href={data.ctaUrl}>
+                            
+                                <div className="cta-inner-cntr">
+                                    <div className="cta-btn-cntr plain-light-cta arrow-top-r">
+                                        {data?.link.map((link) => (
+                                            <CtaBtn key={link.id} link={link}/>                          
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+
                 </div>            
-            ))}
+                
+            </div>
         </section>
         </>
     )

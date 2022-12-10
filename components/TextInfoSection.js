@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CtaBtn from './CTAbtn';
 
 export default function TextInfoSection() {
     const [sectionData, setSectionData] = useState([]);
@@ -17,18 +18,20 @@ export default function TextInfoSection() {
         <>
         <section className="hero-wrapper theme-midnight-green">
             {sectionData.map((data) => (
-                <section className="textSection theme-midnight-green" key={data.id}>
+                <section className="textSection infoSection theme-midnight-green" key={data.id}>
                     {data?.txtInfoSection.map((section) => (
                         <>
                         <div className="textSection__tag">
-                            <hr/>
+                            {/* <hr/> */}
                             <p>{section.tag}</p>
                         </div>
                         
                         <div className="textSection__cntr" key={section.id}> 
-                            <div className="headline-cntr headline-60w">
-                                <h2>{section.headline}</h2>
-                            </div>    
+                            <div className="textSection__cntr__inner-cntr">
+                                <div className="headline-cntr headline-60w">
+                                    <h2>{section.headline}</h2>
+                                </div>
+                            </div>
                                         
                             <div className="txt-cntr flx-row">
                                 <div className="txt-cntr__list subheader">
@@ -44,9 +47,16 @@ export default function TextInfoSection() {
                                         </div>
                                     ))}                                    
                                 </div>  
+                                
                                 <div className="txt-cntr__right">
                                     <div className="slider-cntr">
-                                        <div className="slider"> <span className="slider__icon"></span></div>
+                                        <span className="slider-cntr__base"></span>
+                                        <span className="slider-cntr__step three"></span> <span className="slider-cntr__number three">03.</span>
+                                        <span className="slider-cntr__step two"></span> <span className="slider-cntr__number two">02.</span>
+                                        <span className="slider-cntr__step one"></span> <span className="slider-cntr__number one">01.</span>                                     
+                                        <span className="slider">
+                                            <span className="slider__icon"></span>
+                                        </span>                                        
                                     </div>
                                     {section.articles?.map((article) => (
                                         <div className="txt-section" key={article.id}>
@@ -58,7 +68,13 @@ export default function TextInfoSection() {
                                         </div>
                                     ))}   
                                 </div>                                                             
-                            </div>                        
+                            </div>   
+
+                            <div className="cta-cntr-light">
+                                {section?.link.map((link) => (
+                                    <CtaBtn key={link.id} link={link}/>                          
+                                ))}
+                            </div>                     
 
                         </div>       
                         </>     

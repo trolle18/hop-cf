@@ -13,7 +13,7 @@ export default function Article ( {data} ) {
                 <div className="article-cnt">
                     <div className="article-cnt__txt">
                         <span className="article-cnt__txt__details">{data.createdDate}</span>
-                        <p className="article-cnt__txt__headline">{data.title}</p>
+                        <p className="article-cnt__txt__headline">{data.headline}</p>
                     </div>
                 </div>
             </article>

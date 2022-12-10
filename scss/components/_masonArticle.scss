@@ -1,155 +1,111 @@
 .mason-article {
-    height: min-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    padding: .75em;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: .75em;
 
-    &__img-cntr {
-        height: 220px;
+  &__img-cntr {
+    height: 220px;
+    width: 100%;
+    border-radius: 125px;
+    overflow: hidden;
+
+      img {
+        height: 100%;
         width: 100%;
-        border-radius: 125px;
-        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+      }   
+  }
 
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        // &::before {
-        //     content: '';
-        //     height: 280px;
-        //     width: 100%;
-        //     display: block;
-        //     background-color: rgba(0,0,0,.4);
-        //     border: solid blue 1px;
-        //     position: absolute;
-        //     border-radius: 100px;
-        //     overflow: hidden;
-        // }        
+  &__txt-cntr {
+    height: auto;
+    width: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    justify-content: space-between;
+
+    &__cont {
+      height: 100%;
+      width: 100%;
+      margin: 2em 0 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: .5em;
+      z-index: 100;
+
+      &__tag {
+        text-transform: uppercase;
+        font-size: $fs_xs;
+      }
+
+      &__headline {
+        margin: 0 0 .25em 0;
+        font-size: $fs_l;
+      }
     }
 
-    &__txt-cntr {
-        height: auto;
-        width: auto;
-        bottom: 0;
+    &__vertical-right {
+      height: auto;
+      width: max-content;
+      right: 0;
+      bottom: 0;
+      color: $clr_midnight_green;
+      display: flex;
+      align-items: flex-end;
+        
+      &__inner-cntr {
         display: flex;
         flex-direction: row;
-        gap: .5em;
-        justify-content: space-between;
+        rotate: 180deg;
+        bottom: 0;
+        writing-mode:vertical-rl;
+        text-orientation: mixed;
+      }
 
-        &__cont {
-            height: 100%;
-            width: 100%;
-            margin: 2em 0 0 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            gap: .5em;
-            z-index: 100;
+      p {
+        font-size: $fs_l;
+      }
 
-            &__tag {
-                text-transform: uppercase;
-                font-size: $fs_xs;
-            }
-
-            &__headline {
-                margin: 0 0 .25em 0;
-                font-size: $fs_l;
-            }
-
-            &__link  {
-                width: fit-content;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: .5em;
-
-                a {
-                    width: fit-content;
-                    font-size: $fs_l;
-                    
-                    &::after {
-                        content: "";
-                        display: block;
-                        width: 100%;
-                        height: 1px;
-                        opacity: .20;
-                        background-color: $clr_midnight_green;
-                    }                    
-                }
-
-                &::after {
-                    content: "";
-                    display: block;
-                    width: 1em;
-                    height: 1em;
-                    background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 21 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7C0.447715 7 -4.82823e-08 7.44772 0 8C4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928931C13.9526 0.538407 13.3195 0.538407 12.9289 0.928931C12.5384 1.31946 12.5384 1.95262 12.9289 2.34314L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM1 9L20 9L20 7L1 7L1 9Z' fill='%23183428'/%3E%3C/svg%3E ");
-                    background-color: transparent;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-            }
-        }
-
-        &__vertical-right {
-            height: auto;
-            width: max-content;
-            right: 0;
-            bottom: 0;
-            color: $clr_midnight_green;
-            display: flex;
-            align-items: flex-end;
-            
-            &__inner-cntr {
-                display: flex;
-                flex-direction: row;
-                rotate: 180deg;
-                bottom: 0;
-                writing-mode:vertical-rl;
-                text-orientation: mixed;
-            }
-
-            p {
-                font-size: $fs_l;
-            }
-
-            span {
-                content: '';
-                width: 1px;
-                height: 1em;
-                margin: .25em auto;
-                background-color: $clr_midnight_green;
-            }
-        }
+      span {
+        content: '';
+        width: 1px;
+        height: 1em;
+        margin: .25em auto;
+        background-color: $clr_midnight_green;
+      }
     }
+  }
 }
 
 @media (min-width: 425px) {
-    .mason-article {
-        &__img-cntr {
-            height: 250px;
-            border-radius: 125px;      
-        }
+  .mason-article {
+    &__img-cntr {
+      height: 250px;
+      border-radius: 125px;      
     }
+  }
 }
 
 @media (min-width: 600px) {
-    .mason-article {
-        &__img-cntr {
-            height: 280px;
-            border-radius: 116px;
-        }
+  .mason-article {
+    &__img-cntr {
+      height: 280px;
+      border-radius: 116px;
     }
+  }
 }
 
 @media (min-width: 992px) {
-    .mason-article {
-        &__img-cntr {
-            height: 320px;
-            border-radius: 130px;       
-        }
+  .mason-article {
+    &__img-cntr {
+      height: 320px;
+      border-radius: 130px;       
     }
+  }
 }

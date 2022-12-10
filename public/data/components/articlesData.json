@@ -4,17 +4,18 @@
     "online": "y",
     "type": "article",
     "styleTag": "styletag",
-    "title": "En nyhed behøver ikke altid et billede. Der kan bruges f.eks et citat fra en forsker.",
-    "desc": "Lorem ipsum dolor sit amet",
+    "tag": "news",
     "category": "news",
-    "tag": "tag",
+    "headline": "En nyhed behøver ikke altid et billede. Der kan bruges f.eks et citat fra en forsker.",
+    "text": "Lorem ipsum dolor sit amet",
     "createdDate": "12.11.2022",
     "updatedDate": "12.11.2022",
     "link": [
       {
         "id": 2220,
-        "txt": "Link text",
-        "url": "/"
+        "txt": "Læs mere",
+        "url": "/",
+        "type": "read"
       }
     ],
     "img": [
@@ -25,22 +26,24 @@
         }
       ]
   },
+
   {
     "id": 233,
     "online": "y",
     "type": "article",
     "styleTag": "styletag",
-    "title": "Da H.H.M. Dronningen kom på uanmeldt visit",
-    "desc": "Lorem ipsum dolor sit amet",
+    "tag": "news",
     "category": "news",
-    "tag": "tag",
+    "headline": "Da H.H.M. Dronningen kom på uanmeldt visit",
+    "text": "Lorem ipsum dolor sit amet",
     "createdDate": "12.11.2022",
     "updatedDate": "12.11.2022",
     "link": [
       {
         "id": 2220,
-        "txt": "Link text",
-        "url": "/"
+        "txt": "Læs mere",
+        "url": "/",
+        "type": "read"
       }
     ],
     "img": [
@@ -51,22 +54,24 @@
       }
     ]
   },
+
   {
     "id": 647,
     "online": "y",
     "type": "article",
     "styleTag": "styletag",
-    "title": "Noget om en ny ansat i fondet.",
-    "desc": "Lorem ipsum dolor sit amet",
+    "tag": "news",
     "category": "news",
-    "tag": "tag",
+    "headline": "Noget om en ny ansat i fondet.",
+    "text": "Lorem ipsum dolor sit amet",
     "createdDate": "12.11.2022",
     "updatedDate": "12.11.2022",
     "link": [
       {
         "id": 2220,
-        "txt": "Link text",
-        "url": "/"
+        "txt": "Læs mere",
+        "url": "/",
+        "type": "read"
       }
     ],
     "img": [
@@ -77,22 +82,24 @@
       }
     ]
   },
+
   {
     "id": 222,
     "online": "y",
     "type": "article",
-    "styleTag": "styletag",
-    "title": "En artikel omkring et gennembrud eller en opdagelse",
-    "desc": "Lorem ipsum dolor sit amet",
+    "styleTag": "styletag",    
+    "tag": "news",
     "category": "news",
-    "tag": "tag",
+    "headline": "En artikel omkring et gennembrud eller en opdagelse",
+    "text": "Lorem ipsum dolor sit amet",    
     "createdDate": "12.11.2022",
     "updatedDate": "12.11.2022",
     "link": [
       {
         "id": 2220,
-        "txt": "Link text",
-        "url": "/"
+        "txt": "Læs mere",
+        "url": "/",
+        "type": "read"
       }
     ],
     "img": [
@@ -103,22 +110,24 @@
         }
       ]
     },
+
     {
       "id": 267,
       "online": "y",
       "type": "article",
       "styleTag": "styletag",
-      "title": "Et forskningsprojekt der handler om bevarelsen af verdenshavene ",
-      "desc": "Lorem ipsum dolor sit amet",
+      "tag": "news",
       "category": "news",
-      "tag": "tag",
+      "headline": "Et forskningsprojekt der handler om bevarelsen af verdenshavene ",
+      "text": "Lorem ipsum dolor sit amet",
       "createdDate": "12.11.2022",
       "updatedDate": "12.11.2022",
       "link": [
         {
           "id": 2220,
-          "txt": "Link text",
-          "url": "/"
+          "txt": "Læs mere",
+          "url": "/",
+          "type": "read"
         }
       ],
       "img": [
