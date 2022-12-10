@@ -659,7 +659,7 @@ export const homepageData = [
             img: [
               {
                 id: 5250,
-                src: "/data/media/pod1.png",
+                src: "/data/media/pod2.png",
                 alt: "billede"
               }
             ],
@@ -679,7 +679,7 @@ export const homepageData = [
             img: [
               {
                 id: 190,
-                src: "/data/media/pod2.png",
+                src: "/data/media/pod1.png",
                 alt: "billede"
               }
             ],
