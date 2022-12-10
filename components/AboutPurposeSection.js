@@ -1,4 +1,5 @@
 import CtaBtn from './CtaBtn';
+import FeatureArticle from './FeatureArticle';
 import TagHeadlineSubheadline from './TextSectionModules/TagHeadlineSubheadline';
 import VideoArticle from './VideoArticle';
 
@@ -17,31 +18,28 @@ export default function AboutPurposeSection({ data }) {
                                 {data.articles
                                 .filter((data) => data.styleTag.includes('feature'))
                                 .map((data) => (
-                                    <VideoArticle key={data.id} data={data}/>
+                                    <FeatureArticle key={data.id} data={data}/>
                                 ))}
                             </div>  
-                            <div className="video-section-main__feature-cntr__regular">
-                                <div className="textSection__cntr__inner-cntr grid-cntr  grid-1-2">
-                                    {data.textSec.map((data) => (
-                                        <div key={data.id}>
-                                            <h3>{data.headline}</h3>
-                                            <p>{data.text}</p>
-                                        </div>
-                                    ))}      
-                                </div> 
-                          
-                            </div>   
-
                         </div>
                     </div>
-
                     
+                    <div className="textSection__cntr"> 
+                        <div className="txt-cntr grid-1-2__col-2-2">
+                            <div key={data.id} className="inner-grid-cntr max-80w">
+
+                                {data.textSec.map((data) => (
+                                    <div key={data.id} className="inner-grid-column">
+                                        <p className="inner-grid-column__text">
+                                            {data.text}
+                                        </p>
+                                    </div>
+                                ))} 
+                            </div> 
+                        </div>  
+                    </div>
+                            
                 </section>           
-                <div className="cta-btn-cntr ylw-cta arrow-top-r">
-                    {data?.link.map((link) => (
-                        <CtaBtn key={link.id} link={link}/>                          
-                    ))}
-                </div>
 
             </section>
         </>

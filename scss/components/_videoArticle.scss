@@ -79,6 +79,11 @@
         display: none;
       }
 
+      &__text.show-text {
+        font-size: $fs_m;
+        display: block !important;
+      }
+
       .txt-top {
         display: flex;
         flex-direction: row;

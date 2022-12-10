@@ -1,6 +1,6 @@
 // import Image from "next/image";
 
-export default function VideoArticle ( {data} ) {
+export default function FeatureArticle ( {data} ) {
 
     // function getMedia(data) {
     //     if (data.video.alt === "video") {
@@ -36,15 +36,15 @@ export default function VideoArticle ( {data} ) {
 
     return (
         <>
-            <article className="video-article" key={data.id}>
-                <div className="article-img">
+            <article className="feature-article" key={data.id}>
+                <div className="feature-img">
                     {/* {getMedia(data)} */}
-                    <div className="article-img__video-cntr">
+                    <div className="feature-img__video-cntr">
                     {data.video?.map((video) => (
                         <video
                         key={video.id}
-                        muted
-                        controls={true}
+                        // muted
+                        // controls={false}
                         >
                             <source src={video.src}/>
                         </video>
@@ -52,12 +52,12 @@ export default function VideoArticle ( {data} ) {
                 </div>
                     
                 </div>
-                <div className="article-cnt">
-                    <div className="article-cnt__txt">
-                    <span className="article-cnt__txt__tag article-cnt__txt__details">{data.tag}</span>
-                        <span className="article-cnt__txt__time article-cnt__txt__details">{data.time}</span>
-                        <h3 className="article-cnt__txt__headline">{data.headline}</h3>
-                        <p className="article-cnt__txt__text">{data.text}</p>
+                <div className="feature-cnt">
+                    <div className="feature-cnt__txt">
+                        <span className="feature-cnt__txt__tag">{data.tag}</span>
+                        <h3 className="feature-cnt__txt__headline">{data.headline}</h3>
+                        <span className="feature-cnt__txt__quote"></span>
+                        <p className="feature-cnt__txt__text">{data.text}</p>
                     </div>
                 </div>
             </article>

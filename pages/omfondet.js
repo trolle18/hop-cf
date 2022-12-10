@@ -5,6 +5,9 @@ import NewsletterBlock from '../components/NewsletterBlock'
 import AboutPurposeSection from '../components/AboutPurposeSection';
 import SubpageHero from '../components/SubpageHero';
 import Nav from '../components/Nav';
+import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
+import SwiperCarousel from '../components/SwiperCarousel';
+import TextBevillingSection from '../components/TextBevillingSection';
 
 
 export default function About() {
@@ -44,7 +47,14 @@ export default function About() {
             ))}   
 
             {data.txtSliderSection?.map((data) => ( 
-              <TextCarouselSection key={data.id} data={data}/>
+              <section className="textSection" key={data.id}>
+                    <TagHeadlineSubheadline data={data}/>
+                    <SwiperCarousel data={data}/>
+                </section>      
+            ))} 
+
+            {data.txtBevillingSection?.map((data) => ( 
+              <TextBevillingSection key={data.id} data={data}/>
             ))} 
 
             {data.newsletterBlock?.map((data) => ( 

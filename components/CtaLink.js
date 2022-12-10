@@ -1,5 +1,5 @@
 
-export default function CtaLink({data}) {
+export default function CtaLink({ data }) {
 
     return (
         <>

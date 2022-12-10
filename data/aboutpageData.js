@@ -54,7 +54,7 @@ export const aboutpageData = [
         link: [
           {
             id: 46723,
-            text: "",
+            text: "Læs mere",
             url: "/"
 
           }
@@ -65,11 +65,20 @@ export const aboutpageData = [
             styleTag: "feature",
             headline: "Her blomstrer bryggeri side om side med forskning",
             subtext: "Majken Schultz, Formand Carlsbergfondet",
+            text: "Majken Schultz, Formand Carlsbergfondet",
             link: [
               {
                 id: 2125,
                 text: "",
                 url: "/"
+              }
+            ],
+            video: [
+              {
+                id: 87824,
+                src: "/data/media/videos/science.mp4",
+                alt: "video",
+                img: "/data/media/vidarticle3.png"
               }
             ],
             img: [
@@ -129,13 +138,14 @@ export const aboutpageData = [
             type: "article",
             styleTag: "regular",
             tag: "Forkvinde",
-            category: "",
+            category: "Forkvinde",
             headline: "Maiken Schultz",
             text: "",
+            createdDate: "Forkvinde",
             img: [
               {
                 id: 112330,
-                src: "/data/media/vidarticle1.png",
+                src: "/data/media/bestyrelsen/majkenschultz.png",
                 alt: "img"
               }
             ],
@@ -153,13 +163,14 @@ export const aboutpageData = [
             type: "article",
             styleTag: "regular",
             tag: "Næstformand",
-            category: "",
+            category: "Næstformand",
             headline: "Søren-Peter Olesen",
             text: "",
+            createdDate: "Næstformand",
             img: [
               {
                 id: 112330,
-                src: "/data/media/vidarticle1.png",
+                src: "/data/media/bestyrelsen/sørenpeterolesen.png",
                 alt: "img"
               }
             ],
@@ -176,14 +187,90 @@ export const aboutpageData = [
             online: "y",
             type: "article",
             styleTag: "regular",
-            tag: "Bestyreæsesmedlem",
-            category: "",
+            tag: "Bestyrelsesmedlem",
+            category: "Bestyrelsesmedlem",
             headline: "Peter Hjort",
             text: "",
+            createdDate: "Bestyrelsesmedlem",
             img: [
               {
                 id: 112330,
-                src: "/data/media/vidarticle1.png",
+                src: "/data/media/bestyrelsen/peterhjort.png",
+                alt: "img"
+              }
+            ],
+            link: [
+              {
+                id: 14451,
+                text: "",
+                url: "/",
+              }
+            ]
+          },
+          {
+            id: 184745,
+            online: "y",
+            type: "article",
+            styleTag: "regular",
+            tag: "Forkvinde",
+            category: "Forkvinde",
+            headline: "Maiken Schultz",
+            text: "",
+            createdDate: "Forkvinde",
+            img: [
+              {
+                id: 112330,
+                src: "/data/media/bestyrelsen/majkenschultz.png",
+                alt: "img"
+              }
+            ],
+            link: [
+              {
+                id: 14451,
+                text: "",
+                url: "/",
+              }
+            ]
+          },        
+          {
+            id: 1927515,
+            online: "y",
+            type: "article",
+            styleTag: "regular",
+            tag: "Næstformand",
+            category: "Næstformand",
+            headline: "Søren-Peter Olesen",
+            text: "",
+            createdDate: "Næstformand",
+            img: [
+              {
+                id: 112330,
+                src: "/data/media/bestyrelsen/sørenpeterolesen.png",
+                alt: "img"
+              }
+            ],
+            link: [
+              {
+                id: 14451,
+                text: "",
+                url: "/",
+              }
+            ]
+          },        
+          {
+            id: 3287145,
+            online: "y",
+            type: "article",
+            styleTag: "regular",
+            tag: "Bestyrelsesmedlem",
+            category: "Bestyrelsesmedlem",
+            headline: "Peter Hjort",
+            text: "",
+            createdDate: "Bestyrelsesmedlem",
+            img: [
+              {
+                id: 112330,
+                src: "/data/media/bestyrelsen/peterhjort.png",
                 alt: "img"
               }
             ],
