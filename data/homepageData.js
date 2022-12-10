@@ -23,6 +23,13 @@ export const homepageData = [
             alt: "hero image"
           }
         ],
+        video: [
+          {
+            id: 119993311,
+            src: "/data/media/videos/herovid.mp4",
+            alt: "hero"
+          }
+        ],
         link: [
           {
             id: 122,
