@@ -89,16 +89,6 @@ export const aboutpageData = [
     
               }
             ]
-            // textBlock: [
-            //   {
-            //     id: 12203,
-            //     text: "Carlsbergfondet blev grundlagt på en passion. En passion for perfektion. Passion-en kan findes i alt, hvad fondet foretager sig og er gengivet i de første linjer af Carlsberg-fondets fundats og indgraveret i marmor tavlen, som hænger over indgangsporten til Carlsbergs hovedsæde i Valby, København, som den dag i dag"
-            //   },
-            //   {
-            //     id: 9923717,
-            //     text: "stadig stråler af klarsyn den dag i dag. ”De Gyldne Ord” er en hyldest til det excellente og sublime. De slår fast, at Carlsbergfondet skal stræbe efter den højst mulige kvalitet i alt, hvad fondet gør, og at man i driften af Carlsberg-bryggeriet aldrig kun skal have fokus på forretningen."
-            //   }
-            // ]
           }
         ],
         textSec: [
