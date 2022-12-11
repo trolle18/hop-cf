@@ -164,11 +164,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        // gap: 1em;
-        // border: solid red 1px;
 
         &__headline {
-          border: solid red 1px;
           height: auto;
           width: auto;
           max-width: 100vw;
@@ -191,7 +188,6 @@
 }
 
 .hero-cntr.color-hero.theme-lightest-green {
-  // background-image: url("");
   background-color: $clr_midnight_green;
   color: $clr_midnight_green !important;
   filter: none !important;    

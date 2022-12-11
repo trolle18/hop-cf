@@ -27,17 +27,6 @@ export default function Home() {
   if (isLoading) return <p>Loading...</p>
   if (!sectionData) return <p>No data</p>
 
-  // window.onscroll = function () {     
-  //   if (document.body.scrollTop >= 200 ) {
-  //       nav.classList.add("nav-colored");
-  //   } 
-  //   else {
-  //       nav.classList.remove("nav-colored");
-  //   }
-  // }
-
-
-
   return (
     <>
       <Head>
