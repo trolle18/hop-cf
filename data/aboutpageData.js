@@ -17,13 +17,13 @@ export const aboutpageData = [
         id: 1904,
         headline: "Introduktion til Carlsbergfondet og formål",
         text: "",
-        img: [
-          {
-            id: 1012912,
-            src: "/data/media/hero.png",
-            alt: "hero image"
-          }
-        ],
+        // img: [
+        //   {
+        //     id: 1012912,
+        //     src: "/data/media/hero.png",
+        //     alt: "hero image"
+        //   }
+        // ],
         link: [
           {
             id: 2434,
@@ -89,16 +89,6 @@ export const aboutpageData = [
     
               }
             ]
-            // textBlock: [
-            //   {
-            //     id: 12203,
-            //     text: "Carlsbergfondet blev grundlagt på en passion. En passion for perfektion. Passion-en kan findes i alt, hvad fondet foretager sig og er gengivet i de første linjer af Carlsberg-fondets fundats og indgraveret i marmor tavlen, som hænger over indgangsporten til Carlsbergs hovedsæde i Valby, København, som den dag i dag"
-            //   },
-            //   {
-            //     id: 9923717,
-            //     text: "stadig stråler af klarsyn den dag i dag. ”De Gyldne Ord” er en hyldest til det excellente og sublime. De slår fast, at Carlsbergfondet skal stræbe efter den højst mulige kvalitet i alt, hvad fondet gør, og at man i driften af Carlsberg-bryggeriet aldrig kun skal have fokus på forretningen."
-            //   }
-            // ]
           }
         ],
         textSec: [
@@ -467,6 +457,7 @@ export const aboutpageData = [
           {
             id: 14566,
             tag: "",
+            styleTag: "regular",
             headline: "Vores fundats",
             text: "Ikke den slags man pynter en kage med.",
             img: [
@@ -480,13 +471,15 @@ export const aboutpageData = [
               {
                 id: 531,
                 text: "",
-                url: "/"
+                url: "/",
+                arrow: "down right"
               }
             ]
           },
           {
             id: 111937,
             tag: "",
+            styleTag: "regular",
             headline: "Søg støtte",
             text: "Er dit projekt inden for vores områder kan du søge støtte inden 1 oktober.",
             img: [
@@ -500,19 +493,21 @@ export const aboutpageData = [
               {
                 id: 551,
                 text: "",
-                url: "/"
+                url: "/",
+                arrow: "down right"
               }
             ]
           },
           {
             id: 9274711,
             tag: "",
+            styleTag: "feature",
             headline: "Fondets historie",
             text: "For at gøre en lang historie spændende kan du besøge vores tidslinje",
             img: [
               {
                 id: 190,
-                src: "/data/media/pod2.png",
+                src: "/data/media/bryggeren.png",
                 alt: "billede"
               }
             ],
@@ -520,7 +515,8 @@ export const aboutpageData = [
               {
                 id: 551,
                 text: "",
-                url: "/"
+                url: "/",
+                arrow: "down right"
               }
             ]
           }

@@ -1,7 +1,40 @@
 // import Image from 'next/image';
+import Image from 'next/image';
 import CtaBtn from './CtaBtn';
 
 export default function Hero({ data }) {
+
+    function checkMedia(data) {
+        const isVideo = data.video;
+        if (isVideo) { 
+            return (
+                <div className="hero-cntr__video-cntr">
+                {data.video.map((video) => (
+                    <video
+                    key={video.id}
+                    autoPlay
+                    muted
+                    // loop
+                    >
+                        <source src={video.src}/>
+                    </video>
+                ))}
+                <div className='hero-overlay'></div>
+            </div>
+            ) 
+        }
+        else { 
+            return (
+                <div className="hero-cntr__img-cntr">
+                    {data.img.map((img) => (
+                        <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1000} />
+                
+                    ))}
+                </div>
+            ) 
+        }
+    }
+
 
     return (
         <>
@@ -15,6 +48,7 @@ export default function Hero({ data }) {
                    
                         ))}
                     </div> */}
+
                     <div className="hero-cntr__video-cntr">
                         {data.video.map((video) => (
                             <video
@@ -28,6 +62,7 @@ export default function Hero({ data }) {
                         ))}
                         <div className='hero-overlay'></div>
                     </div>
+                    {/* {checkMedia(data)} */}
 
 
                     <div className="hero-cntr__txt-cntr">

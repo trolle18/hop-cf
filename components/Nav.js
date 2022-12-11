@@ -76,7 +76,7 @@ const Nav = () => {
       })
   }, [])
 
-  if (isLoading) return <p>Loading...</p>
+  if (isLoading) return <p></p>
   if (!sectionData) return <p>No data</p>
 
 

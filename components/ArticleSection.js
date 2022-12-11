@@ -1,24 +1,20 @@
 import { useEffect, useState } from "react"
 import Article from "./Article";
 
-export default function ArticleSection() {
-    const [sectionData, setSectionData] = useState([]);
-
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/components/articlesData.json");
-            const data = await response.json();
-            setSectionData(data)
-        }
-        getData();
-    }, []);
+export default function ArticleSection({ data }) {
 
     return (
         <>
-        <section className="section-grid">
-            {sectionData.map((data) => (
-                    <Article key={data.id} data={data} />
-            ))}
+        <section className="textSection">
+            <div className="textSection__cntr">
+
+                <section className="article-section">
+                    {data.articles.map((data) => (
+                            <Article key={data.id} data={data} />
+                    ))}
+                </section>
+                
+            </div>
         </section>
 
         </>

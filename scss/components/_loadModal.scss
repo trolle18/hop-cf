@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  animation: slideUp 1s ease forwards;
+  animation: slideUp .5s ease-in-out forwards;
 
   .modal-overlay {
     height: 100%;
@@ -125,7 +125,7 @@
   }
 }
 
-.modal-wrapper.modal-hops-white {  // Hops: Yellow
+.modal-wrapper.modal-hops-yellow {  // Hops: Yellow
   .modal {
     .modal-cntr {
       &__img-cntr {

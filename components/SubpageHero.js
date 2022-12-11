@@ -3,14 +3,50 @@ import CtaBtn from './CtaBtn';
 
 export default function SubpageHero({ data }) {
 
+    
+    function checkMedia(data) {
+        const isVideo = data.video;
+        const isImg = data.img;
+        if (isVideo) { 
+            return (
+                <div className="hero-cntr__video-cntr">
+                {data.video.map((video) => (
+                    <video
+                    key={video.id}
+                    autoPlay
+                    muted
+                    // loop
+                    >
+                        <source src={video.src}/>
+                    </video>
+                ))}
+                <div className='hero-overlay'></div>
+            </div>
+            ) 
+        }
+        if (isImg) { 
+            return (
+                <div className="hero-cntr__img-cntr">
+                    {data.img.map((img) => (
+                        <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1400} />
+                
+                    ))}
+                </div>
+            ) 
+        }
+        else { 
+            return (
+                <div className="hero-cntr__img-cntr color-hero"></div>
+            ) 
+        }
+    }
+
     return (
         <>
-        <section className="hero-wrapper subpagehero-wrapper " key={data.id} >
             <div className="hero" key={data.id}>
                 
-                <div className="hero-cntr color-hero theme-lightest-green">                    
-                    <div className="hero-cntr__img-cntr color-hero theme-lightest-green">
-                    </div>
+                <div className="hero-cntr color-hero theme-lightest-green">         
+                {checkMedia(data)}           
 
                     <div className="hero-cntr__txt-cntr subpage-hero-text">
                         <div className="hero-cntr__txt-cntr__headline">
@@ -21,7 +57,7 @@ export default function SubpageHero({ data }) {
                 </div>            
                 
             </div>
-        </section>
+        {/* </section> */}
         </>
     )
 }

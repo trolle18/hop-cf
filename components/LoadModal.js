@@ -1,10 +1,10 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function LoadModal() {
 
     return (
         <>
-        <section className="modal-wrapper modal-theme-lightest-green modal-hops-light-green">
+        {/* <section className="modal-wrapper modal-theme-lightest-green modal-hops-light-green"> */}
             <div className="modal-overlay"></div>
             <div className="modal">
                 
@@ -14,7 +14,7 @@ export default function LoadModal() {
                 </div>            
                 
             </div>
-        </section>
+        {/* </section> */}
         </>
     )
 }

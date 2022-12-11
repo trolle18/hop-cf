@@ -9,7 +9,6 @@
 
   .article-img {
     width: 100%;
-    position: relative;
 
     &__img-cntr {
       height: 260px;
@@ -50,8 +49,6 @@
       }
     }
   }
-
-  
 
   .article-cnt {
     height: 100%;
@@ -94,4 +91,144 @@
       bottom: 0;
     }
   }   
+}
+
+
+
+
+.article-section {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  column-gap: 2em;
+  row-gap: 2em;
+
+  .article {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+  
+    .article-img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+
+      &__img-cntr {
+        height: 10em;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+  
+        img {            
+          height: 100%;
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  
+    .article-cnt {
+      border-bottom: solid $clr_ml_grey 1px;
+
+      &__txt {
+        padding: .5em 0 .25em 0;
+        gap: .25em;
+  
+        &__details {
+          color: $clr_m_grey;
+        }
+  
+        &__headline {
+          font-size: $fs_xl;
+        }
+      }
+  
+      &__btm {
+        width: 100%;
+        padding: 0 0 1em 0;
+        display: flex;
+        justify-content: right;
+        bottom: 0;
+      }
+    }      
+  }
+}
+
+
+
+@media (min-width: 425px) {
+  .article-section {
+    .article {
+      .article-img {  
+        &__img-cntr {
+          height: 14em;
+        }
+      }
+    
+      .article-cnt {
+        border-bottom: solid $clr_ml_grey 1px;
+  
+        &__txt {
+          gap: .5em;
+      }       
+      }
+    }
+  }
+}
+
+
+@media (min-width: 600px) {
+  .article-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2em;
+  
+    .article {
+      height: auto;
+      width: 46%;
+      margin: 0 0;
+    
+      .article-img {  
+        &__img-cntr {
+          height: 12em;
+        }
+      }     
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .article-section {
+    .article {
+      height: auto;
+      max-width: 48%;
+    
+      .article-img {  
+        &__img-cntr {
+          height: 14em;
+        }
+      }     
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .article-section {
+    .article {
+      height: auto;
+      max-width: 30%;
+    
+      .article-img {  
+        &__img-cntr {
+          height: 14em;
+        }
+      }     
+    }
+  }
 }

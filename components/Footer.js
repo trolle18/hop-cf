@@ -2,17 +2,7 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 export default function Footer() {
-    // const [sectionData, setSectionData] = useState([]);
 
-    // // Fetch data from JSON
-    // useEffect(() => {
-    //     async function getData() {
-    //         const response = await fetch("/data/components/footerData.json");
-    //         const data = await response.json();
-    //         setSectionData(data);             
-    //     }       
-    //     getData();        
-    // }, []);
 
     const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)
@@ -27,7 +17,7 @@ export default function Footer() {
         })
     }, [])
   
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return <p></p>
     if (!sectionData) return <p>No data</p>
 
 
@@ -46,10 +36,13 @@ export default function Footer() {
                             ))}
                             <div className="footer-top__col-1__btm">
                             {data?.contactInfo.map((link) => (
-                                <div key={link.id}>
+                                <a key={link.id} href={link.url} target="_blank" rel="noreferrer">
+                                     <div >
                                     <p>{link.text}</p>
                                     <p>{link?.subtext}</p>
                                 </div>
+                                </a>
+                               
                             ))}
                             </div>
                         </div>
@@ -57,11 +50,14 @@ export default function Footer() {
                         <div className="footer-top__col-2">                
                             {data?.navLinks.map((navLink) => (
                                 <div key={navLink.id} className="footer-top__col-2__box">
+                                <a href={navLink?.url}>
                                     <p className="footer-top__col-2__box__headline">{navLink.headline}</p>
-                                    
+                                </a>                                    
                                     <div className="footer-top__col-2__box__links">
                                         {navLink?.links.map((link) => (
-                                            <p key={link.id}>{link.text}</p>
+                                            <a key={link.id} href={link.url}>
+                                                <p key={link.id}>{link.text}</p>
+                                            </a>
                                         ))}
                                     </div>
                                 </div>
@@ -76,9 +72,11 @@ export default function Footer() {
                         </div>
                         <div className="footer-btm__col-2">
                         {data?.someLinks.map((link) => (
+                            <a key={link.id} href={link.url} target="_blank" rel="noreferrer">
                                 <div key={link.id} className="footer-btm__col-2__some-links">
                                     <p>{link.altText}</p>
                                 </div>
+                            </a>
                             ))}
                         </div>
 

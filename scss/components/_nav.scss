@@ -151,7 +151,7 @@
               transition: ease-in .02s;
               cursor: pointer;
 
-              a {
+              &__link-div {
                 height: auto;
                 width: auto;
                 margin: 1em 1em;
@@ -247,12 +247,12 @@
 
     .nav-cntr {
       width: 100%;
-      max-width: 1440px;
+      // max-width: 1440px;
 
       .nav-outer-cntr {
         .nav-inner-cntr {
           width: 100%;
-          max-width: 1440px;
+          // max-width: 1440px;
 
           &__links {
             display: contents;
