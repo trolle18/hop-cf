@@ -4,22 +4,22 @@ import TextCarouselSection from '../components/TextCarouselSection'
 import NewsletterBlock from '../components/NewsletterBlock'
 import AboutPurposeSection from '../components/AboutPurposeSection';
 import SubpageHero from '../components/SubpageHero';
-import Nav from '../components/Nav';
 import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
 import SwiperCarousel from '../components/SwiperCarousel';
 import TextBevillingSection from '../components/TextBevillingSection';
 import TextFondetsMidler from '../components/TextFondetsMidler';
 import BlockGridSection from '../components/BlockGridSection';
-import PageHead from '../components/PageHead';
+import TextBlock from '../components/TextBlock';
+import ArticleSection from '../components/ArticleSection';
 
 
-export default function Ansog() {
+export default function Application() {
   const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)
   
     useEffect(() => {
       setLoading(true)
-      fetch('/api/aboutpage')
+      fetch('/api/applicationpage')
         .then((res) => res.json())
         .then((sectionData) => {
           setSectionData(sectionData)
@@ -32,12 +32,22 @@ export default function Ansog() {
 
   return (
     <>
-      {sectionData.aboutpageData.map((data) => (    
+      {sectionData.applicationpageData.map((data) => (    
         <main className="page" key={data.id}>
             {data.hero?.map((data) => ( 
               <SubpageHero key={data.id}  data={data}/>
             ))}  
-            
+
+            {data.txtBlock?.map((data) => ( 
+              <section className="textSection theme-l-grey" key={data.id} data={data}>
+                <TagHeadlineSubheadline data={data}/>      
+              </section>   
+            ))} 
+
+            {data.applicationArticles?.map((data) => ( 
+              <ArticleSection key={data.id} data={data}/>
+            ))}   
+
             {data.purposeSection?.map((data) => ( 
               <AboutPurposeSection key={data.id} data={data}/>
             ))}   
@@ -53,20 +63,22 @@ export default function Ansog() {
               <TextBevillingSection key={data.id} data={data}/>
             ))} 
 
-            {data.midlerSection?.map((data) => ( 
+            {/* {data.midlerSection?.map((data) => ( 
               <TextFondetsMidler key={data.id} data={data}/>
-            ))} 
+            ))}  */}
 
             {data.otherProjectsSection?.map((data) => ( 
               <BlockGridSection key={data.id} data={data}/>
             ))} 
-
+{/* 
             {data.newsletterBlock?.map((data) => ( 
               <NewsletterBlock key={data.id} data={data}/>
-            ))} 
+            ))}  */}
 
         </main>
       ))}
     </>
   )
 }
+
+
