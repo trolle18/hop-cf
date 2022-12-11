@@ -27,9 +27,6 @@ export default function Home() {
   if (isLoading) return <p>Loading...</p>
   if (!sectionData) return <p>No data</p>
 
-  // window.onscroll = function () {     
-
-
   return (
     <>
       <Head>
