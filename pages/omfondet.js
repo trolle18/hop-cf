@@ -9,6 +9,7 @@ import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadline
 import SwiperCarousel from '../components/SwiperCarousel';
 import TextBevillingSection from '../components/TextBevillingSection';
 import TextFondetsMidler from '../components/TextFondetsMidler';
+import BlockGridSection from '../components/BlockGridSection';
 
 
 export default function About() {
@@ -60,6 +61,10 @@ export default function About() {
 
             {data.midlerSection?.map((data) => ( 
               <TextFondetsMidler key={data.id} data={data}/>
+            ))} 
+
+            {data.otherProjectsSection?.map((data) => ( 
+              <BlockGridSection key={data.id} data={data}/>
             ))} 
 
             {data.newsletterBlock?.map((data) => ( 

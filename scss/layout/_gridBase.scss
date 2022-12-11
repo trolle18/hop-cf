@@ -31,19 +31,6 @@
   column-gap: 0;
 }
 
-// @media (min-width: 600px) {
-//   .grid-cntr {
-//     row-gap: 1em;
-//     column-gap: 2.75em;
-//   }
-// }
-// @media (min-width: 992px) {
-//   .grid-cntr {
-//     row-gap: 1em;
-//     column-gap: 3em;
-//   }
-// }
-
 
 // GRID 2x2 - 2 rows x 2 columns
 .grid-2-2 {
@@ -58,6 +45,9 @@
     &__col-1 { // Column 1
       height: 100%;
       grid-area: 1 / 1 / 2 / 2;
+    }
+    &__col-1.row-gap { // Column 1
+      row-gap: 1em;
     }
     &__col-2 { // Column 2
       height: 100%;
@@ -85,7 +75,6 @@
     }
   }
 }
-
 
 // GRID 1 x 2 - 1 row x 2 columns
 .grid-1-2 {
@@ -216,7 +205,6 @@
 
 @media (min-width: 678px) {
   .inner-grid-cntr {
-    // width: 100%;
     flex-direction: row;
     
     .inner-grid-column {
@@ -245,13 +233,11 @@
   grid-template-rows: repeat(1, 1fr);
 
   &__row-cntr {
-
     display: flex;
     flex-direction: column;
     gap: .5em;
 
     &__inner-cntr {
-      // border: solid red 1px;
       height: 100%;
       width: 100%;
       display: flex;
@@ -278,7 +264,6 @@
           margin: auto 0 0 0;
           padding: 0 0 0 0;
           font-size: $fs-2xl;
-          // bottom: -500px;
           vertical-align: baseline;
         }
         &__text {
@@ -322,7 +307,6 @@
       gap: .5em;
   
       &__inner-cntr {
-        // border: solid red 1px;
         height: 100%;
         width: 100%;
         display: flex;
@@ -349,7 +333,6 @@
             margin: auto 0 0 0;
             padding: 0 0 .0em 0;
             font-size: $fs-5xl;
-            // bottom: -500px;
             vertical-align: baseline;
           }
           &__text {
@@ -370,7 +353,6 @@
         }
         &__col.col-1 {
           width: 40%;
-          // border: solid red 1px;
         }
         &__col.col-2 {
           width: 60%;
@@ -384,3 +366,71 @@
   
 }
 
+.border-red {
+  border: solid red 1px;
+}
+.border-blue {
+  border: solid blue 1px;
+}
+.border-green {
+  border: solid green 1px;
+}
+
+.grid-text-block {
+  height: 100%;
+}
+
+.flex-textblock-cntr {
+  // border: solid green 1px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &__col {
+    // border: solid blue 1px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    &__block {
+      height: auto;
+      width: 100%;
+      background-color: $clr_lightest_green;
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+        border: solid rgb(112, 112, 201) 1px;
+
+        &__btm {
+          height: auto;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          // .seeMore-cntr__inner-cntr {
+          //   p {
+          //     display: none;
+          //   }
+          // }
+        }
+      }
+    }
+  }
+
+  &__col-1 {
+    border: solid blue 1px;
+
+  }
+
+  &__col-2 {
+    border: solid red 1px;
+
+  }
+}

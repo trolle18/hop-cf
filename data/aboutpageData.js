@@ -457,6 +457,7 @@ export const aboutpageData = [
           {
             id: 14566,
             tag: "",
+            styleTag: "regular",
             headline: "Vores fundats",
             text: "Ikke den slags man pynter en kage med.",
             img: [
@@ -477,6 +478,7 @@ export const aboutpageData = [
           {
             id: 111937,
             tag: "",
+            styleTag: "regular",
             headline: "Søg støtte",
             text: "Er dit projekt inden for vores områder kan du søge støtte inden 1 oktober.",
             img: [
@@ -497,6 +499,7 @@ export const aboutpageData = [
           {
             id: 9274711,
             tag: "",
+            styleTag: "feature",
             headline: "Fondets historie",
             text: "For at gøre en lang historie spændende kan du besøge vores tidslinje",
             img: [
