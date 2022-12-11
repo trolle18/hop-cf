@@ -31,10 +31,6 @@ export default function Home() {
   //   if (document.body.scrollTop >= 200 ) {
   //       nav.classList.add("nav-colored");
   //   } 
-  //   else {
-  //       nav.classList.remove("nav-colored");
-
-
 
   return (
     <>
