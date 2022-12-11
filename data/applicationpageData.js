@@ -92,8 +92,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 2220,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Semper-Ardens-Accelerate"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Semper-Ardens-Accelerate",
+                arrow: "down right",
               }
             ],
             img: [
@@ -118,8 +119,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 3323232566,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Semper-Ardens-Accomplish"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Semper-Ardens-Accomplish",
+                arrow: "down right",
               }
             ],
             img: [
@@ -144,8 +146,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 939832,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Semper-Ardens-Advance"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Semper-Ardens-Advance",
+                arrow: "down right",
               }
             ],
             img: [
@@ -170,8 +173,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 397292,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Internationalisation-Fellowships"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Internationalisation-Fellowships",
+                arrow: "down right",
               }
             ],
             img: [
@@ -196,8 +200,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 4444422,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Visiting-Fellowships-at-University-of-Oxford"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Visiting-Fellowships-at-University-of-Oxford",
+                arrow: "down right",
               }
             ],
             img: [
@@ -223,8 +228,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 2332320009,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Reintegration-Fellowships"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Reintegration-Fellowships",
+                arrow: "down right",
               }
             ],
             img: [
@@ -247,8 +253,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 293895,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Monograph-Fellowships"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Monograph-Fellowships",
+                arrow: "down right",
               }
             ],
             img: [
@@ -271,8 +278,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 9908874,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Research-Infrastructure"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Research-Infrastructure",
+                arrow: "down right",
               }
             ],
             img: [
@@ -295,8 +303,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 900273,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Field-Trips_Research-Stays"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Field-Trips_Research-Stays",
+                arrow: "down right",
               }
             ],
             img: [
@@ -319,8 +328,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 13321,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Conferences"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Conferences",
+                arrow: "down right",
               }
             ],
             img: [
@@ -343,8 +353,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 87878,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Field-Trips_Research-Stays2"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Field-Trips_Research-Stays2",
+                arrow: "down right",
               }
             ],
             img: [
@@ -367,8 +378,9 @@ export const applicationpageData = [
             link: [
               {
                 id: 6783,
-                txt: "Ansøg",
-                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Publication"
+                text: "",
+                url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Publication",
+                arrow: "down right",
               }
             ],
             img: [
