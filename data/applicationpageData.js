@@ -322,13 +322,13 @@ export const applicationpageData = [
             type: "article",
             tag: "",
             headline: "Opslag: Åbent",
-            subheadline: "Bevillinger til internationale konferencer og workshops i Danmark.",
-            text: "",
+            subheadline: "",
+            text: "Bevillinger til internationale konferencer og workshops i Danmark.",
             createdDate: "12.11.2022",
             link: [
               {
                 id: 13321,
-                text: "",
+                text: "Ansøg",
                 url: "https://carlsbergfondet.dk/da/Ansoeger/Sog-Stotte/Opslag-og-vejledning/Conferences",
                 arrow: "down right",
               }
