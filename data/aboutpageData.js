@@ -471,7 +471,8 @@ export const aboutpageData = [
               {
                 id: 531,
                 text: "",
-                url: "/"
+                url: "/",
+                arrow: "down right"
               }
             ]
           },
@@ -492,7 +493,8 @@ export const aboutpageData = [
               {
                 id: 551,
                 text: "",
-                url: "/"
+                url: "/",
+                arrow: "down right"
               }
             ]
           },
@@ -505,7 +507,7 @@ export const aboutpageData = [
             img: [
               {
                 id: 190,
-                src: "/data/media/pod2.png",
+                src: "/data/media/bryggeren.png",
                 alt: "billede"
               }
             ],
@@ -513,7 +515,8 @@ export const aboutpageData = [
               {
                 id: 551,
                 text: "",
-                url: "/"
+                url: "/",
+                arrow: "down right"
               }
             ]
           }

@@ -37,7 +37,7 @@ export const data = [
         {
           id: 1161,
           linkTxt: "Ansøg nu",
-          url: "/"
+          url: "/ansog"
         },
         {
           id: 3297,

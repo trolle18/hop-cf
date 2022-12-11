@@ -23,7 +23,7 @@ export const data = [
         {
           id: 1840,
           headline: "Om fondet",
-          url: "/",
+          url: "/omfondet",
           links: [
             {
               id: 1841,
@@ -82,7 +82,7 @@ export const data = [
         {
           id: 1880,
           headline: "Ansøg",
-          url: "/",
+          url: "/ansog",
           links: [
             {
               id: 1881,
