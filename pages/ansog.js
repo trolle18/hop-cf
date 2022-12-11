@@ -11,6 +11,7 @@ import TextFondetsMidler from '../components/TextFondetsMidler';
 import BlockGridSection from '../components/BlockGridSection';
 import TextBlock from '../components/TextBlock';
 import ArticleSection from '../components/ArticleSection';
+import SortArticleSection from '../components/SortArticleSection';
 
 
 export default function Application() {
@@ -45,7 +46,7 @@ export default function Application() {
             ))} 
 
             {data.applicationArticles?.map((data) => ( 
-              <ArticleSection key={data.id} data={data}/>
+              <SortArticleSection key={data.id} data={data}/>
             ))}   
 
             {data.purposeSection?.map((data) => ( 
