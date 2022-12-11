@@ -25,7 +25,7 @@ export default function Home() {
       })
   }, [])
 
-  if (isLoading) return <p>Loading...</p>
+  if (isLoading) return <p></p>
   if (!sectionData) return <p>No data</p>
 
   return (
@@ -34,7 +34,9 @@ export default function Home() {
       {sectionData.homepageData.map((data) => (
         
         <main className="page" key={data.id}>
-          <LoadModal />
+          <section className="modal-wrapper modal-theme-lightest-green modal-hops-light-green">
+            <LoadModal />
+          </section>
 
           {data.hero?.map((data) => ( 
             <Hero key={data.id}  data={data}/>

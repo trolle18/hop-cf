@@ -5,11 +5,11 @@ export default function SubpageHero({ data }) {
 
     return (
         <>
-        <section className="hero-wrapper subpagehero-wrapper " key={data.id} >
+        {/* <section className="hero-wrapper subpagehero-wrapper " key={data.id} > */}
             <div className="hero" key={data.id}>
                 
                 <div className="hero-cntr color-hero theme-lightest-green">                    
-                    <div className="hero-cntr__img-cntr color-hero theme-lightest-green">
+                    <div className="hero-cntr__img-cntr color-hero">
                     </div>
 
                     <div className="hero-cntr__txt-cntr subpage-hero-text">
@@ -21,7 +21,7 @@ export default function SubpageHero({ data }) {
                 </div>            
                 
             </div>
-        </section>
+        {/* </section> */}
         </>
     )
 }

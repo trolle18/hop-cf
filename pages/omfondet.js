@@ -7,6 +7,7 @@ import SwiperCarousel from '../components/SwiperCarousel';
 import TextBevillingSection from '../components/TextBevillingSection';
 import TextFondetsMidler from '../components/TextFondetsMidler';
 import BlockGridSection from '../components/BlockGridSection';
+import LoadModal from '../components/LoadModal';
 
 
 export default function About() {
@@ -23,43 +24,51 @@ export default function About() {
         })
     }, [])
   
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return <p></p>
     if (!sectionData) return <p>No data</p>
 
   return (
     <>
       {sectionData.aboutpageData.map((data) => (    
         <main className="page" key={data.id}>
-            {data.hero?.map((data) => ( 
-              <SubpageHero key={data.id}  data={data}/>
-            ))}  
-            
-            {data.purposeSection?.map((data) => ( 
-              <AboutPurposeSection key={data.id} data={data}/>
-            ))}   
 
-            {data.txtSliderSection?.map((data) => ( 
-              <section className="textSection" key={data.id}>
-                    <TagHeadlineSubheadline data={data}/>
-                    <SwiperCarousel data={data}/>
-                </section>      
-            ))} 
+          <section className="modal-wrapper modal-theme-midnight-green modal-hops-light-green">
+            <LoadModal />
+          </section>
+          
 
-            {data.txtBevillingSection?.map((data) => ( 
-              <TextBevillingSection key={data.id} data={data}/>
-            ))} 
+          {data.hero?.map((data) => ( 
+            <section className="hero-wrapper subpagehero-wrapper theme-dark-grey" key={data.id} >
+              <SubpageHero data={data}/>
+            </section>
+          ))}  
+          
+          {data.purposeSection?.map((data) => ( 
+            <AboutPurposeSection key={data.id} data={data}/>
+          ))}   
 
-            {data.midlerSection?.map((data) => ( 
-              <TextFondetsMidler key={data.id} data={data}/>
-            ))} 
+          {data.txtSliderSection?.map((data) => ( 
+            <section className="textSection" key={data.id}>
+                  <TagHeadlineSubheadline data={data}/>
+                  <SwiperCarousel data={data}/>
+              </section>      
+          ))} 
 
-            {data.otherProjectsSection?.map((data) => ( 
-              <BlockGridSection key={data.id} data={data}/>
-            ))} 
+          {data.txtBevillingSection?.map((data) => ( 
+            <TextBevillingSection key={data.id} data={data}/>
+          ))} 
 
-            {data.newsletterBlock?.map((data) => ( 
-              <NewsletterBlock key={data.id} data={data}/>
-            ))} 
+          {data.midlerSection?.map((data) => ( 
+            <TextFondetsMidler key={data.id} data={data}/>
+          ))} 
+
+          {data.otherProjectsSection?.map((data) => ( 
+            <BlockGridSection key={data.id} data={data}/>
+          ))} 
+
+          {data.newsletterBlock?.map((data) => ( 
+            <NewsletterBlock key={data.id} data={data}/>
+          ))} 
 
         </main>
       ))}

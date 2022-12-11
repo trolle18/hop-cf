@@ -12,6 +12,8 @@ import BlockGridSection from '../components/BlockGridSection';
 import TextBlock from '../components/TextBlock';
 import ArticleSection from '../components/ArticleSection';
 import SortArticleSection from '../components/SortArticleSection';
+import SeeMoreCtaLink from '../components/SeeMoreCtaLink';
+import LoadModal from '../components/LoadModal';
 
 
 export default function Application() {
@@ -28,53 +30,49 @@ export default function Application() {
         })
     }, [])
   
-    if (isLoading) return <p>Loading...</p>
+    if (isLoading) return <p></p>
     if (!sectionData) return <p>No data</p>
 
-  return (
+  return ( 
     <>
       {sectionData.applicationpageData.map((data) => (    
         <main className="page" key={data.id}>
-            {data.hero?.map((data) => ( 
-              <SubpageHero key={data.id}  data={data}/>
-            ))}  
 
-            {data.txtBlock?.map((data) => ( 
-              <section className="textSection theme-l-grey" key={data.id} data={data}>
-                <TagHeadlineSubheadline data={data}/>      
-              </section>   
-            ))} 
+        <section className="modal-wrapper modal-theme-dark-red modal-hops-yellow">
+            <LoadModal />
+          </section>
 
-            {data.applicationArticles?.map((data) => ( 
-              <SortArticleSection key={data.id} data={data}/>
-            ))}   
+          {data.hero?.map((data) => ( 
+            <section className="hero-wrapper subpagehero-wrapper theme-midnight-green" key={data.id} >
+              <SubpageHero data={data}/>
+            </section>
+          ))}  
 
-            {data.purposeSection?.map((data) => ( 
-              <AboutPurposeSection key={data.id} data={data}/>
-            ))}   
+          {data.txtBlock?.map((data) => ( 
+            <section className="textSection" key={data.id} data={data}>
+              <TagHeadlineSubheadline data={data}/>      
+            </section>   
+          ))} 
 
-            {data.txtSliderSection?.map((data) => ( 
-              <section className="textSection" key={data.id}>
-                    <TagHeadlineSubheadline data={data}/>
-                    <SwiperCarousel data={data}/>
-                </section>      
-            ))} 
+          {data.applicationArticles?.map((data) => ( 
+            <SortArticleSection key={data.id} data={data}/>
+          ))}   
+          {data.txtBevillingSection?.map((data) => ( 
+        
+            <section className="textSection"  key={data.id}>
+              <TagHeadlineSubheadline data={data}/>   
+              <div className="textSection__cntr"> 
+                <div className="seeMore-cntr">
+                  <SeeMoreCtaLink data={data}/>
+                </div> 
+              </div>  
+            </section>
+          ))} 
 
-            {data.txtBevillingSection?.map((data) => ( 
-              <TextBevillingSection key={data.id} data={data}/>
-            ))} 
 
-            {/* {data.midlerSection?.map((data) => ( 
-              <TextFondetsMidler key={data.id} data={data}/>
-            ))}  */}
-
-            {data.otherProjectsSection?.map((data) => ( 
-              <BlockGridSection key={data.id} data={data}/>
-            ))} 
-{/* 
-            {data.newsletterBlock?.map((data) => ( 
-              <NewsletterBlock key={data.id} data={data}/>
-            ))}  */}
+          {data.otherProjectsSection?.map((data) => ( 
+            <BlockGridSection key={data.id} data={data}/>
+          ))} 
 
         </main>
       ))}

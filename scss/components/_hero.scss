@@ -187,14 +187,48 @@
   }
 }
 
+.hero-wrapper.subpagehero-wrapper.theme-midnight-green {
+  .hero-cntr.color-hero {
+    background-color: $clr_midnight_green;
+    color: $clr_lightest_green !important;
+    filter: none !important;    
+  }
+}
+
+.hero-wrapper.subpagehero-wrapper.theme-lightest-green {
+  .hero-cntr.color-hero {
+    background-color: $clr_lightest_green;
+    color: $clr_midnight_green !important;
+    filter: none !important;    
+  }
+}
+
+.hero-wrapper.subpagehero-wrapper.theme-dark-red {
+  .hero-cntr.color-hero {
+    background-color: $clr_dark-red;
+    color: $clr_yellow !important;
+    filter: none !important;    
+  }
+}
+
+.hero-wrapper.subpagehero-wrapper.theme-dark-grey {
+  .hero-cntr.color-hero {
+    background-color: $clr_m-grey;
+    color: $clr_white !important;
+    filter: none !important;    
+  }
+}
+
+
 .hero-cntr.color-hero.theme-lightest-green {
   background-color: $clr_midnight_green;
   color: $clr_midnight_green !important;
   filter: none !important;    
 }
 
+
 .theme-midnight-green {
-    background-color: $clr_midnight_green;
+  background-color: $clr_midnight_green;
 }
 
 
