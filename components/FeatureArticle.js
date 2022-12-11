@@ -1,50 +1,17 @@
-// import Image from "next/image";
+
 
 export default function FeatureArticle ( {data} ) {
 
-    // function getMedia(data) {
-    //     if (data.video.alt === "video") {
-    //         return (
-    //             <div className="article-img__video-cntr">
-    //                 {data.video?.map((video) => (
-    //                     <video
-    //                     key={video.id}
-    //                     // autoPlay
-    //                     muted
-    //                     controls={true}
-    //                     // loop
-    //                     >
-    //                         <source src={video.src}/>
-    //                     </video>
-    //                 ))}                        
-    //             </div>
-                
-    //         )
-    //     }
-    //       if (data.video.alt != "video") {
-    //         return (
-    //             <div className="article-img__img-cntr">
-    //                 {data.img.map((img) => (
-    //                     <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1000} />
-    //                 ))}
-    //             </div>
-    //         )
-    //     }
-    // }
-    
 
 
     return (
         <>
             <article className="feature-article" key={data.id}>
                 <div className="feature-img">
-                    {/* {getMedia(data)} */}
                     <div className="feature-img__video-cntr">
                     {data.video?.map((video) => (
                         <video
                         key={video.id}
-                        // muted
-                        // controls={false}
                         >
                             <source src={video.src}/>
                         </video>

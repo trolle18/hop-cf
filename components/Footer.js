@@ -2,17 +2,6 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 export default function Footer() {
-    // const [sectionData, setSectionData] = useState([]);
-
-    // // Fetch data from JSON
-    // useEffect(() => {
-    //     async function getData() {
-    //         const response = await fetch("/data/components/footerData.json");
-    //         const data = await response.json();
-    //         setSectionData(data);             
-    //     }       
-    //     getData();        
-    // }, []);
 
     const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)

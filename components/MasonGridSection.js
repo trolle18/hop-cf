@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 import CtaLink from './CtaLink';
 import MasonArticle from './MasonArticle';
-import TagHeadline from './TextSectionModules/TagHeadline';
+// import TagHeadline from './TextSectionModules/TagHeadline';
 
-export default function MasonGridSection() {
-    const [sectionData, setSectionData] = useState([]);
+export default function MasonGridSection({ data }) {
+    // const [sectionData, setSectionData] = useState([]);
 
-    // Fetch data from JSON
-    useEffect(() => {
-        async function getData() {
-            const response = await fetch("/data/homePageData.json");
-            const data = await response.json();
-            setSectionData(data);             
-        }       
-        getData();        
-    }, []);
+    // // Fetch data from JSON
+    // useEffect(() => {
+    //     async function getData() {
+    //         const response = await fetch("/data/homePageData.json");
+    //         const data = await response.json();
+    //         setSectionData(data);             
+    //     }       
+    //     getData();        
+    // }, []);
 
     return (
         <>
-        {sectionData.map((data) => (
+        {/* {sectionData.map((data) => ( */}
             <section className="textSection" key={data.id}>
                 {data?.txtEventSection.map((section) => (
                 <>
@@ -54,7 +54,7 @@ export default function MasonGridSection() {
                 </>          
                 ))} 
             </section>        
-        ))}  
+        {/* ))}   */}
         </>
     )
 }
