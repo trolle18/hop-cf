@@ -88,7 +88,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. oktober 2023",
             subheadline: "Opslag: Åbner den 30. juni 2023",
             text: "Treårige bevillinger til nyansatte lektorer i et fast lektorat til etablering af selvstændig forskningsgruppe eller forskningsmiljø.",
-            createdDate: "",
             deadline: "2023-10-01",
             opens: "2023-06-30",
             link: [
@@ -117,7 +116,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. oktober 2023",
             subheadline: "Opslag: Åbner den 30. juni 2023",
             text: "Femårige bevillinger til internationalt anerkendte nyligt fastansatte professorer til gennemførelse af nytænkende og ambitiøse forskningsprojekter.",
-            createdDate: "",
             deadline: "2023-10-01",
             opens: "2023-06-30",
             link: [
@@ -146,7 +144,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. oktober 2024",
             subheadline: "Opslag: Åbner den 30. juni 2024",
             text: "Femårige bevillinger til internationalt anerkendte professorer eller forskergrupper til gennemførelse af visionære forskningsprojekter med potentiale til tværvidenskabeligt gennembrud.",
-            createdDate: "",
             deadline: "2024-10-01",
             opens: "2024-06-30",
             link: [
@@ -175,7 +172,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. april 2023",
             subheadline: "Opslag: Åbner den 31. januar 2023",
             text: "Et- til toårige postdocstipendier til ophold ved førende udenlandske forskningsinstitutioner.",
-            createdDate: "",
             deadline: "2023-04-01",
             opens: "2023-04-01",
             link: [
@@ -204,7 +200,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. april 2023",
             subheadline: "Opslag: Åbner den 31. januar 2023",
             text: "Toårige postdocstipendier til ophold ved University of Oxford.",
-            createdDate: "",
             deadline: "2023-04-01",
             opens: "2023-01-31",
             link: [
@@ -233,7 +228,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. oktober 2023",
             subheadline: "Opslag: Åbner den 30. juni 2023",
             text: "Toårige postdocstipendier til forskning ved danske forskningsinstitutioner i forlængelse af et internationaliseringsstipendium fra Carlsbergfondet <br/>eller andet forskningsophold i udlandet.",
-            createdDate: "",
             deadline: "2023-10-01",
             opens: "2023-06-30",
             link: [
@@ -260,7 +254,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. oktober 2023",
             subheadline: "Opslag: Åbner den 30. juni 2023",
             text: "Etårige fuldtidsstipendier til førende, etablerede forskere inden for humaniora eller samfundsvidenskab og med et projekt, der sigter mod publicering af en banebrydende monografi eller fremragende dansk doktorafhandling.",
-            createdDate: "",
             deadline: "2023-10-01",
             opens: "2023-06-30",
             link: [
@@ -287,7 +280,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. oktober 2023",
             subheadline: "Opslag: Åbner den 30. juni 2023",
             text: "Bevillinger til apparatur, registerdata og databaser.",
-            createdDate: "",
             deadline: "2023-10-01",
             opens: "2023-06-30",
             link: [
@@ -314,7 +306,6 @@ export const applicationpageData = [
             headline: "Deadline: 1. oktober 2023",
             subheadline: "Opslag: Åbner den 30. juni 2023",
             text: "Bevillinger til feltekspeditioner eller forskningsophold ved udenlandske forskningsinstitutioner over 100.000 kr.",
-            createdDate: "",
             deadline: "2023-10-01",
             opens: "2023-06-01",
             link: [
@@ -341,7 +332,6 @@ export const applicationpageData = [
             headline: "Opslag: Åbent",
             subheadline: "",
             text: "Bevillinger til internationale konferencer og workshops i Danmark.",
-            createdDate: "",
             deadline: "",
             opens: "",
             link: [
@@ -368,7 +358,6 @@ export const applicationpageData = [
             headline: "Opslag: Åbent",
             subheadline: "",
             text: "Bevillinger til feltekspeditioner i udlandet eller forskningsophold ved udenlandske forskningsinstitutioner under 100.000 kr.",
-            createdDate: "",
             deadline: "",
             opens: "",
             link: [
@@ -395,7 +384,6 @@ export const applicationpageData = [
             headline: "Opslag: Åbent",
             subheadline: "",
             text: "Bevillinger til publicering af monografier baseret på forskning støttet af Carlsbergfondet.",
-            createdDate: "",
             deadline: "",
             opens: "",
             link: [
