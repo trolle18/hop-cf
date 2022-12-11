@@ -90,6 +90,7 @@ export const applicationpageData = [
             text: "Treårige bevillinger til nyansatte lektorer i et fast lektorat til etablering af selvstændig forskningsgruppe eller forskningsmiljø.",
             deadline: "2023-10-01",
             opens: "2023-06-30",
+            keywords: [ "oktober", "2023", "Treårige bevillinger", "nyansatte lektorer", "fast lektorat", "nyligt fastansatte professorer", "selvstændig forskningsgruppe eller forskningsmiljø" ],
             link: [
               {
                 id: 2220,
@@ -118,6 +119,7 @@ export const applicationpageData = [
             text: "Femårige bevillinger til internationalt anerkendte nyligt fastansatte professorer til gennemførelse af nytænkende og ambitiøse forskningsprojekter.",
             deadline: "2023-10-01",
             opens: "2023-06-30",
+            keywords: [ "oktober", "2023", "Femårige bevillinger", "internationalt", "professorer", "nyligt fastansatte professorer", "nytænkende og ambitiøse forskningsprojekter" ],
             link: [
               {
                 id: 3323232566,
@@ -146,6 +148,7 @@ export const applicationpageData = [
             text: "Femårige bevillinger til internationalt anerkendte professorer eller forskergrupper til gennemførelse af visionære forskningsprojekter med potentiale til tværvidenskabeligt gennembrud.",
             deadline: "2024-10-01",
             opens: "2024-06-30",
+            keywords: [ "oktober", "2023", "Femårige bevillinger", "internationalt", "professorer", "forskergrupper", "forskningsprojekter", "tværvidenskabeligt" ],
             link: [
               {
                 id: 939832,
@@ -174,6 +177,7 @@ export const applicationpageData = [
             text: "Et- til toårige postdocstipendier til ophold ved førende udenlandske forskningsinstitutioner.",
             deadline: "2023-04-01",
             opens: "2023-04-01",
+            keywords: [ "april", "2023", "toårig postdocstipendier", "etårig", "udenlandske forskningsinstitutioner", "forskningsophold i udlandet"],
             link: [
               {
                 id: 397292,
@@ -202,6 +206,7 @@ export const applicationpageData = [
             text: "Toårige postdocstipendier til ophold ved University of Oxford.",
             deadline: "2023-04-01",
             opens: "2023-01-31",
+            keywords: [ "april", "2023", "Toårig postdocstipendier", "University of Oxford", "internationaliseringsstipendium", "forskningsophold i udlandet"],
             link: [
               {
                 id: 4444422,
@@ -227,9 +232,10 @@ export const applicationpageData = [
             category: "",
             headline: "Deadline: 1. oktober 2023",
             subheadline: "Opslag: Åbner den 30. juni 2023",
-            text: "Toårige postdocstipendier til forskning ved danske forskningsinstitutioner i forlængelse af et internationaliseringsstipendium fra Carlsbergfondet <br/>eller andet forskningsophold i udlandet.",
+            text: "Toårige postdocstipendier til forskning ved danske forskningsinstitutioner i forlængelse af et internationaliseringsstipendium fra Carlsbergfondet eller andet forskningsophold i udlandet.",
             deadline: "2023-10-01",
             opens: "2023-06-30",
+            keywords: [ "2023", "oktober", "Toårige postdocstipendier", " danske forskningsinstitutioner", "internationaliseringsstipendium", "forskningsophold i udlandet"],
             link: [
               {
                 id: 2332320009,
@@ -256,6 +262,7 @@ export const applicationpageData = [
             text: "Etårige fuldtidsstipendier til førende, etablerede forskere inden for humaniora eller samfundsvidenskab og med et projekt, der sigter mod publicering af en banebrydende monografi eller fremragende dansk doktorafhandling.",
             deadline: "2023-10-01",
             opens: "2023-06-30",
+            keywords: [ "2023", "oktober", "Etårige fuldtidsstipendier", "humaniora", "samfundsvidenskab", "monografi", "doktorafhandling"],
             link: [
               {
                 id: 293895,
@@ -282,6 +289,7 @@ export const applicationpageData = [
             text: "Bevillinger til apparatur, registerdata og databaser.",
             deadline: "2023-10-01",
             opens: "2023-06-30",
+            keywords: [ "2023", "oktober", "bevilling", "apparatur", "registerdata", "databaser"],
             link: [
               {
                 id: 9908874,
@@ -308,6 +316,7 @@ export const applicationpageData = [
             text: "Bevillinger til feltekspeditioner eller forskningsophold ved udenlandske forskningsinstitutioner over 100.000 kr.",
             deadline: "2023-10-01",
             opens: "2023-06-01",
+            keywords: [ "2023", "oktober", "bevilling", "feltekspeditioner", "forskningsophold", "udenlandske forskningsinstitutioner"],
             link: [
               {
                 id: 900273,
@@ -334,6 +343,7 @@ export const applicationpageData = [
             text: "Bevillinger til internationale konferencer og workshops i Danmark.",
             deadline: "",
             opens: "",
+            keywords: [ "bevilling", "internationale", "konferencer", "workshops", "Danmark" ],
             link: [
               {
                 id: 13321,
@@ -360,6 +370,7 @@ export const applicationpageData = [
             text: "Bevillinger til feltekspeditioner i udlandet eller forskningsophold ved udenlandske forskningsinstitutioner under 100.000 kr.",
             deadline: "",
             opens: "",
+            keywords: [ "bevilling", "udlandet", "feltekspeditioner", "forskningsophold", "udenlandske forskningsinstitutioner" ],
             link: [
               {
                 id: 87878,
@@ -386,6 +397,7 @@ export const applicationpageData = [
             text: "Bevillinger til publicering af monografier baseret på forskning støttet af Carlsbergfondet.",
             deadline: "",
             opens: "",
+            keywords: [ "bevilling", "publicering", "feltekspeditioner", "monografier" ],
             link: [
               {
                 id: 6783,
