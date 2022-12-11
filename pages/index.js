@@ -33,8 +33,6 @@ export default function Home() {
   //   } 
   //   else {
   //       nav.classList.remove("nav-colored");
-  //   }
-  // }
 
 
 
