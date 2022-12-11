@@ -3,7 +3,7 @@ import Article from "./Article";
 
 export default function SortArticleSection({ data }) {
     const [searchValue, setSearchValue] = useState("");
-    
+
     // Adds function to search for keywords in searchbar 
     function matchKeywords(searchValue, keywords) {
         let match = false;
@@ -19,21 +19,20 @@ export default function SortArticleSection({ data }) {
         <>
         <section className="textSection">
             <div className="textSection__cntr">
-            <div className="search-cntr">
-                <input 
-                className="search" 
-                type="text" 
-                placeholder="Søg..." 
-                onChange={(e) => setSearchValue(e.target.value.toLowerCase())} 
-                />
-                <p>Søg</p> 
-                <div className="search-svg"></div>
-            </div>
+                <div className="search-cntr">
+                    <input 
+                    className="search-cntr__input" 
+                    type="text" 
+                    placeholder="Søg" 
+                    onChange={(e) => setSearchValue(e.target.value.toLowerCase())} 
+                    />
+                    <div className="search-svg"></div>
+                </div>
 
                 <section className="article-section">
                     {data.articles
-                    .sort ((a, b) => a.deadline > b.deadline ? 1 : -1)
-                    .filter((data) => data.headline.toLowerCase().includes(searchValue) || matchKeywords(searchValue, data.keywords))
+                    .sort ((a, b) => a?.deadline > b?.deadline ? 1 : -1)
+                    .filter((data) => data.headline.toLowerCase().includes(searchValue) || matchKeywords(searchValue, data?.keywords))
                     .map((data) => (
                         <Article key={data.id} data={data} />
                     ))}

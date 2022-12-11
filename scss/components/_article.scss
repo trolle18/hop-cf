@@ -98,11 +98,12 @@
 
 .article-section {
   height: auto;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 2em;
+  column-gap: 2em;
+  row-gap: 2em;
 
   .article {
     height: auto;
@@ -186,11 +187,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 2em;
-    column-gap: 1em;
   
     .article {
       height: auto;
-      max-width: 48%;
+      width: 46%;
+      margin: 0 0;
     
       .article-img {  
         &__img-cntr {
@@ -203,9 +204,6 @@
 
 @media (min-width: 992px) {
   .article-section {
-    row-gap: 2em;
-    column-gap: .5em;
-  
     .article {
       height: auto;
       max-width: 48%;
@@ -222,9 +220,6 @@
 
 @media (min-width: 1200px) {
   .article-section {
-    row-gap: 3em;
-    column-gap: .5em;
-  
     .article {
       height: auto;
       max-width: 30%;
