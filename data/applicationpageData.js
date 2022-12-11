@@ -11,6 +11,7 @@ export const applicationpageData = [
     ],
 
 
+
     hero: [
       {
         
@@ -34,6 +35,8 @@ export const applicationpageData = [
         ]
       }
     ],
+
+
 
     txtBlock: [
       {
@@ -69,6 +72,7 @@ export const applicationpageData = [
         ]
       }
     ],
+
 
 
     applicationArticles: [
@@ -418,243 +422,87 @@ export const applicationpageData = [
       }
     ],
 
-
-    purposeSection: [
+    infoApplicationProcessSection: [
       {
-        id: 1244,
+        id: 344114,
         tag: "",
-        headline: "Fondets to formål",
+        headline: "Behandlingsprocedurer",
         headline2nd: "",
-        subheadline: "Vi er et af verdens ældste ervhervsdrivende fonde. Her blomstrer ambitiøs bryggerivirksomhed side om side med forskning og støtte til det ypperste inden for videnskab, kunst og kultur.",
-        text: "",
-        img: [
-          {
-            id: 313,
-            src: "",
-            alt: "image"
-
-          }
-        ],
-        link: [
-          {
-            id: 46723,
-            text: "Læs mere",
-            url: "/"
-
-          }
-        ],
-        articles: [
-          {
-            id: 235,
-            styleTag: "feature",
-            headline: "Her blomstrer bryggeri side om side med forskning",
-            subtext: "Majken Schultz, Formand Carlsbergfondet",
-            text: "Majken Schultz, Formand Carlsbergfondet",
-            link: [
-              {
-                id: 2125,
-                text: "",
-                url: "/"
-              }
-            ],
-            video: [
-              {
-                id: 87824,
-                src: "/data/media/videos/science.mp4",
-                alt: "video",
-                img: "/data/media/vidarticle3.png"
-              }
-            ],
-            img: [
-              {
-                id: 313,
-                src: "/data/media/CF_aboutarticle1.png",
-                alt: "image"
-    
-              }
-            ]
-          }
-        ],
+        subheadline: "Carlsbergfondet støtter de bedste forskere med de mest lovende projekter. Fondet ønsker at fremme international-iseringen og vækstlaget i danske grundforskning ved at støtte de i særklasse bedste og mest talentfulde yngre forskere.",
+        text: "Kort efter indsendelse af ansøgningen modtager ansøger en kvittering på e-mail, der bekræfter, at Carlsbergfondet har registreret ansøgningen. Ansøgeren vil kunne finde en fuld ansøgning som én PDF-fil i ansøgningssystemet 'CF-Grant'.",
+        textSecHead: "Behandling af ansøgninger:",
         textSec: [
           {
-            id: 12203,
-            text: "Carlsbergfondet blev grundlagt på en passion. En passion for perfektion. Passion-en kan findes i alt, hvad fondet foretager sig og er gengivet i de første linjer af Carlsberg-fondets fundats og indgraveret i marmor tavlen, som hænger over indgangsporten til Carlsbergs hovedsæde i Valby, København, som den dag i dag"
+            id: 8771,
+            text: "Alle ansøgninger behandles fortroligt."
           },
           {
-            id: 9923717,
-            text: "stadig stråler af klarsyn den dag i dag. ”De Gyldne Ord” er en hyldest til det excellente og sublime. De slår fast, at Carlsbergfondet skal stræbe efter den højst mulige kvalitet i alt, hvad fondet gør, og at man i driften af Carlsberg-bryggeriet aldrig kun skal have fokus på forretningen."
-          }
-        ]
-      }
-    ],
-
-
-    txtSliderSection: [
-      {
-        id: 214,
-        tag: "",
-        headline: "Bestyrelsen",
-        headline2nd: "",
-        subheadline: "",
-        text: "",
+            id: 9238237,
+            text: "Ansøgninger gennemgås for overensstemmelse med de generelle og specifikke krav beskrevet ovenfor."
+          },
+          {
+            id: 19774,
+            text: "Hvis en ansøgning ikke opfylder de generelle og specifikke krav, vil ansøgningen blive afvist administrativt."
+          },
+          {
+            id: 1234,
+            text: "Ansøgninger under følgende finansieringsinstrumenter behandles udelukkende af Carlsbergfondets bestyrelse:",
+            subText: [
+              {
+                id: 7317317,
+                text: "Internationaliseringsstipendier"
+              },
+              {
+                id: 5445,
+                text: "Besøgende Fellowships ved University of Oxford"
+              },
+              {
+                id: 32,
+                text: "Reintegrationsstipendier"
+              },
+              {
+                id: 588,
+                text: "Monografistipendier"
+              },
+              {
+                id: 2554,
+                text: "Forskningsinfrastruktur (under 3 mio. kr.)"
+              },
+              {
+                id: 23534,
+                text: "Ekskursioner / forskningsophold"
+              }
+            ]
+          },
+          {
+            id: 99933,
+            text: "Ansøgninger under følgende finansieringsinstrumenter vil desuden blive gennemgået af eksterne eksperter:",
+            subText: [
+              {
+                id: 7317317,
+                text: "Semper Ardens: Accelerate"
+              },
+              {
+                id: 245,
+                text: "Semper Ardens: Advance"
+              },
+              {
+                id: 3224,
+                text: "Forskningsinfrastruktur (over 3 mio. kr.)"
+              }
+            ]
+          },
+          {
+            id: 9221774,
+            text: "Carlsbergfondets bestyrelse træffer den endelige beslutning om alle ansøgninger."
+          },
+        ],
+        textCol: "Applicants will receive notification of the board's decision in the form of either a grant letter or a rejection letter by mid-December 2022. This does not apply to Semper Ardens: Advance applicants who have been invited to an interview in January 2023. These applicants will receive a notification of the board's decision in the form of either a grant letter or rejection letter by mid-February 2023.",
         link: [
           {
-            id: 122,
-            text: "",
-            url: ""
-
-          }
-        ],
-        articles: [
-          {
-            id: 184745,
-            online: "y",
-            type: "article",
-            styleTag: "regular",
-            tag: "Forkvinde",
-            category: "Forkvinde",
-            headline: "Maiken Schultz",
-            text: "",
-            createdDate: "Forkvinde",
-            img: [
-              {
-                id: 112330,
-                src: "/data/media/bestyrelsen/majkenschultz.png",
-                alt: "img"
-              }
-            ],
-            link: [
-              {
-                id: 14451,
-                text: "",
-                url: "/",
-              }
-            ]
-          },        
-          {
-            id: 1927515,
-            online: "y",
-            type: "article",
-            styleTag: "regular",
-            tag: "Næstformand",
-            category: "Næstformand",
-            headline: "Søren-Peter Olesen",
-            text: "",
-            createdDate: "Næstformand",
-            img: [
-              {
-                id: 112330,
-                src: "/data/media/bestyrelsen/sørenpeterolesen.png",
-                alt: "img"
-              }
-            ],
-            link: [
-              {
-                id: 14451,
-                text: "",
-                url: "/",
-              }
-            ]
-          },        
-          {
-            id: 3287145,
-            online: "y",
-            type: "article",
-            styleTag: "regular",
-            tag: "Bestyrelsesmedlem",
-            category: "Bestyrelsesmedlem",
-            headline: "Peter Hjort",
-            text: "",
-            createdDate: "Bestyrelsesmedlem",
-            img: [
-              {
-                id: 112330,
-                src: "/data/media/bestyrelsen/peterhjort.png",
-                alt: "img"
-              }
-            ],
-            link: [
-              {
-                id: 14451,
-                text: "",
-                url: "/",
-              }
-            ]
-          },
-          {
-            id: 184745,
-            online: "y",
-            type: "article",
-            styleTag: "regular",
-            tag: "Forkvinde",
-            category: "Forkvinde",
-            headline: "Maiken Schultz",
-            text: "",
-            createdDate: "Forkvinde",
-            img: [
-              {
-                id: 112330,
-                src: "/data/media/bestyrelsen/majkenschultz.png",
-                alt: "img"
-              }
-            ],
-            link: [
-              {
-                id: 14451,
-                text: "",
-                url: "/",
-              }
-            ]
-          },        
-          {
-            id: 1927515,
-            online: "y",
-            type: "article",
-            styleTag: "regular",
-            tag: "Næstformand",
-            category: "Næstformand",
-            headline: "Søren-Peter Olesen",
-            text: "",
-            createdDate: "Næstformand",
-            img: [
-              {
-                id: 112330,
-                src: "/data/media/bestyrelsen/sørenpeterolesen.png",
-                alt: "img"
-              }
-            ],
-            link: [
-              {
-                id: 14451,
-                text: "",
-                url: "/",
-              }
-            ]
-          },        
-          {
-            id: 3287145,
-            online: "y",
-            type: "article",
-            styleTag: "regular",
-            tag: "Bestyrelsesmedlem",
-            category: "Bestyrelsesmedlem",
-            headline: "Peter Hjort",
-            text: "",
-            createdDate: "Bestyrelsesmedlem",
-            img: [
-              {
-                id: 112330,
-                src: "/data/media/bestyrelsen/peterhjort.png",
-                alt: "img"
-              }
-            ],
-            link: [
-              {
-                id: 14451,
-                text: "",
-                url: "/",
-              }
-            ]
+            id: 8277272,
+            text: "Hele fondets fundats",
+            url: "/"
           }
         ]
       }
@@ -697,129 +545,6 @@ export const applicationpageData = [
       }
     ],
 
-    midlerSection: [
-      {
-        id: 9911275,
-        tag: "",
-        headline: "Fondets midler",
-        headline2nd: "",
-        subheadline: "GFondet ønsker at fremme international iseringen og vækstlaget i danske grundforskning ved at støtte de i særklasse bedste og mest talent fulde yngre forskere.",
-        text: "",
-        link: [
-          {
-            id: 962522,
-            text: "",
-            url: "/"
-          }
-        ],
-        articles: [
-          {
-            id: 5155,
-            online: "y",
-            type: "",
-            styleTag: "",
-            tag: "",
-            category: "1",
-            headline: "2018",
-            number: "276",
-            text: "mio",
-            link: [
-              {
-                id: 5951,
-                text: "",
-                url: "/"
-              }
-            ],
-            img: [
-              {
-                id:29581,
-                src: "/data/media/midlerstep1.svg",
-                alt: ""
-              }
-            ]
-          },
-        
-          {
-            id: 155578,
-            online: "y",
-            type: "",
-            styleTag: "",
-            tag: "",
-            category: "2",
-            headline: "2019",
-            number: "414",
-            text: "mio",
-            link: [
-              {
-                id: 661,
-                text: "",
-                url: "/"
-              }
-            ],
-            img: [
-              {
-                id: 918813,
-                src: "/data/media/midlerstep2.svg",
-                alt: ""
-              }
-            ]
-          },
-        
-          {
-            id: 37731,
-            online: "y",
-            type: "",
-            styleTag: "",
-            tag: "",
-            category: "3",
-            headline: "2020",
-            number: "537",
-            text: "mio",
-            link: [
-              {
-                id: 853,
-                text: "",
-                url: "/"
-              }
-            ],
-            img: [
-              {
-                id: 988222,
-                src: "/data/media/midlerstep3.svg",
-                alt: ""
-              }
-            ]
-          },
-        
-          {
-            id: 2682,
-            online: "y",
-            type: "",
-            styleTag: "",
-            tag: "",
-            category: "4",
-            headline: "2021",
-            number: "612",
-            text: "mio",
-            link: [
-              {
-                id: 3921,
-                text: "",
-                url: "/"
-              }
-            ],
-            img: [
-              {
-                id: 197111,
-                src: "/data/media/midlerstep4.svg",
-                alt: ""
-              }
-            ]
-          }
-        ]
-
-      }
-    ],
 
 
     otherProjectsSection: [
