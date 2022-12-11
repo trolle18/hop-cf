@@ -19,13 +19,13 @@ export const applicationpageData = [
         headline: "Ansøgninger og bevillinger",
         text: "",
         theme: "light",
-        img: [
-          {
-            id: 1012912,
-            src: "/data/media/hero.png",
-            alt: "hero image"
-          }
-        ],
+        // img: [
+        //   {
+        //     id: 1012912,
+        //     src: "/data/media/hero.png",
+        //     alt: "hero image"
+        //   }
+        // ],
         link: [
           {
             id: 2434,

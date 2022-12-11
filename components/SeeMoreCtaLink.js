@@ -42,7 +42,7 @@ export default function SeeMoreCtaLink({ data }) {
             return (
             <span className="arrow-left"></span>
             ) 
-        }
+        }             
         else { 
             return(
                 <span className="arrow-top-right"></span>
@@ -52,8 +52,8 @@ export default function SeeMoreCtaLink({ data }) {
 
     return (
         <>
-        {data.link.map((data) => (
-            <a className="seeMore-cntr__inner-cntr" key={data.id} href={data.url}>
+        {data?.link.map((data) => (
+            <a className="seeMore-cntr__inner-cntr" key={data.id} href={data?.url}>
                 <div className="arrow-cntr">
                     {checkArrowType(data)}
                 </div>

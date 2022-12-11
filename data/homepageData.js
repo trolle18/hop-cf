@@ -118,7 +118,7 @@ export const homepageData = [
           {
             id: 122,
             text: "Flere nyheder",
-            url: "/"
+            url: "/nyheder"
 
           }
         ],
@@ -138,7 +138,7 @@ export const homepageData = [
               {
                 id: 2220,
                 txt: "Læs mere",
-                url: "/",
+                url: "/nyheder",
                 type: "read"
               }
             ],
@@ -166,7 +166,7 @@ export const homepageData = [
               {
                 id: 2220,
                 txt: "Læs mere",
-                url: "/",
+                url: "/nyheder",
                 type: "read"
               }
             ],
@@ -194,7 +194,7 @@ export const homepageData = [
               {
                 id: 2220,
                 txt: "Læs mere",
-                url: "/",
+                url: "/nyheder",
                 type: "read"
               }
             ],
@@ -222,7 +222,7 @@ export const homepageData = [
               {
                 id: 2220,
                 txt: "Læs mere",
-                url: "/",
+                url: "/nyheder",
                 type: "read"
               }
             ],
@@ -250,7 +250,7 @@ export const homepageData = [
               {
                 id: 2220,
                 txt: "Læs mere",
-                url: "/",
+                url: "/nyheder",
                 type: "read"
               }
             ],

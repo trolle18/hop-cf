@@ -17,13 +17,13 @@ export const aboutpageData = [
         id: 1904,
         headline: "Introduktion til Carlsbergfondet og formål",
         text: "",
-        img: [
-          {
-            id: 1012912,
-            src: "/data/media/hero.png",
-            alt: "hero image"
-          }
-        ],
+        // img: [
+        //   {
+        //     id: 1012912,
+        //     src: "/data/media/hero.png",
+        //     alt: "hero image"
+        //   }
+        // ],
         link: [
           {
             id: 2434,

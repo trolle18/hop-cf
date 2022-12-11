@@ -22,7 +22,7 @@ export const newspageData = [
         img: [
           {
             id: 151,
-            src: "/data/media/hero.png",
+            src: "/data/media/katherine-hero.png",
             alt: "hero image"
           }
         ],
@@ -58,7 +58,7 @@ export const newspageData = [
           {
             id: 121542,
             text: "",
-            url: "/"
+            url: "/nyheder"
           }
         ],
       }
@@ -97,7 +97,7 @@ export const newspageData = [
               {
                 id: 541,
                 txt: "",
-                url: "/"
+                url: "/nyheder"
               }
             ]
           },
@@ -125,7 +125,7 @@ export const newspageData = [
               {
                 id: 531,
                 txt: "",
-                url: "/"
+                url: "/nyheder"
               }
             ]
           },      
@@ -146,7 +146,7 @@ export const newspageData = [
               {
                 id: 2220,
                 txt: "",
-                url: "/",
+                url: "/nyheder",
                 type: "read"
               }
             ],
@@ -175,8 +175,8 @@ export const newspageData = [
             link: [
               {
                 id: 2220,
-                txt: "Læs mere",
-                url: "/",
+                txt: "",
+                url: "/nyheder",
                 type: "read"
               }
             ],
@@ -205,8 +205,8 @@ export const newspageData = [
             link: [
               {
                 id: 2220,
-                txt: "Læs mere",
-                url: "/",
+                txt: "",
+                url: "/nyheder",
                 type: "read"
               }
             ],
@@ -234,8 +234,8 @@ export const newspageData = [
             link: [
               {
                 id: 2220,
-                txt: "Læs mere",
-                url: "/",
+                txt: "",
+                url: "/nyheder",
                 type: "read"
               }
             ],
@@ -263,8 +263,8 @@ export const newspageData = [
             link: [
               {
                 id: 2220,
-                txt: "Læs mere",
-                url: "/",
+                txt: "",
+                url: "/nyheder",
                 type: "read"
               }
             ],

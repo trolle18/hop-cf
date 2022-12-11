@@ -3,7 +3,6 @@ import SubpageHero from '../components/SubpageHero';
 import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
 import BlockGridSection from '../components/BlockGridSection';
 import SortArticleSection from '../components/SortArticleSection';
-import SeeMoreCtaLink from '../components/SeeMoreCtaLink';
 import LoadModal from '../components/LoadModal';
 import NewsletterBlock from '../components/NewsletterBlock';
 import VideoSection from '../components/VideoSection';
@@ -40,6 +39,11 @@ export default function News() {
               <SubpageHero data={data}/>
             </section>
           ))}  
+          {/* {data.hero?.map((data) => ( 
+            <section className="hero-wrapper subpagehero-wrapper theme-midnight-green" key={data.id} >
+              <Hero data={data}/>
+            </section>
+          ))}   */}
 
           {data.txtBlock?.map((data) => ( 
             <section className="textSection" key={data.id} data={data}>
