@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 
 export { NavLink };
 
-NavLink.propTypes = {
-    href: PropTypes.string.isRequired,
-    exact: PropTypes.bool
-};
+   NavLink.propTypes = {
+        href: PropTypes.string.isRequired,
+        exact: PropTypes.bool
+    };
 
-NavLink.defaultProps = {
-    exact: false
-};
+    NavLink.defaultProps = {
+        exact: false
+    };
 
 function NavLink({ href, exact, children, ...props }) {
     const { pathname } = useRouter();
@@ -20,6 +20,8 @@ function NavLink({ href, exact, children, ...props }) {
     if (isActive) {
         props.className += ' active';
     }
+
+ 
 
     return (
         <Link href={href} {...props} >

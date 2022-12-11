@@ -27,12 +27,12 @@ export const data = [
         {
           id: 761,
           linkTxt: "Viden",
-          url: "/"
+          url: "/viden"
         },
         {
           id: 812,
           linkTxt: "Hvad har vi støttet",
-          url: "/"
+          url: "/hvadharvistottet"
         },
         {
           id: 1161,

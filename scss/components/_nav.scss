@@ -227,11 +227,39 @@
               color: $clr_white;
               text-decoration: none;
               transition: ease-in .02s;
+              display: flex;
+              flex-direction: column;
               cursor: pointer;
 
               &:hover {
-                color: $clr_light_green;
+                // color: $clr_l_grey;
+
+                &::after {
+                  content: "";
+                  background-color: $clr_l_grey;
+                }
               }
+
+              &::after {
+                content: "";
+                margin: .25em 0 0 0;
+                width: inherit;
+                height: 1px;
+                background-color: transparent;
+              }
+            }
+
+            a.active {
+              // color: $clr_light_green;
+              display: flex;
+              flex-direction: column;
+              // gap: .25em;
+
+              &::after {
+                content: "";
+                background-color: $clr_white;
+              }
+              
             }
           }
         }

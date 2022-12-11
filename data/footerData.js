@@ -28,17 +28,17 @@ export const data = [
             {
               id: 1841,
               text: "Carlsbergfondet",
-              url: "/"
+              url: "/omfondet"
             },
             {
               id: 1842,
               text: "Passion for perfektion",
-              url: "/"
+              url: "/omfondet"
             },
             {
               id: 1843,
               text: "Hvem er vi",
-              url: "/"
+              url: "/omfondet"
             }
           ]
         },
@@ -87,17 +87,17 @@ export const data = [
             {
               id: 1881,
               text: "Carlsbergfondet",
-              url: "/"
+              url: "/omfondet"
             },
             {
               id: 1882,
               text: "Passion for perfektion",
-              url: "/"
+              url: "/omfondet"
             },
             {
               id: 1883,
               text: "Hvem er vi",
-              url: "/"
+              url: "/omfondet"
             }
           ]
         }
