@@ -1,16 +1,7 @@
-import Head from 'next/head'
 import React, { useState, useEffect } from 'react';
-import TextCarouselSection from '../components/TextCarouselSection'
-import NewsletterBlock from '../components/NewsletterBlock'
-import AboutPurposeSection from '../components/AboutPurposeSection';
 import SubpageHero from '../components/SubpageHero';
 import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
-import SwiperCarousel from '../components/SwiperCarousel';
-import TextBevillingSection from '../components/TextBevillingSection';
-import TextFondetsMidler from '../components/TextFondetsMidler';
 import BlockGridSection from '../components/BlockGridSection';
-import TextBlock from '../components/TextBlock';
-import ArticleSection from '../components/ArticleSection';
 import SortArticleSection from '../components/SortArticleSection';
 import SeeMoreCtaLink from '../components/SeeMoreCtaLink';
 import LoadModal from '../components/LoadModal';
