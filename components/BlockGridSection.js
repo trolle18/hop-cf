@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
 import Image from "next/image";
-import CtaBtn from './CTAbtn';
 import TagHeadlineSubheadline from './TextSectionModules/TagHeadlineSubheadline';
 import SeeMoreCtaLink from './SeeMoreCtaLink';
 
