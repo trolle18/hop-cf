@@ -4,8 +4,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['carlsbergfondet.dk', 'carlsbergfondet', 'https://carlsbergfondet.dk'],
-    loader: "akamai",
-    path: "",
+    // loader: "akamai",
+    // path: "",
   },
 }
 
