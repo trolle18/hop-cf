@@ -38,7 +38,7 @@ export default function Hero({ data }) {
 
     return (
         <>
-        <section className="hero-wrapper" key={data.id} >
+        {/* <section className="hero-wrapper" key={data.id} > */}
             <div className="hero" key={data.id}>
                 
                 <div className="hero-cntr">                    
@@ -90,7 +90,7 @@ export default function Hero({ data }) {
                 </div>            
                 
             </div>
-        </section>
+        {/* </section> */}
         </>
     )
 }

@@ -6,15 +6,16 @@ import SortArticleSection from '../components/SortArticleSection';
 import LoadModal from '../components/LoadModal';
 import NewsletterBlock from '../components/NewsletterBlock';
 import VideoSection from '../components/VideoSection';
+import Nav from '../components/Nav';
 
 
-export default function Knowledge() {
+export default function KnowledgePage() {
   const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)
   
     useEffect(() => {
       setLoading(true)
-      fetch('/api/newspage')
+      fetch('/api/knowledgepage')
         .then((res) => res.json())
         .then((sectionData) => {
           setSectionData(sectionData)
@@ -27,7 +28,11 @@ export default function Knowledge() {
 
   return ( 
     <>
-      {sectionData.newspageData.map((data) => (    
+      {sectionData.knowledgepageData.map((data) => (    
+        <>
+        {/* {data?.nav.map((data) => (  */}
+        <Nav />
+          {/* ))}   */}
         <main className="page" key={data.id}>
 
         <section className="modal-wrapper modal-theme-light-orange modal-hops-light-green">
@@ -45,13 +50,13 @@ export default function Knowledge() {
             </section>
           ))}   */}
 
-          {data.txtBlock?.map((data) => ( 
+          {data?.txtBlock?.map((data) => ( 
             <section className="textSection" key={data.id} data={data}>
               <TagHeadlineSubheadline data={data}/>      
             </section>   
           ))} 
 
-          {data.articles?.map((data) => ( 
+          {data?.articles?.map((data) => ( 
             <SortArticleSection key={data.id} data={data}/>
           ))}   
 
@@ -59,15 +64,16 @@ export default function Knowledge() {
             <PodcastSection key={data.id} data={data}/>
           ))}  */}
 
-          {data.videoSection?.map((data) => ( 
+          {data?.videoSection?.map((data) => ( 
             <VideoSection key={data.id} data={data}/>
           ))} 
 
-          {data.newsletterBlock?.map((data) => ( 
+          {data?.newsletterBlock?.map((data) => ( 
             <NewsletterBlock key={data.id} data={data}/>
           ))}
 
         </main>
+        </>
       ))}
     </>
   )

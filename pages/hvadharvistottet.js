@@ -6,15 +6,16 @@ import SortArticleSection from '../components/SortArticleSection';
 import LoadModal from '../components/LoadModal';
 import NewsletterBlock from '../components/NewsletterBlock';
 import VideoSection from '../components/VideoSection';
+import Nav from '../components/Nav';
 
 
-export default function Supported() {
+export default function SupportedPage() {
   const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)
   
     useEffect(() => {
       setLoading(true)
-      fetch('/api/newspage')
+      fetch('/api/supportedpage')
         .then((res) => res.json())
         .then((sectionData) => {
           setSectionData(sectionData)
@@ -27,7 +28,11 @@ export default function Supported() {
 
   return ( 
     <>
-      {sectionData.newspageData.map((data) => (    
+      {sectionData.supportedpageData.map((data) => (    
+        <>
+          {/* {data?.nav.map((data) => (  */}
+          <Nav />
+          {/* ))}   */}
         <main className="page" key={data.id}>
 
         <section className="modal-wrapper modal-theme-light-orange modal-hops-light-green">
@@ -68,6 +73,7 @@ export default function Supported() {
           ))}
 
         </main>
+        </>
       ))}
     </>
   )

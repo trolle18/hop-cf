@@ -6,9 +6,10 @@ import SortArticleSection from '../components/SortArticleSection';
 import LoadModal from '../components/LoadModal';
 import NewsletterBlock from '../components/NewsletterBlock';
 import VideoSection from '../components/VideoSection';
+import Nav from '../components/Nav';
 
 
-export default function News() {
+export default function NewsPage() {
   const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)
   
@@ -28,6 +29,10 @@ export default function News() {
   return ( 
     <>
       {sectionData.newspageData.map((data) => (    
+        <>
+        {/* {data?.nav.map((data) => (  */}
+        <Nav />
+          {/* ))}   */}
         <main className="page" key={data.id}>
 
         <section className="modal-wrapper modal-theme-light-orange modal-hops-light-green">
@@ -68,6 +73,7 @@ export default function News() {
           ))}
 
         </main>
+        </>
       ))}
     </>
   )

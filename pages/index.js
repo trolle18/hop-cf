@@ -11,7 +11,7 @@ import LoadModal from '../components/LoadModal';
 import Nav from '../components/Nav';
 import PageHead from '../components/PageHead';
 
-export default function Home() {
+export default function HomePage() {
   const [sectionData, setSectionData] = useState(null)
   const [isLoading, setLoading] = useState(false)
   
@@ -30,17 +30,26 @@ export default function Home() {
 
   return (
     <>
-
       {sectionData.homepageData.map((data) => (
+        <>
+        {data?.nav.map((data) => ( 
+          <Nav key={data.id}/>
+        ))}  
         
         <main className="page" key={data.id}>
-          <section className="modal-wrapper modal-theme-lightest-green modal-hops-light-green">
-            <LoadModal />
-          </section>
 
+          {data?.hero.map((data) => ( 
+            <section key={data.id} className="modal-wrapper modal-theme-lightest-green modal-hops-light-green">
+              <LoadModal />
+            </section>
+          ))}  
+         
+ 
           {data.hero?.map((data) => ( 
-            <Hero key={data.id}  data={data}/>
-          ))}    
+            <section className="hero-wrapper theme-midnight-green theme-text-light-grey" key={data.id} >
+              <Hero key={data.id}  data={data}/>
+            </section>
+          ))} 
           
           {data.txtBlock?.map((data) => ( 
             <TextBlock key={data.id} data={data}/>
@@ -66,7 +75,8 @@ export default function Home() {
             <NewsletterBlock key={data.id} data={data}/>
           ))}       
 
-      </main>
+        </main>
+        </>
       ))}
     </>
   )
