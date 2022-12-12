@@ -38,7 +38,7 @@ export default function About() {
           
 
           {data.hero?.map((data) => ( 
-            <section className="hero-wrapper subpagehero-wrapper theme-dark-grey" key={data.id} >
+            <section className="hero-wrapper subpagehero-wrapper theme-lightest-green" key={data.id} >
               <SubpageHero data={data}/>
             </section>
           ))}  

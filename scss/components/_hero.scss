@@ -19,7 +19,7 @@
 
         img {
           position: absolute;
-          height: auto;
+          height: 100%;
           width: auto;
           margin: auto auto;
           top: 0%;
@@ -90,7 +90,7 @@
           word-wrap: normal;
           word-break: break-word;
           hyphens: auto;
-          color: $clr_l_grey;
+          // color: $clr_l_grey;
 
           h1 {
             width: 100%;
@@ -187,49 +187,6 @@
   }
 }
 
-.hero-wrapper.subpagehero-wrapper.theme-midnight-green {
-  .hero-cntr.color-hero {
-    background-color: $clr_midnight_green;
-    color: $clr_lightest_green !important;
-    filter: none !important;    
-  }
-}
-
-.hero-wrapper.subpagehero-wrapper.theme-lightest-green {
-  .hero-cntr.color-hero {
-    background-color: $clr_lightest_green;
-    color: $clr_midnight_green !important;
-    filter: none !important;    
-  }
-}
-
-.hero-wrapper.subpagehero-wrapper.theme-dark-red {
-  .hero-cntr.color-hero {
-    background-color: $clr_dark-red;
-    color: $clr_yellow !important;
-    filter: none !important;    
-  }
-}
-
-.hero-wrapper.subpagehero-wrapper.theme-dark-grey {
-  .hero-cntr.color-hero {
-    background-color: $clr_m-grey;
-    color: $clr_white !important;
-    filter: none !important;    
-  }
-}
-
-
-.hero-cntr.color-hero.theme-lightest-green {
-  background-color: $clr_midnight_green;
-  color: $clr_midnight_green !important;
-  filter: none !important;    
-}
-
-
-.theme-midnight-green {
-  background-color: $clr_midnight_green;
-}
 
 
 @media (min-width: 600px) {
@@ -238,6 +195,16 @@
       .hero-cntr {
         height: 90vh;
         max-height: 700px;
+
+        &__img-cntr {
+          height: 100%;
+          width: auto; 
+  
+          img {
+            height: 100%;
+            width: auto;
+          }
+        }
 
         &__video-cntr {
           height: 100%;
@@ -321,6 +288,26 @@
     }      
   }
 }
+
+@media (min-width: 768px) {
+  .hero-wrapper {
+    .hero {
+      .hero-cntr {
+        height: 80vh;
+        &__img-cntr {
+          height: 100%;
+          width: 100%; 
+  
+          img {
+            height: 100%;
+            width: auto;
+          }
+        }
+      }
+    }      
+  }
+}
+
 
 
 @media (min-width: 992px) {
@@ -451,5 +438,125 @@
         }
       }
     }      
+  }
+}
+
+
+
+//// ----
+
+
+.hero-wrapper.subpagehero-wrapper.theme-midnight-green {
+  .hero-cntr.color-hero {
+    background-color: $clr_midnight_green;
+    color: $clr_lightest_green !important;
+    filter: none !important;    
+    
+  }
+}
+
+.hero-wrapper.subpagehero-wrapper.theme-lightest-green {
+  .hero-cntr.color-hero {
+    background-color: $clr_lightest_green;
+    color: $clr_midnight_green !important;
+    filter: none !important;    
+    .hero {
+      .hero-cntr {
+        &__txt-cntr {
+          &__headline {
+            color: $clr_midnight_green !important;
+            h1 {
+              font-size: $fs_2xl;
+            }
+          }
+    
+          &__btm {
+            &__text {
+              p {
+                color: $clr_midnight_green !important;
+              }
+            }
+          }
+        }
+        &__txt-cntr.subpage-hero-text {
+          &__headline {
+            color: $clr_midnight_green !important;
+    
+            h1 {
+              font-size: $fs_2-3xl;
+              color: $clr_midnight_green !important;
+            }
+          }
+        }
+    
+      }
+    }
+  }
+}
+
+.hero-wrapper.subpagehero-wrapper.theme-dark-red {
+  .hero-cntr.color-hero {
+    background-color: $clr_dark-red;
+    color: $clr_yellow !important;
+    filter: none !important;    
+  }
+}
+
+.hero-wrapper.subpagehero-wrapper.theme-dark-grey {
+  .hero-cntr.color-hero {
+    background-color: $clr_m-grey;
+    color: $clr_white !important;
+    filter: none !important;    
+  }
+}
+
+
+.hero-cntr.color-hero.theme-lightest-green {
+  background-color: $clr_midnight_green;
+  color: $clr_midnight_green !important;
+  filter: none !important;    
+}
+
+
+.theme-midnight-green {
+  background-color: $clr_midnight_green;
+}
+
+.hero-wrapper.subpagehero-wrapper.theme-lightest-green {
+  .hero-cntr.color-hero {
+    background-color: $clr_lightest_green;
+    color: $clr_midnight_green !important;
+    filter: none !important;    
+    .hero {
+      .hero-cntr {
+        &__txt-cntr {
+          &__headline {
+            color: $clr_midnight_green !important;
+            h1 {
+              font-size: $fs_2xl;
+            }
+          }
+    
+          &__btm {
+            &__text {
+              p {
+                color: $clr_midnight_green !important;
+              }
+            }
+          }
+        }
+        &__txt-cntr.subpage-hero-text {
+          &__headline {
+            color: $clr_midnight_green !important;
+    
+            h1 {
+              font-size: $fs_2-3xl;
+              color: $clr_midnight_green !important;
+            }
+          }
+        }
+    
+      }
+    }
   }
 }
