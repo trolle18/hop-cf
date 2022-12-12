@@ -46,7 +46,7 @@ export default function HomePage() {
          
  
           {data.hero?.map((data) => ( 
-            <section className="hero-wrapper theme-midnight-green theme-text-light-grey" key={data.id} >
+            <section className="hero-wrapper theme-text-light-grey" key={data.id} >
               <Hero key={data.id}  data={data}/>
             </section>
           ))} 
