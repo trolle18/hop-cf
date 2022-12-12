@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SubpageHero from '../components/SubpageHero';
 import TagHeadlineSubheadline from '../components/TextSectionModules/TagHeadlineSubheadline';
-import BlockGridSection from '../components/BlockGridSection';
 import SortArticleSection from '../components/SortArticleSection';
 import LoadModal from '../components/LoadModal';
 import NewsletterBlock from '../components/NewsletterBlock';
