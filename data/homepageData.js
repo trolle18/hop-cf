@@ -36,7 +36,7 @@ export const homepageData = [
           {
             id: 122,
             text: "Ansøg om bevilling",
-            url: "/"
+            url: "/ansog"
           }
         ]
       }
@@ -72,7 +72,7 @@ export const homepageData = [
           {
             id: 122,
             text: "Søg nu",
-            url: "/"
+            url: "/ansog"
           }
         ]
       }
@@ -98,7 +98,7 @@ export const homepageData = [
           {
             id: 122,
             text: "Se alle åbne forslag",
-            url: "/"
+            url: "/ansog"
 
           }
         ]
@@ -308,7 +308,7 @@ export const homepageData = [
               {
                 id: 531,
                 text: "Mere info",
-                url: "/"
+                url: ""
               }
             ]
           },
@@ -329,7 +329,7 @@ export const homepageData = [
               {
                 id: 541,
                 text: "Mere info",
-                url: "/"
+                url: ""
               }
             ]
           },
@@ -350,7 +350,7 @@ export const homepageData = [
               {
                 id: 551,
                 text: "Mere info",
-                url: "/"
+                url: ""
               }
             ]
           }
@@ -404,7 +404,7 @@ export const homepageData = [
               {
                 id: 331,
                 text: "Mere info",
-                url: "/"
+                url: "/ansog"
               }
             ]
           }          
@@ -450,7 +450,7 @@ export const homepageData = [
           {
             id: 12912,
             text: "Om fondet",
-            url: "/"
+            url: "/omfondet"
           }
         ],
       }
@@ -469,7 +469,7 @@ export const homepageData = [
           {
             id: 9342,
             text: "Flere videoer",
-            url: "/"
+            url: "/nyheder"
           }
         ],
         articles: [
@@ -504,7 +504,7 @@ export const homepageData = [
               {
                 id: 5951,
                 text: "Afspil",
-                url: "/",
+                url: "",
                 type: "play"
               }
             ]
@@ -540,7 +540,7 @@ export const homepageData = [
               {
                 id: 661,
                 text: "Afspil",
-                url: "/",
+                url: "",
                 type: "play"
               }
             ]
@@ -576,7 +576,7 @@ export const homepageData = [
               {
                 id: 853,
                 text: "Afspil",
-                url: "/",
+                url: "",
                 type: "play"
               }
             ]
@@ -612,7 +612,7 @@ export const homepageData = [
               {
                 id: 3921,
                 text: "Afspil",
-                url: "/",
+                url: "",
                 type: "play"
               }
             ]
@@ -648,7 +648,7 @@ export const homepageData = [
               {
                 id: 3921,
                 text: "Afspil",
-                url: "/",
+                url: "",
                 type: "play"
               }
             ]
@@ -684,7 +684,7 @@ export const homepageData = [
               {
                 id: 853,
                 text: "Afspil",
-                url: "/",
+                url: "",
                 type: "play"
               }
             ]
@@ -720,7 +720,7 @@ export const homepageData = [
               {
                 id: 3921,
                 text: "Afspil",
-                url: "/",
+                url: "",
                 type: "play"
               }
             ]
@@ -756,7 +756,7 @@ export const homepageData = [
               {
                 id: 3921,
                 text: "Afspil",
-                url: "/",
+                url: "",
                 type: "play"
               }
             ]
@@ -799,7 +799,7 @@ export const homepageData = [
           {
             id: 122647,
             text: "Tilmeld",
-            url: "/"
+            url: ""
           }
         ]
       }
@@ -818,7 +818,7 @@ export const homepageData = [
           {
             id: 422,
             text: "Flere podcasts",
-            url: "/"
+            url: ""
           }
         ],
         articles: [
@@ -838,7 +838,7 @@ export const homepageData = [
               {
                 id: 531,
                 text: "Link",
-                url: "/"
+                url: ""
               }
             ]
           },
@@ -858,7 +858,7 @@ export const homepageData = [
               {
                 id: 551,
                 text: "Link",
-                url: "/"
+                url: ""
               }
             ]
           }
