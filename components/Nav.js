@@ -3,7 +3,7 @@ import NavBurgerMenu from './NavBurgerMenu';
 import { NavLink } from './NavLink';
 // import SearchField from './SearchField';
 
-const Nav = () => {
+const Nav = ({ data }) => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   // const [scrollYFromTop, setScrollYFromTop] = useState(0);
@@ -80,13 +80,30 @@ const Nav = () => {
   if (!sectionData) return <p>No data</p>
 
 
+
+function checkTheme(data) {
+  const isTheme = data.theme;
+    if (isTheme === "theme-lightest-green") { 
+      return ("theme-lightest-green") 
+    }
+
+    if (isTheme === "theme-midnight-green") { 
+      return ("theme-midnight-green") 
+    }       
+    else { 
+        return("") 
+    }
+}
+
+
   return (
     <>
       <nav className={`active ${show && ''}`} id="nav">
         {sectionData.data.map((data) => (
 
           <div key={data.id} className={`nav-cntr ${navbg && ''}`} id="nav-bg">
-            <div className="nav-outer-cntr">
+            {/* <div className="nav-outer-cntr"> */}
+            <div className={`nav-outer-cntr ${checkTheme(data) && ''}`}>
               <div className="nav-inner-cntr">
 
                 <div className="nav-mob-links">                 

@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return ( 
     <>
      <PageHead/>
-      <Nav/>
+      {/* <Nav/> */}
       {/* <Nav/> */}
       <Component {...pageProps} />
       <Footer/>

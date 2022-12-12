@@ -9,13 +9,13 @@ import VideoSection from '../components/VideoSection';
 import Nav from '../components/Nav';
 
 
-export default function NewsPage() {
+export default function SupportedPage() {
   const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)
   
     useEffect(() => {
       setLoading(true)
-      fetch('/api/newspage')
+      fetch('/api/supportedpage')
         .then((res) => res.json())
         .then((sectionData) => {
           setSectionData(sectionData)
@@ -28,10 +28,10 @@ export default function NewsPage() {
 
   return ( 
     <>
-      {sectionData.newspageData.map((data) => (    
+      {sectionData.supportedpageData.map((data) => (    
         <>
-        {/* {data?.nav.map((data) => (  */}
-        <Nav />
+          {/* {data?.nav.map((data) => (  */}
+          <Nav />
           {/* ))}   */}
         <main className="page" key={data.id}>
 

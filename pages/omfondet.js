@@ -8,9 +8,10 @@ import TextBevillingSection from '../components/TextBevillingSection';
 import TextFondetsMidler from '../components/TextFondetsMidler';
 import BlockGridSection from '../components/BlockGridSection';
 import LoadModal from '../components/LoadModal';
+import Nav from '../components/Nav';
 
 
-export default function About() {
+export default function AboutPage() {
   const [sectionData, setSectionData] = useState(null)
     const [isLoading, setLoading] = useState(false)
   
@@ -30,6 +31,11 @@ export default function About() {
   return (
     <>
       {sectionData.aboutpageData.map((data) => (    
+        <>
+          {/* {data?.nav.map((data) => (  */}
+            <Nav />
+          {/* ))}   */}
+      
         <main className="page" key={data.id}>
 
           <section className="modal-wrapper modal-theme-midnight-green modal-hops-light-green">
@@ -38,7 +44,7 @@ export default function About() {
           
 
           {data.hero?.map((data) => ( 
-            <section className="hero-wrapper subpagehero-wrapper theme-dark-grey" key={data.id} >
+            <section className="hero-wrapper subpagehero-wrapper theme-midnight-green" key={data.id} >
               <SubpageHero data={data}/>
             </section>
           ))}  
@@ -71,6 +77,7 @@ export default function About() {
           ))} 
 
         </main>
+        </>
       ))}
     </>
   )

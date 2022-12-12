@@ -28,7 +28,7 @@ export default function SubpageHero({ data }) {
             return (
                 <div className="hero-cntr__img-cntr">
                     {data.img.map((img) => (
-                        <Image key={img.id} src={img.src} alt={img.alt} height={1000} width={1400} />
+                        <Image key={img.id} src={img.src} alt={img.alt} height={2000} width={2000} />
                 
                     ))}
                 </div>
@@ -45,7 +45,7 @@ export default function SubpageHero({ data }) {
         <>
             <div className="hero" key={data.id}>
                 
-                <div className="hero-cntr color-hero theme-lightest-green">         
+                <div className="hero-cntr color-hero">         
                 {checkMedia(data)}           
 
                     <div className="hero-cntr__txt-cntr subpage-hero-text">
